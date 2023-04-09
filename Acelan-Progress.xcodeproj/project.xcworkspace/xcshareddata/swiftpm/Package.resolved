@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "statefularch",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/purenative/StatefulArch",
+      "state" : {
+        "revision" : "839824ca200c8f1ecc6219f06a6838d20735f03f",
+        "version" : "0.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}

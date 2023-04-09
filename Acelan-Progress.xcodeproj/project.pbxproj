@@ -10,7 +10,7 @@
 		9D5A801F29BB9D5300648BA1 /* Acelan_ProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */; };
 		9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A802029BB9D5300648BA1 /* ContentView.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
-		9D5A802629BB9D5900648BA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802529BB9D5900648BA1 /* Preview Assets.xcassets */; };
+		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +18,6 @@
 		9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acelan_ProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802029BB9D5300648BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D5A802529BB9D5900648BA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,17 +54,8 @@
 				9DA9DE0D29E32E74004F8274 /* Resources */,
 				9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */,
 				9D5A802029BB9D5300648BA1 /* ContentView.swift */,
-				9D5A802429BB9D5900648BA1 /* Preview Content */,
 			);
 			path = "Acelan-Progress";
-			sourceTree = "<group>";
-		};
-		9D5A802429BB9D5900648BA1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				9D5A802529BB9D5900648BA1 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		9DA9DE0D29E32E74004F8274 /* Resources */ = {
@@ -91,6 +82,9 @@
 			dependencies = (
 			);
 			name = "Acelan-Progress";
+			packageProductDependencies = (
+				9DA9DE0F29E3338A004F8274 /* StatefulArch */,
+			);
 			productName = "Acelan-Progress";
 			productReference = 9D5A801B29BB9D5300648BA1 /* Acelan-Progress.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 9D5A801229BB9D5300648BA1;
+			packageReferences = (
+				9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */,
+			);
 			productRefGroup = 9D5A801C29BB9D5300648BA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,7 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5A802629BB9D5900648BA1 /* Preview Assets.xcassets in Resources */,
 				9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +270,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K654LQMS84;
+				DEVELOPMENT_TEAM = 24X4EL2BCS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Acelan Progress";
@@ -307,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K654LQMS84;
+				DEVELOPMENT_TEAM = 24X4EL2BCS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Acelan Progress";
@@ -355,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/purenative/StatefulArch";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DA9DE0F29E3338A004F8274 /* StatefulArch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */;
+			productName = StatefulArch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D5A801329BB9D5300648BA1 /* Project object */;
 }
