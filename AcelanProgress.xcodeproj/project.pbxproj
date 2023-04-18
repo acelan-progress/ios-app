@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D5A801F29BB9D5300648BA1 /* Acelan_ProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */; };
+		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
 		9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A802029BB9D5300648BA1 /* ContentView.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D5A801B29BB9D5300648BA1 /* Acelan-Progress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Acelan-Progress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acelan_ProgressApp.swift; sourceTree = "<group>"; };
+		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802029BB9D5300648BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,7 +35,7 @@
 		9D5A801229BB9D5300648BA1 = {
 			isa = PBXGroup;
 			children = (
-				9D5A801D29BB9D5300648BA1 /* Acelan-Progress */,
+				9D5A801D29BB9D5300648BA1 /* AcelanProgress */,
 				9D5A801C29BB9D5300648BA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,19 +43,19 @@
 		9D5A801C29BB9D5300648BA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D5A801B29BB9D5300648BA1 /* Acelan-Progress.app */,
+				9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D5A801D29BB9D5300648BA1 /* Acelan-Progress */ = {
+		9D5A801D29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXGroup;
 			children = (
 				9DA9DE0D29E32E74004F8274 /* Resources */,
-				9D5A801E29BB9D5300648BA1 /* Acelan_ProgressApp.swift */,
+				9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */,
 				9D5A802029BB9D5300648BA1 /* ContentView.swift */,
 			);
-			path = "Acelan-Progress";
+			path = AcelanProgress;
 			sourceTree = "<group>";
 		};
 		9DA9DE0D29E32E74004F8274 /* Resources */ = {
@@ -69,9 +69,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D5A801A29BB9D5300648BA1 /* Acelan-Progress */ = {
+		9D5A801A29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D5A802929BB9D5900648BA1 /* Build configuration list for PBXNativeTarget "Acelan-Progress" */;
+			buildConfigurationList = 9D5A802929BB9D5900648BA1 /* Build configuration list for PBXNativeTarget "AcelanProgress" */;
 			buildPhases = (
 				9D5A801729BB9D5300648BA1 /* Sources */,
 				9D5A801829BB9D5300648BA1 /* Frameworks */,
@@ -81,12 +81,12 @@
 			);
 			dependencies = (
 			);
-			name = "Acelan-Progress";
+			name = AcelanProgress;
 			packageProductDependencies = (
 				9DA9DE0F29E3338A004F8274 /* StatefulArch */,
 			);
 			productName = "Acelan-Progress";
-			productReference = 9D5A801B29BB9D5300648BA1 /* Acelan-Progress.app */;
+			productReference = 9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D5A801629BB9D5300648BA1 /* Build configuration list for PBXProject "Acelan-Progress" */;
+			buildConfigurationList = 9D5A801629BB9D5300648BA1 /* Build configuration list for PBXProject "AcelanProgress" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D5A801A29BB9D5300648BA1 /* Acelan-Progress */,
+				9D5A801A29BB9D5300648BA1 /* AcelanProgress */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */,
-				9D5A801F29BB9D5300648BA1 /* Acelan_ProgressApp.swift in Sources */,
+				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +312,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D5A801629BB9D5300648BA1 /* Build configuration list for PBXProject "Acelan-Progress" */ = {
+		9D5A801629BB9D5300648BA1 /* Build configuration list for PBXProject "AcelanProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5A802729BB9D5900648BA1 /* Debug */,
@@ -341,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D5A802929BB9D5900648BA1 /* Build configuration list for PBXNativeTarget "Acelan-Progress" */ = {
+		9D5A802929BB9D5900648BA1 /* Build configuration list for PBXNativeTarget "AcelanProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5A802A29BB9D5900648BA1 /* Debug */,

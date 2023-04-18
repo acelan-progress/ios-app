@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Acelan-Progress
+//  AcelanProgress
 //
 //  Created by Mikhail Eremeev on 10.03.2023.
 //
