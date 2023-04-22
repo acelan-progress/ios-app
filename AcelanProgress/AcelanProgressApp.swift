@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import StatefulArch
+import AppConfiguration
 
 @main
 struct AcelanProgressApp: App {
+    
+    init() {
+        AppConfiguration.setup(
+            DIConfiguration.self,
+            NavigationConfiguration.self
+        )
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
+    
 }

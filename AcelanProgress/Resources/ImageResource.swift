@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftUI
 
 enum ImageResource: String {
@@ -14,6 +15,19 @@ enum ImageResource: String {
     case icon_notifications
     case icon_prodile
     case icon_tasks
+    case image_acelan_logo
+    
+}
+
+extension UIImage {
+    
+    static func resource(_ imageResource: ImageResource) -> UIImage {
+        UIImage(named: imageResource.rawValue)!
+    }
+    
+    static func resourceTemplate(_ imageResource: ImageResource) -> UIImage {
+        resource(imageResource).withRenderingMode(.alwaysTemplate)
+    }
     
 }
 

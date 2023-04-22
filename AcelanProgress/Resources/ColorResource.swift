@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftUI
 
 enum ColorResource: String {
@@ -19,6 +20,14 @@ enum ColorResource: String {
     case Purple
     case Red
     case White
+    
+}
+
+extension UIColor {
+    
+    static func resource(_ colorResource: ColorResource) -> UIColor {
+        UIColor(named: colorResource.rawValue)!
+    }
     
 }
 

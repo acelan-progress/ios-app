@@ -10,7 +10,17 @@ import SwiftUI
 struct PrimaryButton: View {
     
     let title: String
+    
+    @Binding
+    private var loading: Bool
+    
     let action: () -> Void
+    
+    init(title: String, loading: Binding<Bool>, action: @escaping () -> Void) {
+        self.title = title
+        _loading = loading
+        self.action = action
+    }
     
     var body: some View {
         Button(action: action) {
@@ -19,9 +29,18 @@ struct PrimaryButton: View {
                     .frame(height: 40)
                     .foregroundColor(.resource(.Purple))
                 
-                Text(title)
-                    .font(.system(size: 16, weight: .bold))
-                    .foregroundColor(.resource(.White))
+                if loading {
+                    ProgressView()
+                        .progressViewStyle(
+                            CircularProgressViewStyle(
+                                tint: .resource(.White)
+                            )
+                        )
+                } else {
+                    Text(title)
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundColor(.resource(.White))
+                }
             }
         }
     }
@@ -30,7 +49,10 @@ struct PrimaryButton: View {
 
 struct PrimaryButton_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryButton(title: "Login", action: {})
-            .padding(30)
+        PrimaryButton(
+            title: "Login",
+            loading: .constant(false),
+            action: {}
+        ).padding(30)
     }
 }

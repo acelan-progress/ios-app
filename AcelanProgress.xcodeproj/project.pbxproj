@@ -8,15 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
-		9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A802029BB9D5300648BA1 /* ContentView.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */; };
 		9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */; };
 		9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */; };
 		9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF129F4109700B3BBAE /* ColorResource.swift */; };
 		9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF329F411D600B3BBAE /* ImageResource.swift */; };
-		9DA57BF729F415C900B3BBAE /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF629F415C900B3BBAE /* TextInput.swift */; };
 		9DA57BFA29F417C100B3BBAE /* PNComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA57BF929F417C100B3BBAE /* PNComponents */; };
+		9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */; };
+		9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */; };
+		9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0329F434BD00B3BBAE /* LoginMainState.swift */; };
+		9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0529F4350B00B3BBAE /* LoginMainAction.swift */; };
+		9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0729F435A200B3BBAE /* LoginMainInterceptor.swift */; };
+		9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0929F435E800B3BBAE /* LoginMainPage.swift */; };
+		9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */; };
+		9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0D29F437EE00B3BBAE /* LoginModuleBuilder.swift */; };
+		9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1129F439EC00B3BBAE /* DIConfiguration.swift */; };
+		9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1329F447FB00B3BBAE /* LoginMainScenario.swift */; };
+		9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1529F4481A00B3BBAE /* LoginMainScenarioProtocol.swift */; };
+		9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */; };
+		9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */; };
+		9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +48,24 @@
 /* Begin PBXFileReference section */
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
-		9D5A802029BB9D5300648BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		9DA57BF129F4109700B3BBAE /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		9DA57BF329F411D600B3BBAE /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
-		9DA57BF629F415C900B3BBAE /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTextField.swift; sourceTree = "<group>"; };
+		9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTextFieldState.swift; sourceTree = "<group>"; };
+		9DA57C0329F434BD00B3BBAE /* LoginMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainState.swift; sourceTree = "<group>"; };
+		9DA57C0529F4350B00B3BBAE /* LoginMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainAction.swift; sourceTree = "<group>"; };
+		9DA57C0729F435A200B3BBAE /* LoginMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainInterceptor.swift; sourceTree = "<group>"; };
+		9DA57C0929F435E800B3BBAE /* LoginMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainPage.swift; sourceTree = "<group>"; };
+		9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		9DA57C0D29F437EE00B3BBAE /* LoginModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleBuilder.swift; sourceTree = "<group>"; };
+		9DA57C1129F439EC00B3BBAE /* DIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConfiguration.swift; sourceTree = "<group>"; };
+		9DA57C1329F447FB00B3BBAE /* LoginMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainScenario.swift; sourceTree = "<group>"; };
+		9DA57C1529F4481A00B3BBAE /* LoginMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainScenarioProtocol.swift; sourceTree = "<group>"; };
+		9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
+		9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +102,12 @@
 		9D5A801D29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXGroup;
 			children = (
+				9DA57C1E29F4522C00B3BBAE /* Models */,
+				9DA57C0F29F439BC00B3BBAE /* AppConfigurations */,
+				9DA57C0029F4343F00B3BBAE /* Modules */,
 				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9DA9DE0D29E32E74004F8274 /* Resources */,
 				9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */,
-				9D5A802029BB9D5300648BA1 /* ContentView.swift */,
 			);
 			path = AcelanProgress;
 			sourceTree = "<group>";
@@ -89,10 +115,76 @@
 		9D7AF9DE29F4019200E7C9E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9DA57BFD29F4262000B3BBAE /* AcelanTextField */,
 				9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */,
-				9DA57BF629F415C900B3BBAE /* TextInput.swift */,
+				9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */,
+				9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DA57BFD29F4262000B3BBAE /* AcelanTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */,
+				9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */,
+			);
+			path = AcelanTextField;
+			sourceTree = "<group>";
+		};
+		9DA57C0029F4343F00B3BBAE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C0129F434A500B3BBAE /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9DA57C0129F434A500B3BBAE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C0D29F437EE00B3BBAE /* LoginModuleBuilder.swift */,
+				9DA57C0229F434AF00B3BBAE /* LoginMain */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9DA57C0229F434AF00B3BBAE /* LoginMain */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C0329F434BD00B3BBAE /* LoginMainState.swift */,
+				9DA57C0529F4350B00B3BBAE /* LoginMainAction.swift */,
+				9DA57C0729F435A200B3BBAE /* LoginMainInterceptor.swift */,
+				9DA57C0929F435E800B3BBAE /* LoginMainPage.swift */,
+				9DA57C1329F447FB00B3BBAE /* LoginMainScenario.swift */,
+				9DA57C1529F4481A00B3BBAE /* LoginMainScenarioProtocol.swift */,
+			);
+			path = LoginMain;
+			sourceTree = "<group>";
+		};
+		9DA57C0F29F439BC00B3BBAE /* AppConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C1129F439EC00B3BBAE /* DIConfiguration.swift */,
+				9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */,
+			);
+			path = AppConfigurations;
+			sourceTree = "<group>";
+		};
+		9DA57C1E29F4522C00B3BBAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C1F29F4524100B3BBAE /* UI */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DA57C1F29F4524100B3BBAE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		9DA9DE0D29E32E74004F8274 /* Resources */ = {
@@ -189,10 +281,22 @@
 			files = (
 				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
 				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
-				9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */,
+				9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */,
+				9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */,
+				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
+				9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */,
+				9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */,
 				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
+				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
+				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
+				9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */,
+				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
+				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
+				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
 				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
-				9DA57BF729F415C900B3BBAE /* TextInput.swift in Sources */,
+				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
+				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
+				9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,25 +421,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 24X4EL2BCS;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AcelanProgress/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Acelan Progress";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.sfedu.mmcs.Acelan-Progress";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.sfedu.mmcs.AcelanProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -350,25 +454,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 24X4EL2BCS;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AcelanProgress/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Acelan Progress";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.sfedu.mmcs.Acelan-Progress";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.sfedu.mmcs.AcelanProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
