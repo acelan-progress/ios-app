@@ -2,21 +2,18 @@
 //  ContentView.swift
 //  AcelanProgress
 //
-//  Created by Mikhail Eremeev on 10.03.2023.
+//  Created by Mikhail Yeremeyev on 10.03.2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        PrimaryButton(title: "Login", action: {})
+            .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

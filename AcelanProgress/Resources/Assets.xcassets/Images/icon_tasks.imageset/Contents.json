@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon_tasks.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

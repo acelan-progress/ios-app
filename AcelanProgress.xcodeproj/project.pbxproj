@@ -12,14 +12,35 @@
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */; };
 		9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */; };
+		9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */; };
+		9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF129F4109700B3BBAE /* ColorResource.swift */; };
+		9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF329F411D600B3BBAE /* ImageResource.swift */; };
+		9DA57BF729F415C900B3BBAE /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF629F415C900B3BBAE /* TextInput.swift */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D7AF9D829F400B900E7C9E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802029BB9D5300648BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		9DA57BF129F4109700B3BBAE /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
+		9DA57BF329F411D600B3BBAE /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		9DA57BF629F415C900B3BBAE /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,7 @@
 		9D5A801D29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXGroup;
 			children = (
+				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9DA9DE0D29E32E74004F8274 /* Resources */,
 				9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */,
 				9D5A802029BB9D5300648BA1 /* ContentView.swift */,
@@ -62,10 +84,21 @@
 			path = AcelanProgress;
 			sourceTree = "<group>";
 		};
+		9D7AF9DE29F4019200E7C9E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */,
+				9DA57BF629F415C900B3BBAE /* TextInput.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9DA9DE0D29E32E74004F8274 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				9D5A802229BB9D5900648BA1 /* Assets.xcassets */,
+				9DA57BF129F4109700B3BBAE /* ColorResource.swift */,
+				9DA57BF329F411D600B3BBAE /* ImageResource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -80,6 +113,7 @@
 				9D5A801729BB9D5300648BA1 /* Sources */,
 				9D5A801829BB9D5300648BA1 /* Frameworks */,
 				9D5A801929BB9D5300648BA1 /* Resources */,
+				9D7AF9D829F400B900E7C9E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
+				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
 				9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */,
 				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
+				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
+				9DA57BF729F415C900B3BBAE /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

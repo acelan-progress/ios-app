@@ -2,7 +2,7 @@
 //  AcelanProgressApp.swift
 //  AcelanProgress
 //
-//  Created by Mikhail Eremeev on 10.03.2023.
+//  Created by Mikhail Yeremeyev on 10.03.2023.
 //
 
 import SwiftUI
