@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "pncomponentns",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/purenative/pncomponentns.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "82c593dbb854dda431f800dc459d677c9c470f7e"
+      }
+    },
+    {
       "identity" : "statefularch",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/purenative/StatefulArch",

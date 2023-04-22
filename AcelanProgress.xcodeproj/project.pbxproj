@@ -16,6 +16,7 @@
 		9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF129F4109700B3BBAE /* ColorResource.swift */; };
 		9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF329F411D600B3BBAE /* ImageResource.swift */; };
 		9DA57BF729F415C900B3BBAE /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF629F415C900B3BBAE /* TextInput.swift */; };
+		9DA57BFA29F417C100B3BBAE /* PNComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA57BF929F417C100B3BBAE /* PNComponents */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA57BFA29F417C100B3BBAE /* PNComponents in Frameworks */,
 				9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */,
 				9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */,
 				9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */,
@@ -124,6 +126,7 @@
 				9DA9DE0F29E3338A004F8274 /* StatefulArch */,
 				9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */,
 				9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */,
+				9DA57BF929F417C100B3BBAE /* PNComponents */,
 			);
 			productName = "Acelan-Progress";
 			productReference = 9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */;
@@ -157,6 +160,7 @@
 				9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */,
 				9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */,
 				9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */,
+				9DA57BF829F417C100B3BBAE /* XCRemoteSwiftPackageReference "pncomponentns" */,
 			);
 			productRefGroup = 9D5A801C29BB9D5300648BA1 /* Products */;
 			projectDirPath = "";
@@ -415,6 +419,14 @@
 				minimumVersion = 0.0.1;
 			};
 		};
+		9DA57BF829F417C100B3BBAE /* XCRemoteSwiftPackageReference "pncomponentns" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/purenative/pncomponentns.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/purenative/StatefulArch";
@@ -435,6 +447,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */;
 			productName = AppConfiguration;
+		};
+		9DA57BF929F417C100B3BBAE /* PNComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DA57BF829F417C100B3BBAE /* XCRemoteSwiftPackageReference "pncomponentns" */;
+			productName = PNComponents;
 		};
 		9DA9DE0F29E3338A004F8274 /* StatefulArch */ = {
 			isa = XCSwiftPackageProductDependency;
