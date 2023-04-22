@@ -11,6 +11,7 @@
 		9D5A802129BB9D5300648BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A802029BB9D5300648BA1 /* ContentView.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */; };
+		9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			files = (
 				9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */,
 				9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */,
+				9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,7 @@
 			packageProductDependencies = (
 				9DA9DE0F29E3338A004F8274 /* StatefulArch */,
 				9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */,
+				9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */,
 			);
 			productName = "Acelan-Progress";
 			productReference = 9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */;
@@ -119,6 +122,7 @@
 			packageReferences = (
 				9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */,
 				9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */,
+				9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */,
 			);
 			productRefGroup = 9D5A801C29BB9D5300648BA1 /* Products */;
 			projectDirPath = "";
@@ -365,6 +369,14 @@
 				minimumVersion = 0.0.2;
 			};
 		};
+		9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/purenative/AppConfiguration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		9DA9DE0E29E3338A004F8274 /* XCRemoteSwiftPackageReference "StatefulArch" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/purenative/StatefulArch";
@@ -380,6 +392,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */;
 			productName = SwiftDI;
+		};
+		9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */;
+			productName = AppConfiguration;
 		};
 		9DA9DE0F29E3338A004F8274 /* StatefulArch */ = {
 			isa = XCSwiftPackageProductDependency;

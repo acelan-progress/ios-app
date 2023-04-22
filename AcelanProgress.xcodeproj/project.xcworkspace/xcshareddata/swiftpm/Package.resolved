@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "appconfiguration",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/purenative/AppConfiguration.git",
+      "state" : {
+        "revision" : "f9d085ade38dc745229eb73a8f6f3a7b6639ea22",
+        "version" : "0.0.1"
+      }
+    },
+    {
       "identity" : "statefularch",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/purenative/StatefulArch",
