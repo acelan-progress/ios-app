@@ -8,6 +8,15 @@
         "revision" : "839824ca200c8f1ecc6219f06a6838d20735f03f",
         "version" : "0.1.1"
       }
+    },
+    {
+      "identity" : "swiftdi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/purenative/SwiftDI.git",
+      "state" : {
+        "revision" : "9976875b6a5fda81c156743bf53cb95ce0ebeb3f",
+        "version" : "0.0.2"
+      }
     }
   ],
   "version" : 2
