@@ -11,6 +11,15 @@
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */; };
 		9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */; };
+		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
+		9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40229F5097400A85AF5 /* AcelanTask.swift */; };
+		9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */; };
+		9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40829F50A9E00A85AF5 /* DateFormatterProtocol.swift */; };
+		9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */; };
+		9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */; };
+		9DA4A41029F5117400A85AF5 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40F29F5117400A85AF5 /* TaskItem.swift */; };
+		9DA4A41429F5321A00A85AF5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A41329F5321A00A85AF5 /* String.swift */; };
+		9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A41529F5446600A85AF5 /* Int+String.swift */; };
 		9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */; };
 		9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF129F4109700B3BBAE /* ColorResource.swift */; };
 		9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF329F411D600B3BBAE /* ImageResource.swift */; };
@@ -49,6 +58,15 @@
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
+		9DA4A40229F5097400A85AF5 /* AcelanTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTask.swift; sourceTree = "<group>"; };
+		9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskDateFormatter.swift; sourceTree = "<group>"; };
+		9DA4A40829F50A9E00A85AF5 /* DateFormatterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterProtocol.swift; sourceTree = "<group>"; };
+		9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskArtifact.swift; sourceTree = "<group>"; };
+		9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskFileType.swift; sourceTree = "<group>"; };
+		9DA4A40F29F5117400A85AF5 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		9DA4A41329F5321A00A85AF5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9DA4A41529F5446600A85AF5 /* Int+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
 		9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		9DA57BF129F4109700B3BBAE /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		9DA57BF329F411D600B3BBAE /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
@@ -102,6 +120,8 @@
 		9D5A801D29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXGroup;
 			children = (
+				9DA4A41229F5321100A85AF5 /* Extensions */,
+				9DA4A41129F531FA00A85AF5 /* Support */,
 				9DA57C1E29F4522C00B3BBAE /* Models */,
 				9DA57C0F29F439BC00B3BBAE /* AppConfigurations */,
 				9DA57C0029F4343F00B3BBAE /* Modules */,
@@ -121,6 +141,51 @@
 				9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DA4A3FF29F5028100A85AF5 /* Decodable */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */,
+				9DA4A40229F5097400A85AF5 /* AcelanTask.swift */,
+				9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */,
+				9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */,
+			);
+			path = Decodable;
+			sourceTree = "<group>";
+		};
+		9DA4A40429F50A2600A85AF5 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */,
+				9DA4A40829F50A9E00A85AF5 /* DateFormatterProtocol.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		9DA4A40E29F5114500A85AF5 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A40F29F5117400A85AF5 /* TaskItem.swift */,
+			);
+			path = Facades;
+			sourceTree = "<group>";
+		};
+		9DA4A41129F531FA00A85AF5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A40429F50A2600A85AF5 /* Formatters */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9DA4A41229F5321100A85AF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A41329F5321A00A85AF5 /* String.swift */,
+				9DA4A41529F5446600A85AF5 /* Int+String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9DA57BFD29F4262000B3BBAE /* AcelanTextField */ = {
@@ -174,6 +239,8 @@
 		9DA57C1E29F4522C00B3BBAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9DA4A40E29F5114500A85AF5 /* Facades */,
+				9DA4A3FF29F5028100A85AF5 /* Decodable */,
 				9DA57C1F29F4524100B3BBAE /* UI */,
 			);
 			path = Models;
@@ -279,10 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */,
 				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
 				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
+				9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */,
 				9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */,
+				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
 				9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */,
+				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */,
 				9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */,
@@ -290,12 +361,17 @@
 				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
 				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
 				9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */,
+				9DA4A41429F5321A00A85AF5 /* String.swift in Sources */,
 				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
 				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
+				9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */,
 				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
+				9DA4A41029F5117400A85AF5 /* TaskItem.swift in Sources */,
+				9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */,
+				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
 				9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

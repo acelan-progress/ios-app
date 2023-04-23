@@ -13,15 +13,16 @@ protocol TaskItemData: Identifiable {
     var id: Int { get }
     var name: String { get }
     var status: String { get }
-    var statusColor: Color { get }
-    var startedAt: String? { get }
-    var finishedAt: String? { get }
+    var statusBackgroundColor: Color { get }
+    var statusTitleColor: Color { get }
+    var startedAt: String { get }
+    var finishedAt: String { get }
     
 }
 
 #if DEBUG
 enum TaskItemMock: String, CaseIterable, TaskItemData {
-    
+
     case queued
     case working
     case failure
@@ -63,36 +64,52 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
         rawValue
     }
     
-    var statusColor: Color {
+    var statusBackgroundColor: Color {
         switch self {
         case .queued:
-            return .resource(.Blue)
+            return .resource(.LightGray)
             
         case .working:
-            return .resource(.Orange)
+            return .resource(.LightBlue)
             
         case .failure:
-            return .resource(.Red)
+            return .resource(.Pink)
             
         case .success:
-            return .resource(.Green)
+            return .resource(.LightGreen)
         }
     }
     
-    var startedAt: String? {
+    var statusTitleColor: Color {
         switch self {
         case .queued:
-            return nil
+            return .resource(.Carbon)
+            
+        case .working:
+            return .resource(.DarkBlue)
+            
+        case .failure:
+            return .resource(.DarkRed)
+            
+        case .success:
+            return .resource(.DarkGreen)
+        }
+    }
+    
+    var startedAt: String {
+        switch self {
+        case .queued:
+            return .dash
             
         case .working, .failure, .success:
             return "12.04.2023"
         }
     }
     
-    var finishedAt: String? {
+    var finishedAt: String {
         switch self {
         case .queued, .working:
-            return nil
+            return .dash
             
         case .failure, .success:
             return "12.04.2023"

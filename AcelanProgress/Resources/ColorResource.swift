@@ -12,13 +12,15 @@ import SwiftUI
 enum ColorResource: String {
     
     case Black
-    case Blue
     case Carbon
-    case Green
+    case DarkBlue
+    case DarkGreen
+    case DarkRed
+    case LightBlue
     case LightGray
-    case Orange
+    case LightGreen
+    case Pink
     case Purple
-    case Red
     case White
     
 }

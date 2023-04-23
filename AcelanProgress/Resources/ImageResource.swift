@@ -11,7 +11,7 @@ import SwiftUI
 
 enum ImageResource: String {
     
-    case icon_materials
+    case icon_models
     case icon_notifications
     case icon_prodile
     case icon_tasks

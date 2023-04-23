@@ -16,6 +16,8 @@ final class LoginMainScenario: PageScenario {
     func login(email: String, password: String) async -> Void {
         loading = true
         // TODO: - Implement API request
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        loading = false
     }
     
 }
