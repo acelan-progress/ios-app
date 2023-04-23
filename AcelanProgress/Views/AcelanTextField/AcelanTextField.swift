@@ -49,13 +49,13 @@ struct AcelanTextField: View {
             .frame(height: 40)
             .padding(.horizontal, 10)
             .overlay(
-                buildTextInputBorderOverlayView()
+                buildTextInputOverlayView()
             )
         }
     }
     
     @ViewBuilder
-    private func buildTextInputBorderOverlayView() -> some View {
+    private func buildTextInputOverlayView() -> some View {
         RoundedRectangle(cornerRadius: 10)
             .stroke(
                 Color.resource(state.focused ? .Purple : .LightGray),

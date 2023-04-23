@@ -12,10 +12,10 @@ enum TaskItem: TaskItemData {
     
     case acelanTask(AcelanTask)
     
-    var id: Int {
+    var id: String {
         switch self {
         case let .acelanTask(acelanTask):
-            return acelanTask.id
+            return acelanTask.id.asString()
         }
     }
     

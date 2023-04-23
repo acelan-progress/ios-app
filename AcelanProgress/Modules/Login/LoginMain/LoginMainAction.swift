@@ -9,6 +9,6 @@ import Foundation
 
 enum LoginMainAction {
     
-    case login
+    case performLogin
     
 }

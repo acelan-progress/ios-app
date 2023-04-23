@@ -14,6 +14,7 @@ enum ColorResource: String {
     case Black
     case Carbon
     case DarkBlue
+    case DarkGray
     case DarkGreen
     case DarkRed
     case LightBlue

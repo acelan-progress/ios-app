@@ -15,7 +15,7 @@ class AcelanTaskDateFormatter: DateFormatterProtocol {
     
     private static var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.setLocalizedDateFormatFromTemplate("dd.MM.yyyy")
+        dateFormatter.setLocalizedDateFormatFromTemplate("dd.MM.yyyy, hh:mm")
         return dateFormatter
     }()
     

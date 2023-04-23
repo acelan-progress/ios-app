@@ -10,7 +10,7 @@ import SwiftUI
 
 protocol TaskItemData: Identifiable {
     
-    var id: Int { get }
+    var id: String { get }
     var name: String { get }
     var status: String { get }
     var statusBackgroundColor: Color { get }
@@ -28,19 +28,19 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
     case failure
     case success
     
-    var id: Int {
+    var id: String {
         switch self {
         case .queued:
-            return 1
+            return 1.asString()
         
         case .working:
-            return 2
+            return 2.asString()
             
         case .failure:
-            return 3
+            return 3.asString()
             
         case .success:
-            return 4
+            return 4.asString()
         }
     }
     
@@ -53,7 +53,7 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
             return "Still waiting..."
             
         case .failure:
-            return "Bad task"
+            return "Very very very very very very very very very bad task"
             
         case .success:
             return "Good task"
@@ -102,7 +102,7 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
             return .dash
             
         case .working, .failure, .success:
-            return "12.04.2023"
+            return "12.04.2023, 14:30"
         }
     }
     
@@ -112,7 +112,7 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
             return .dash
             
         case .failure, .success:
-            return "12.04.2023"
+            return "12.04.2023, 15:30"
         }
     }
     

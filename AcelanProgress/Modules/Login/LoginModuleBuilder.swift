@@ -20,7 +20,7 @@ enum LoginModuleBuilder: ModuleBuilder {
             return LoginMainPage(
                 state: state,
                 interceptor: interceptor
-            ).asModule()
+            ).asNavigationModule()
         }
     }
     

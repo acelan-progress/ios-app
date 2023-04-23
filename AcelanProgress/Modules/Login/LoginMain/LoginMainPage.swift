@@ -36,7 +36,7 @@ struct LoginMainPage: PageView {
                 title: "Login",
                 loading: $state.loading,
                 action: {
-                    interceptor.call(action: .login)
+                    interceptor.call(action: .performLogin)
                 }
             )
             
