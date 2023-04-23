@@ -17,6 +17,18 @@
 		9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4329F553B30033B5AF /* TasksMainInterceptor.swift */; };
 		9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4529F553CD0033B5AF /* TasksMainAction.swift */; };
 		9D7D4D4A29F557630033B5AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4929F557630033B5AF /* NavigationController.swift */; };
+		9D7D4D4C29F58DDD0033B5AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4B29F58DDD0033B5AF /* TabBarController.swift */; };
+		9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4D29F58F790033B5AF /* TabBarItem.swift */; };
+		9D7D4D5229F5909F0033B5AF /* MainModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5129F5909F0033B5AF /* MainModuleBuilder.swift */; };
+		9D7D4D5429F591820033B5AF /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5329F591820033B5AF /* SecondaryButton.swift */; };
+		9D7D4D5729F592340033B5AF /* ProfileModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5629F592340033B5AF /* ProfileModuleBuilder.swift */; };
+		9D7D4D5A29F592610033B5AF /* ProfileMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5929F592610033B5AF /* ProfileMainState.swift */; };
+		9D7D4D5C29F592A00033B5AF /* ProfileMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5B29F592A00033B5AF /* ProfileMainAction.swift */; };
+		9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5D29F592BE0033B5AF /* ProfileMainInterceptor.swift */; };
+		9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5F29F593190033B5AF /* ProfileMainScenario.swift */; };
+		9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */; };
+		9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */; };
+		9D7D4D6729F5955C0033B5AF /* AcelanLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */; };
 		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
 		9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40229F5097400A85AF5 /* AcelanTask.swift */; };
 		9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */; };
@@ -70,6 +82,18 @@
 		9D7D4D4329F553B30033B5AF /* TasksMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainInterceptor.swift; sourceTree = "<group>"; };
 		9D7D4D4529F553CD0033B5AF /* TasksMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainAction.swift; sourceTree = "<group>"; };
 		9D7D4D4929F557630033B5AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		9D7D4D4B29F58DDD0033B5AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9D7D4D4D29F58F790033B5AF /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		9D7D4D5129F5909F0033B5AF /* MainModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleBuilder.swift; sourceTree = "<group>"; };
+		9D7D4D5329F591820033B5AF /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		9D7D4D5629F592340033B5AF /* ProfileModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleBuilder.swift; sourceTree = "<group>"; };
+		9D7D4D5929F592610033B5AF /* ProfileMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainState.swift; sourceTree = "<group>"; };
+		9D7D4D5B29F592A00033B5AF /* ProfileMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainAction.swift; sourceTree = "<group>"; };
+		9D7D4D5D29F592BE0033B5AF /* ProfileMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainInterceptor.swift; sourceTree = "<group>"; };
+		9D7D4D5F29F593190033B5AF /* ProfileMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScenario.swift; sourceTree = "<group>"; };
+		9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScenarioProtocol.swift; sourceTree = "<group>"; };
+		9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainPage.swift; sourceTree = "<group>"; };
+		9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanLabel.swift; sourceTree = "<group>"; };
 		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
 		9DA4A40229F5097400A85AF5 /* AcelanTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTask.swift; sourceTree = "<group>"; };
 		9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskDateFormatter.swift; sourceTree = "<group>"; };
@@ -138,7 +162,6 @@
 				9DA57C1E29F4522C00B3BBAE /* Models */,
 				9DA57C0F29F439BC00B3BBAE /* AppConfigurations */,
 				9DA57C0029F4343F00B3BBAE /* Modules */,
-				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9DA9DE0D29E32E74004F8274 /* Resources */,
 				9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */,
 			);
@@ -150,8 +173,10 @@
 			children = (
 				9DA57BFD29F4262000B3BBAE /* AcelanTextField */,
 				9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */,
+				9D7D4D5329F591820033B5AF /* SecondaryButton.swift */,
 				9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */,
 				9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */,
+				9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +204,7 @@
 		9D7D4D4729F557430033B5AF /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9D7D4D4829F557520033B5AF /* Controllers */,
 			);
 			path = ReusableComponents;
@@ -188,8 +214,39 @@
 			isa = PBXGroup;
 			children = (
 				9D7D4D4929F557630033B5AF /* NavigationController.swift */,
+				9D7D4D4B29F58DDD0033B5AF /* TabBarController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D7D4D5029F590910033B5AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D4D5129F5909F0033B5AF /* MainModuleBuilder.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D7D4D5529F592090033B5AF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D4D5629F592340033B5AF /* ProfileModuleBuilder.swift */,
+				9D7D4D5829F592510033B5AF /* ProfileMain */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9D7D4D5829F592510033B5AF /* ProfileMain */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D4D5929F592610033B5AF /* ProfileMainState.swift */,
+				9D7D4D5B29F592A00033B5AF /* ProfileMainAction.swift */,
+				9D7D4D5D29F592BE0033B5AF /* ProfileMainInterceptor.swift */,
+				9D7D4D5F29F593190033B5AF /* ProfileMainScenario.swift */,
+				9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */,
+				9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */,
+			);
+			path = ProfileMain;
 			sourceTree = "<group>";
 		};
 		9DA4A3FF29F5028100A85AF5 /* Decodable */ = {
@@ -249,6 +306,8 @@
 		9DA57C0029F4343F00B3BBAE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9D7D4D5529F592090033B5AF /* Profile */,
+				9D7D4D5029F590910033B5AF /* Main */,
 				9D7D4D3B29F552F30033B5AF /* Tasks */,
 				9DA57C0129F434A500B3BBAE /* Login */,
 			);
@@ -300,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */,
+				9D7D4D4D29F58F790033B5AF /* TabBarItem.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -399,34 +459,46 @@
 				9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */,
 				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
 				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
+				9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */,
 				9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */,
+				9D7D4D6729F5955C0033B5AF /* AcelanLabel.swift in Sources */,
 				9D7D4D4029F5533A0033B5AF /* TasksMainPage.swift in Sources */,
 				9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */,
 				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
 				9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */,
+				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */,
 				9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */,
 				9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */,
+				9D7D4D5729F592340033B5AF /* ProfileModuleBuilder.swift in Sources */,
 				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
+				9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */,
 				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
 				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
+				9D7D4D5229F5909F0033B5AF /* MainModuleBuilder.swift in Sources */,
 				9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */,
 				9DA4A41429F5321A00A85AF5 /* String.swift in Sources */,
+				9D7D4D5A29F592610033B5AF /* ProfileMainState.swift in Sources */,
 				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,
 				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
 				9D7D4D4A29F557630033B5AF /* NavigationController.swift in Sources */,
+				9D7D4D4C29F58DDD0033B5AF /* TabBarController.swift in Sources */,
+				9D7D4D5429F591820033B5AF /* SecondaryButton.swift in Sources */,
 				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
 				9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */,
+				9D7D4D5C29F592A00033B5AF /* ProfileMainAction.swift in Sources */,
 				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
 				9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */,
+				9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,
 				9DA4A41029F5117400A85AF5 /* TaskItem.swift in Sources */,
 				9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */,
+				9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */,
 				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
 				9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */,
 			);

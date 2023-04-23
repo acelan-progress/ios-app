@@ -55,11 +55,11 @@ struct TaskItemView<Item: TaskItemData>: View {
     private func buildLabelView(title: String, content: String) -> some View {
         HStack(alignment: .top, spacing: 5) {
             Text(title)
-                .font(.system(size: 14, weight: .semibold))
+                .font(.system(size: 14))
                 .foregroundColor(.resource(.DarkGray))
             
             Text(content)
-                .font(.system(size: 14, weight: .semibold))
+                .font(.system(size: 14))
                 .foregroundColor(.resource(.Black))
         }
         .frame(height: 25)

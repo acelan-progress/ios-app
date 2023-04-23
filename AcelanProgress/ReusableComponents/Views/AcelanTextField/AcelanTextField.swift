@@ -46,7 +46,7 @@ struct AcelanTextField: View {
                     ]
                 )
             }
-            .frame(height: 40)
+            .frame(height: 45)
             .padding(.horizontal, 10)
             .overlay(
                 buildTextInputOverlayView()

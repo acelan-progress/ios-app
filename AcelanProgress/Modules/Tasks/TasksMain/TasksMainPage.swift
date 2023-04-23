@@ -16,8 +16,6 @@ struct TasksMainPage: PageView {
     let interceptor: TasksMainInterceptor
     
     var body: some View {
-        NavigationBar(title: "Tasks")
-        
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
                 ForEach(state.taskItems) { taskItem in
@@ -29,9 +27,11 @@ struct TasksMainPage: PageView {
                     )
                 }
             }
-            .padding(.vertical, 10)
+            .padding(.top, 64)
+            .padding(.bottom, 10)
             .padding(.horizontal, 20)
         }
+        .overlay(NavigationBar(title: "Tasks"), alignment: .top)
     }
     
 }

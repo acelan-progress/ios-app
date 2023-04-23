@@ -16,34 +16,35 @@ struct LoginMainPage: PageView {
     let interceptor: LoginMainInterceptor
     
     var body: some View {
-        VStack(spacing: 15) {
-            Image.resource(.image_acelan_logo)
-                .padding(.top, 10)
-            
-            AcelanTextField(
-                title: "Email",
-                placeholder: "Enter email",
-                text: $state.email
-            )
-            
-            AcelanTextField(
-                title: "Password",
-                placeholder: "Enter password",
-                text: $state.password
-            )
-            
-            PrimaryButton(
-                title: "Login",
-                loading: $state.loading,
-                action: {
-                    interceptor.call(action: .performLogin)
-                }
-            )
-            
-            Spacer()
+        ScrollView {
+            VStack(spacing: 15) {
+                Image.resource(.image_acelan_logo)
+                
+                AcelanTextField(
+                    title: "Email",
+                    placeholder: "Enter email",
+                    text: $state.email
+                )
+                
+                AcelanTextField(
+                    title: "Password",
+                    placeholder: "Enter password",
+                    text: $state.password
+                )
+                
+                PrimaryButton(
+                    title: "Login",
+                    loading: $state.loading,
+                    action: {
+                        interceptor.call(action: .performLogin)
+                    }
+                )
+                
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            .allowsHitTesting(!state.loading)
         }
-        .allowsHitTesting(!state.loading)
-        .padding(.horizontal, 30)
     }
 
 }

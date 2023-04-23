@@ -20,10 +20,10 @@ final class LoginMainInterceptor: PageInterceptor<LoginMainAction, LoginMainStat
         switch action {
         case .performLogin:
             if let email = state?.email, let password = state?.password {
-                await scenario.login(email: email, password: password)
+                await scenario.performLogin(email: email, password: password)
             }
             
-            NavigationService.setRoot(using: TasksModuleBuilder.main)
+            NavigationService.setRoot(using: MainModuleBuilder.tabBar)
         }
     }
     

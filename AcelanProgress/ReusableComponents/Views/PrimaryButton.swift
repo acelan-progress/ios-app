@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PNComponents
 
 struct PrimaryButton: View {
     
@@ -23,26 +24,25 @@ struct PrimaryButton: View {
     }
     
     var body: some View {
-        Button(action: action) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 40)
-                    .foregroundColor(.resource(.Purple))
-                
-                if loading {
-                    ProgressView()
-                        .progressViewStyle(
-                            CircularProgressViewStyle(
-                                tint: .resource(.White)
-                            )
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(height: 45)
+                .foregroundColor(.resource(.Purple))
+            
+            if loading {
+                ProgressView()
+                    .progressViewStyle(
+                        CircularProgressViewStyle(
+                            tint: .resource(.White)
                         )
-                } else {
-                    Text(title)
-                        .font(.system(size: 16, weight: .bold))
-                        .foregroundColor(.resource(.White))
-                }
+                    )
+            } else {
+                Text(title)
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(.resource(.White))
             }
         }
+        .buttonAction(action)
     }
 
 }

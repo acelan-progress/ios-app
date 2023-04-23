@@ -1,23 +1,23 @@
 //
-//  LoginMainScenario.swift
+//  ProfileMainScenario.swift
 //  AcelanProgress
 //
-//  Created by Mikhail Yeremeyev on 22.04.2023.
+//  Created by Mikhail Yeremeyev on 23.04.2023.
 //
 
 import Foundation
 import StatefulArch
 
-final class LoginMainScenario: PageScenario {
+final class ProfileMainScenario: PageScenario {
     
     @Published
     var loading: Bool = false
     
 }
 
-extension LoginMainScenario: LoginMainScenarioProtocol {
+extension ProfileMainScenario: ProfileMainScenarioProtocol {
     
-    func performLogin(email: String, password: String) async {
+    func performLogout() async {
         loading = true
         // TODO: - Implement API request
         try? await Task.sleep(nanoseconds: 1_000_000_000)

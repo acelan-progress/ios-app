@@ -11,7 +11,7 @@ import StatefulArch
 @MainActor
 protocol LoginMainScenarioProtocol: PageScenario {
     
-    func login(email: String, password: String) async
+    func performLogin(email: String, password: String) async
     
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher)
     

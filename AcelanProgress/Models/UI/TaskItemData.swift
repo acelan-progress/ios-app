@@ -61,7 +61,7 @@ enum TaskItemMock: String, CaseIterable, TaskItemData {
     }
     
     var status: String {
-        rawValue
+        rawValue.capitalized
     }
     
     var statusBackgroundColor: Color {

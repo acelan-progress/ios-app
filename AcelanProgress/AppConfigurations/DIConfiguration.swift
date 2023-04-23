@@ -30,6 +30,10 @@ extension DIConfiguration {
             LoginMainScenario(serviceProvider: container)
         }
         
+        container.registerDependency(ProfileMainScenarioProtocol.self) {
+            ProfileMainScenario(serviceProvider: container)
+        }
+        
     }
     
 }
