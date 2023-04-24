@@ -17,7 +17,7 @@ struct ProfileMainPage: PageView {
     let interceptor: ProfileMainInterceptor
     
     var body: some View {
-        let content = VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 10) {
             AcelanLabel(title: "Email", content: state.email)
                 .alignment(.leading)
             
@@ -33,20 +33,7 @@ struct ProfileMainPage: PageView {
         .padding(.top, 64)
         .padding(.horizontal, 20)
         .overlay(NavigationBar(title: "Profile"), alignment: .top)
-        
-        if !state.loading {
-            content
-                .allowsHitTesting(!state.loading)
-        } else {
-            content.overlay(
-                ProgressView()
-                    .progressViewStyle(
-                        CircularProgressViewStyle(tint: .resource(.Purple))
-                    )
-            )
-            .ignoresSafeArea()
-            .allowsHitTesting(!state.loading)
-        }
+        .loading(show: $state.loading)
     }
     
 }

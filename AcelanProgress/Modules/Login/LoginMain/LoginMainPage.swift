@@ -34,7 +34,6 @@ struct LoginMainPage: PageView {
                 
                 PrimaryButton(
                     title: "Login",
-                    loading: $state.loading,
                     action: {
                         interceptor.call(action: .performLogin)
                     }
@@ -45,6 +44,7 @@ struct LoginMainPage: PageView {
             .padding(.horizontal, 20)
             .allowsHitTesting(!state.loading)
         }
+        .loading(show: $state.loading)
     }
 
 }

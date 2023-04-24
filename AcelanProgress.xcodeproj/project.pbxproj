@@ -29,6 +29,8 @@
 		9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */; };
 		9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */; };
 		9D7D4D6729F5955C0033B5AF /* AcelanLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */; };
+		9D7D991C29F6F271008AC934 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991B29F6F271008AC934 /* Loader.swift */; };
+		9D7D991F29F6F441008AC934 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991E29F6F441008AC934 /* Loading.swift */; };
 		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
 		9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40229F5097400A85AF5 /* AcelanTask.swift */; };
 		9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */; };
@@ -94,6 +96,8 @@
 		9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScenarioProtocol.swift; sourceTree = "<group>"; };
 		9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainPage.swift; sourceTree = "<group>"; };
 		9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanLabel.swift; sourceTree = "<group>"; };
+		9D7D991B29F6F271008AC934 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		9D7D991E29F6F441008AC934 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
 		9DA4A40229F5097400A85AF5 /* AcelanTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTask.swift; sourceTree = "<group>"; };
 		9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskDateFormatter.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */,
 				9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */,
 				9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */,
+				9D7D991B29F6F271008AC934 /* Loader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 		9D7D4D4729F557430033B5AF /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9D7D991D29F6F411008AC934 /* ViewModifiers */,
 				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9D7D4D4829F557520033B5AF /* Controllers */,
 			);
@@ -247,6 +253,14 @@
 				9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */,
 			);
 			path = ProfileMain;
+			sourceTree = "<group>";
+		};
+		9D7D991D29F6F411008AC934 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D991E29F6F441008AC934 /* Loading.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		9DA4A3FF29F5028100A85AF5 /* Decodable */ = {
@@ -466,6 +480,7 @@
 				9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */,
 				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
 				9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */,
+				9D7D991F29F6F441008AC934 /* Loading.swift in Sources */,
 				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
@@ -482,6 +497,7 @@
 				9DA4A41429F5321A00A85AF5 /* String.swift in Sources */,
 				9D7D4D5A29F592610033B5AF /* ProfileMainState.swift in Sources */,
 				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
+				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,
 				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
