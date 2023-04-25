@@ -19,7 +19,7 @@ struct AcelanLabel: View {
                 .foregroundColor(.resource(.DarkGray))
             
             Text(content)
-                .font(.system(size: 14))
+                .font(.system(size: 16))
                 .foregroundColor(.resource(.Black))
         }
     }

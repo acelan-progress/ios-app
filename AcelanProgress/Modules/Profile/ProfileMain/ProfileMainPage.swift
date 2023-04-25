@@ -17,22 +17,25 @@ struct ProfileMainPage: PageView {
     let interceptor: ProfileMainInterceptor
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            AcelanLabel(title: "Email", content: state.email)
-                .alignment(.leading)
+        VStack(spacing: .zero) {
+            NavigationBar(title: "Profile")
             
-            SecondaryButton(
-                title: "Logout",
-                action: {
-                    interceptor.call(action: .performLogout)
-                }
-            )
-            
-            Spacer()
+            VStack(alignment: .leading, spacing: 10) {
+                AcelanLabel(title: "Email", content: state.email)
+                    .alignment(.leading)
+                
+                SecondaryButton(
+                    title: "Logout",
+                    action: {
+                        interceptor.call(action: .performLogout)
+                    }
+                )
+                
+                Spacer()
+            }
+            .padding(.vertical, 10)
+            .padding(.horizontal, 20)
         }
-        .padding(.top, 64)
-        .padding(.horizontal, 20)
-        .overlay(NavigationBar(title: "Profile"), alignment: .top)
         .loading(show: $state.loading)
     }
     

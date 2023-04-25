@@ -13,13 +13,23 @@ struct Loading: ViewModifier {
     var show: Bool
     
     func body(content: Content) -> some View {
-        if !show {
-            content
+        if show {
+            ZStack {
+                content
+
+                Color.clear
+                
+                VStack {
+                    Spacer()
+                    
+                    Loader()
+                    
+                    Spacer()
+                }
+            }
+            .ignoresSafeArea(.all)
         } else {
             content
-                .overlay(Loader())
-                .ignoresSafeArea()
-                .allowsHitTesting(false)
         }
     }
     
