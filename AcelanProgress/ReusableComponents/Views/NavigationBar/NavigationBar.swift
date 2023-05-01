@@ -12,10 +12,12 @@ struct NavigationBar: View {
     
     let title: String
     let leadingItem: NavigationBarItem?
+    let trailingItem: NavigationBarItem?
     
-    init(title: String, leadingItem: NavigationBarItem? = nil) {
+    init(title: String, leadingItem: NavigationBarItem? = nil, trailingItem: NavigationBarItem? = nil) {
         self.title = title
         self.leadingItem = leadingItem
+        self.trailingItem = trailingItem
     }
     
     var body: some View {
@@ -29,11 +31,18 @@ struct NavigationBar: View {
             Separator()
                 .alignment(.bottom)
             
-            if case let .backButton(action) = leadingItem {
-                BackButton(action: action)
-                    .alignment(.leading)
-                    .padding(.leading, 16)
+            HStack {
+                if case let .backButton(action) = leadingItem {
+                    BackButton(action: action)
+                }
+                
+                Spacer()
+                
+                if case let .deleteButton(action) = trailingItem {
+                    DeleteButton(action: action)
+                }
             }
+            .padding(.horizontal, 16)
         }
         .frame(height: 44)
     }

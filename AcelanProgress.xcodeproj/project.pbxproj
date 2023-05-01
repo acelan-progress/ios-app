@@ -13,6 +13,13 @@
 		9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */; };
 		9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B529FFBD540019625E /* ItemOverlayView.swift */; };
 		9D12F5B829FFC1260019625E /* PrimaryTextFieldKeyboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */; };
+		9D12F5BC29FFD7A80019625E /* ModelViewerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */; };
+		9D12F5BF29FFDBA40019625E /* ModelViewerMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5BE29FFDBA40019625E /* ModelViewerMainAction.swift */; };
+		9D12F5C129FFDBF30019625E /* ModelViewerMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */; };
+		9D12F5C329FFDC260019625E /* airplane.ply in Resources */ = {isa = PBXBuildFile; fileRef = 9D12F5C229FFDC260019625E /* airplane.ply */; };
+		9D12F5C529FFDC7E0019625E /* ModelViewerMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */; };
+		9D12F5C729FFDCE50019625E /* ModelViewerMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */; };
+		9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C829FFDE550019625E /* DeleteButton.swift */; };
 		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D7692AF29FA585200EE0B53 /* TaskStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */; };
@@ -99,6 +106,13 @@
 		9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainPage.swift; sourceTree = "<group>"; };
 		9D12F5B529FFBD540019625E /* ItemOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOverlayView.swift; sourceTree = "<group>"; };
 		9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldKeyboardType.swift; sourceTree = "<group>"; };
+		9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerBuilder.swift; sourceTree = "<group>"; };
+		9D12F5BE29FFDBA40019625E /* ModelViewerMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainAction.swift; sourceTree = "<group>"; };
+		9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainState.swift; sourceTree = "<group>"; };
+		9D12F5C229FFDC260019625E /* airplane.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airplane.ply; sourceTree = "<group>"; };
+		9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainInterceptor.swift; sourceTree = "<group>"; };
+		9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainPage.swift; sourceTree = "<group>"; };
+		9D12F5C829FFDE550019625E /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +208,26 @@
 			path = StatefulArch;
 			sourceTree = "<group>";
 		};
+		9D12F5BA29FFD7940019625E /* ModelViewer */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */,
+				9D12F5BD29FFD7AF0019625E /* ModelViewerMain */,
+			);
+			path = ModelViewer;
+			sourceTree = "<group>";
+		};
+		9D12F5BD29FFD7AF0019625E /* ModelViewerMain */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5BE29FFDBA40019625E /* ModelViewerMainAction.swift */,
+				9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */,
+				9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */,
+				9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */,
+			);
+			path = ModelViewerMain;
+			sourceTree = "<group>";
+		};
 		9D5A801229BB9D5300648BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +294,7 @@
 				9D7692B629FA70E400EE0B53 /* VLabel.swift */,
 				9D7D4D6629F5955C0033B5AF /* HLabel.swift */,
 				9D7D991B29F6F271008AC934 /* Loader.swift */,
+				9D12F5C829FFDE550019625E /* DeleteButton.swift */,
 				9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */,
 			);
 			path = Views;
@@ -393,6 +428,7 @@
 		9DA57C0029F4343F00B3BBAE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9D12F5BA29FFD7940019625E /* ModelViewer */,
 				9D7692B829FA7F0100EE0B53 /* Artifacts */,
 				9D7D4D5529F592090033B5AF /* Profile */,
 				9D7D4D5029F590910033B5AF /* Main */,
@@ -454,6 +490,7 @@
 		9DA9DE0D29E32E74004F8274 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D12F5C229FFDC260019625E /* airplane.ply */,
 				9D5A802229BB9D5900648BA1 /* Assets.xcassets */,
 				9DA57BF129F4109700B3BBAE /* ColorResource.swift */,
 				9DA57BF329F411D600B3BBAE /* ImageResource.swift */,
@@ -562,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */,
+				9D12F5C329FFDC260019625E /* airplane.ply in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,9 +624,11 @@
 				9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */,
 				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
 				9DA57BFF29F4263200B3BBAE /* PrimaryTextFieldState.swift in Sources */,
+				9D12F5C129FFDBF30019625E /* ModelViewerMainState.swift in Sources */,
 				9D7D991F29F6F441008AC934 /* Loading.swift in Sources */,
 				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
 				9D12F5B029FD66810019625E /* ArtifactItemData.swift in Sources */,
+				9D12F5BC29FFD7A80019625E /* ModelViewerBuilder.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */,
@@ -602,6 +642,7 @@
 				9D7692BA29FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift in Sources */,
 				9D7692B729FA70E400EE0B53 /* VLabel.swift in Sources */,
 				9D7692BD29FA7F3A00EE0B53 /* ArtifactsMainAction.swift in Sources */,
+				9D12F5BF29FFDBA40019625E /* ModelViewerMainAction.swift in Sources */,
 				9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */,
 				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
 				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
@@ -628,11 +669,14 @@
 				9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */,
 				9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
+				9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */,
 				9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */,
 				9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,
 				9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */,
 				9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */,
+				9D12F5C729FFDCE50019625E /* ModelViewerMainPage.swift in Sources */,
+				9D12F5C529FFDC7E0019625E /* ModelViewerMainInterceptor.swift in Sources */,
 				9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */,
 				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
 				9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */,

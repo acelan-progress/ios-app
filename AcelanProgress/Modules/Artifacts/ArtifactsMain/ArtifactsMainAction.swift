@@ -9,6 +9,6 @@ import Foundation
 
 enum ArtifactsMainAction {
     
-    case openArtifactItemDetail(ArtifactItemMock)
+    case openModelViewer(ArtifactItemMock)
     
 }
