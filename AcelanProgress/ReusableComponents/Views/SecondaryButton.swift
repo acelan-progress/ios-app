@@ -11,7 +11,6 @@ import PNComponents
 struct SecondaryButton: View {
     
     let title: String
-    
     let action: () -> Void
     
     var body: some View {

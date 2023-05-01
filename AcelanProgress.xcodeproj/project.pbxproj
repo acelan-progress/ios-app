@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D12F5AE29FC51440019625E /* PageView+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5AD29FC51440019625E /* PageView+Module.swift */; };
+		9D12F5B029FD66810019625E /* ArtifactItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5AF29FD66810019625E /* ArtifactItemData.swift */; };
+		9D12F5B229FFB8C30019625E /* ArtifactsMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B129FFB8C30019625E /* ArtifactsMainInterceptor.swift */; };
+		9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */; };
+		9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B529FFBD540019625E /* ItemOverlayView.swift */; };
+		9D12F5B829FFC1260019625E /* PrimaryTextFieldKeyboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */; };
 		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
+		9D7692AF29FA585200EE0B53 /* TaskStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */; };
+		9D7692B329FA694B00EE0B53 /* ArtifactItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */; };
+		9D7692B729FA70E400EE0B53 /* VLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B629FA70E400EE0B53 /* VLabel.swift */; };
+		9D7692BA29FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B929FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift */; };
+		9D7692BD29FA7F3A00EE0B53 /* ArtifactsMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692BC29FA7F3A00EE0B53 /* ArtifactsMainAction.swift */; };
+		9D7692BF29FA7F7400EE0B53 /* ArtifactsMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692BE29FA7F7400EE0B53 /* ArtifactsMainState.swift */; };
 		9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */; };
 		9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */; };
 		9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D3C29F553000033B5AF /* TasksModuleBuilder.swift */; };
@@ -28,7 +40,7 @@
 		9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D5F29F593190033B5AF /* ProfileMainScenario.swift */; };
 		9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */; };
 		9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */; };
-		9D7D4D6729F5955C0033B5AF /* AcelanLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */; };
+		9D7D4D6729F5955C0033B5AF /* HLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6629F5955C0033B5AF /* HLabel.swift */; };
 		9D7D991C29F6F271008AC934 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991B29F6F271008AC934 /* Loader.swift */; };
 		9D7D991F29F6F441008AC934 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991E29F6F441008AC934 /* Loading.swift */; };
 		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
@@ -37,15 +49,14 @@
 		9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40829F50A9E00A85AF5 /* DateFormatterProtocol.swift */; };
 		9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */; };
 		9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */; };
-		9DA4A41029F5117400A85AF5 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40F29F5117400A85AF5 /* TaskItem.swift */; };
 		9DA4A41429F5321A00A85AF5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A41329F5321A00A85AF5 /* String.swift */; };
 		9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A41529F5446600A85AF5 /* Int+String.swift */; };
 		9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */; };
 		9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF129F4109700B3BBAE /* ColorResource.swift */; };
 		9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BF329F411D600B3BBAE /* ImageResource.swift */; };
 		9DA57BFA29F417C100B3BBAE /* PNComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA57BF929F417C100B3BBAE /* PNComponents */; };
-		9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */; };
-		9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */; };
+		9DA57BFC29F425FD00B3BBAE /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFB29F425FD00B3BBAE /* PrimaryTextField.swift */; };
+		9DA57BFF29F4263200B3BBAE /* PrimaryTextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57BFE29F4263200B3BBAE /* PrimaryTextFieldState.swift */; };
 		9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0329F434BD00B3BBAE /* LoginMainState.swift */; };
 		9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0529F4350B00B3BBAE /* LoginMainAction.swift */; };
 		9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C0729F435A200B3BBAE /* LoginMainInterceptor.swift */; };
@@ -59,6 +70,13 @@
 		9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */; };
 		9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
+		9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */; };
+		9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */; };
+		9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */; };
+		9DBFAA1229F7D39B001F27DC /* TasksDetailInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1129F7D39B001F27DC /* TasksDetailInterceptor.swift */; };
+		9DBFAA1429F7F160001F27DC /* TasksDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */; };
+		9DBFAA1629F7F2E0001F27DC /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1529F7F2E0001F27DC /* Separator.swift */; };
+		9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1929F7F7A6001F27DC /* NavigationBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,9 +93,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D12F5AD29FC51440019625E /* PageView+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageView+Module.swift"; sourceTree = "<group>"; };
+		9D12F5AF29FD66810019625E /* ArtifactItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItemData.swift; sourceTree = "<group>"; };
+		9D12F5B129FFB8C30019625E /* ArtifactsMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainInterceptor.swift; sourceTree = "<group>"; };
+		9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainPage.swift; sourceTree = "<group>"; };
+		9D12F5B529FFBD540019625E /* ItemOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOverlayView.swift; sourceTree = "<group>"; };
+		9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldKeyboardType.swift; sourceTree = "<group>"; };
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusView.swift; sourceTree = "<group>"; };
+		9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItemView.swift; sourceTree = "<group>"; };
+		9D7692B629FA70E400EE0B53 /* VLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLabel.swift; sourceTree = "<group>"; };
+		9D7692B929FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsModuleBuilder.swift; sourceTree = "<group>"; };
+		9D7692BC29FA7F3A00EE0B53 /* ArtifactsMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainAction.swift; sourceTree = "<group>"; };
+		9D7692BE29FA7F7400EE0B53 /* ArtifactsMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainState.swift; sourceTree = "<group>"; };
 		9D7D4D3C29F553000033B5AF /* TasksModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModuleBuilder.swift; sourceTree = "<group>"; };
 		9D7D4D3F29F5533A0033B5AF /* TasksMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainPage.swift; sourceTree = "<group>"; };
 		9D7D4D4129F553490033B5AF /* TasksMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainState.swift; sourceTree = "<group>"; };
@@ -95,7 +125,7 @@
 		9D7D4D5F29F593190033B5AF /* ProfileMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScenario.swift; sourceTree = "<group>"; };
 		9D7D4D6129F593340033B5AF /* ProfileMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScenarioProtocol.swift; sourceTree = "<group>"; };
 		9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainPage.swift; sourceTree = "<group>"; };
-		9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanLabel.swift; sourceTree = "<group>"; };
+		9D7D4D6629F5955C0033B5AF /* HLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLabel.swift; sourceTree = "<group>"; };
 		9D7D991B29F6F271008AC934 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		9D7D991E29F6F441008AC934 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
@@ -104,14 +134,13 @@
 		9DA4A40829F50A9E00A85AF5 /* DateFormatterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterProtocol.swift; sourceTree = "<group>"; };
 		9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskArtifact.swift; sourceTree = "<group>"; };
 		9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskFileType.swift; sourceTree = "<group>"; };
-		9DA4A40F29F5117400A85AF5 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		9DA4A41329F5321A00A85AF5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		9DA4A41529F5446600A85AF5 /* Int+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
 		9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		9DA57BF129F4109700B3BBAE /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		9DA57BF329F411D600B3BBAE /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
-		9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTextField.swift; sourceTree = "<group>"; };
-		9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTextFieldState.swift; sourceTree = "<group>"; };
+		9DA57BFB29F425FD00B3BBAE /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		9DA57BFE29F4263200B3BBAE /* PrimaryTextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldState.swift; sourceTree = "<group>"; };
 		9DA57C0329F434BD00B3BBAE /* LoginMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainState.swift; sourceTree = "<group>"; };
 		9DA57C0529F4350B00B3BBAE /* LoginMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainAction.swift; sourceTree = "<group>"; };
 		9DA57C0729F435A200B3BBAE /* LoginMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainInterceptor.swift; sourceTree = "<group>"; };
@@ -124,6 +153,13 @@
 		9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
 		9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemData.swift; sourceTree = "<group>"; };
+		9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailState.swift; sourceTree = "<group>"; };
+		9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailAction.swift; sourceTree = "<group>"; };
+		9DBFAA1129F7D39B001F27DC /* TasksDetailInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailInterceptor.swift; sourceTree = "<group>"; };
+		9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailPage.swift; sourceTree = "<group>"; };
+		9DBFAA1529F7F2E0001F27DC /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		9DBFAA1929F7F7A6001F27DC /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +177,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D12F5AB29FC51290019625E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A41329F5321A00A85AF5 /* String.swift */,
+				9DA4A41529F5446600A85AF5 /* Int+String.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9D12F5AC29FC51310019625E /* StatefulArch */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5AD29FC51440019625E /* PageView+Module.swift */,
+			);
+			path = StatefulArch;
+			sourceTree = "<group>";
+		};
 		9D5A801229BB9D5300648BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -172,16 +225,42 @@
 			path = AcelanProgress;
 			sourceTree = "<group>";
 		};
+		9D7692B829FA7F0100EE0B53 /* Artifacts */ = {
+			isa = PBXGroup;
+			children = (
+				9D7692B929FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift */,
+				9D7692BB29FA7F2700EE0B53 /* ArtifactsMain */,
+			);
+			path = Artifacts;
+			sourceTree = "<group>";
+		};
+		9D7692BB29FA7F2700EE0B53 /* ArtifactsMain */ = {
+			isa = PBXGroup;
+			children = (
+				9D7692BC29FA7F3A00EE0B53 /* ArtifactsMainAction.swift */,
+				9D7692BE29FA7F7400EE0B53 /* ArtifactsMainState.swift */,
+				9D12F5B129FFB8C30019625E /* ArtifactsMainInterceptor.swift */,
+				9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */,
+			);
+			path = ArtifactsMain;
+			sourceTree = "<group>";
+		};
 		9D7AF9DE29F4019200E7C9E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9DA57BFD29F4262000B3BBAE /* AcelanTextField */,
+				9DA57BFD29F4262000B3BBAE /* PrimaryTextField */,
+				9DBFAA1829F7F78F001F27DC /* NavigationBar */,
 				9DA57BEF29F40ED400B3BBAE /* PrimaryButton.swift */,
+				9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */,
 				9D7D4D5329F591820033B5AF /* SecondaryButton.swift */,
-				9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */,
+				9DBFAA1529F7F2E0001F27DC /* Separator.swift */,
+				9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */,
 				9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */,
-				9D7D4D6629F5955C0033B5AF /* AcelanLabel.swift */,
+				9D12F5B529FFBD540019625E /* ItemOverlayView.swift */,
+				9D7692B629FA70E400EE0B53 /* VLabel.swift */,
+				9D7D4D6629F5955C0033B5AF /* HLabel.swift */,
 				9D7D991B29F6F271008AC934 /* Loader.swift */,
+				9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7D4D3C29F553000033B5AF /* TasksModuleBuilder.swift */,
+				9DBFAA0C29F7D25D001F27DC /* TasksDetail */,
 				9D7D4D3E29F553270033B5AF /* TasksMain */,
 			);
 			path = Tasks;
@@ -219,8 +299,8 @@
 		9D7D4D4829F557520033B5AF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9DBFAA1B29F8098C001F27DC /* TabBarController */,
 				9D7D4D4929F557630033B5AF /* NavigationController.swift */,
-				9D7D4D4B29F58DDD0033B5AF /* TabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -283,14 +363,6 @@
 			path = Formatters;
 			sourceTree = "<group>";
 		};
-		9DA4A40E29F5114500A85AF5 /* Facades */ = {
-			isa = PBXGroup;
-			children = (
-				9DA4A40F29F5117400A85AF5 /* TaskItem.swift */,
-			);
-			path = Facades;
-			sourceTree = "<group>";
-		};
 		9DA4A41129F531FA00A85AF5 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,24 +374,26 @@
 		9DA4A41229F5321100A85AF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9DA4A41329F5321A00A85AF5 /* String.swift */,
-				9DA4A41529F5446600A85AF5 /* Int+String.swift */,
+				9D12F5AC29FC51310019625E /* StatefulArch */,
+				9D12F5AB29FC51290019625E /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		9DA57BFD29F4262000B3BBAE /* AcelanTextField */ = {
+		9DA57BFD29F4262000B3BBAE /* PrimaryTextField */ = {
 			isa = PBXGroup;
 			children = (
-				9DA57BFB29F425FD00B3BBAE /* AcelanTextField.swift */,
-				9DA57BFE29F4263200B3BBAE /* AcelanTextFieldState.swift */,
+				9DA57BFB29F425FD00B3BBAE /* PrimaryTextField.swift */,
+				9DA57BFE29F4263200B3BBAE /* PrimaryTextFieldState.swift */,
+				9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */,
 			);
-			path = AcelanTextField;
+			path = PrimaryTextField;
 			sourceTree = "<group>";
 		};
 		9DA57C0029F4343F00B3BBAE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9D7692B829FA7F0100EE0B53 /* Artifacts */,
 				9D7D4D5529F592090033B5AF /* Profile */,
 				9D7D4D5029F590910033B5AF /* Main */,
 				9D7D4D3B29F552F30033B5AF /* Tasks */,
@@ -362,7 +436,6 @@
 		9DA57C1E29F4522C00B3BBAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9DA4A40E29F5114500A85AF5 /* Facades */,
 				9DA4A3FF29F5028100A85AF5 /* Decodable */,
 				9DA57C1F29F4524100B3BBAE /* UI */,
 			);
@@ -373,7 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */,
-				9D7D4D4D29F58F790033B5AF /* TabBarItem.swift */,
+				9D12F5AF29FD66810019625E /* ArtifactItemData.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -386,6 +459,35 @@
 				9DA57BF329F411D600B3BBAE /* ImageResource.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DBFAA0C29F7D25D001F27DC /* TasksDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */,
+				9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */,
+				9DBFAA1129F7D39B001F27DC /* TasksDetailInterceptor.swift */,
+				9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */,
+			);
+			path = TasksDetail;
+			sourceTree = "<group>";
+		};
+		9DBFAA1829F7F78F001F27DC /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				9DA57C0B29F4362F00B3BBAE /* NavigationBar.swift */,
+				9DBFAA1929F7F7A6001F27DC /* NavigationBarItem.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		9DBFAA1B29F8098C001F27DC /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				9D7D4D4D29F58F790033B5AF /* TabBarItem.swift */,
+				9D7D4D4B29F58DDD0033B5AF /* TabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,34 +574,48 @@
 			files = (
 				9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */,
 				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
+				9D7692AF29FA585200EE0B53 /* TaskStatusView.swift in Sources */,
 				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
+				9D7692B329FA694B00EE0B53 /* ArtifactItemView.swift in Sources */,
 				9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */,
 				9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */,
-				9D7D4D6729F5955C0033B5AF /* AcelanLabel.swift in Sources */,
+				9D7D4D6729F5955C0033B5AF /* HLabel.swift in Sources */,
+				9DBFAA1429F7F160001F27DC /* TasksDetailPage.swift in Sources */,
 				9D7D4D4029F5533A0033B5AF /* TasksMainPage.swift in Sources */,
-				9DA57BFC29F425FD00B3BBAE /* AcelanTextField.swift in Sources */,
+				9DA57BFC29F425FD00B3BBAE /* PrimaryTextField.swift in Sources */,
+				9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */,
 				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
-				9DA57BFF29F4263200B3BBAE /* AcelanTextFieldState.swift in Sources */,
+				9DA57BFF29F4263200B3BBAE /* PrimaryTextFieldState.swift in Sources */,
 				9D7D991F29F6F441008AC934 /* Loading.swift in Sources */,
 				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
+				9D12F5B029FD66810019625E /* ArtifactItemData.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */,
+				9D12F5B229FFB8C30019625E /* ArtifactsMainInterceptor.swift in Sources */,
 				9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */,
 				9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */,
+				9D7692BF29FA7F7400EE0B53 /* ArtifactsMainState.swift in Sources */,
+				9DBFAA1229F7D39B001F27DC /* TasksDetailInterceptor.swift in Sources */,
 				9D7D4D5729F592340033B5AF /* ProfileModuleBuilder.swift in Sources */,
 				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
+				9D7692BA29FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift in Sources */,
+				9D7692B729FA70E400EE0B53 /* VLabel.swift in Sources */,
+				9D7692BD29FA7F3A00EE0B53 /* ArtifactsMainAction.swift in Sources */,
 				9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */,
 				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
 				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
 				9D7D4D5229F5909F0033B5AF /* MainModuleBuilder.swift in Sources */,
+				9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */,
 				9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */,
 				9DA4A41429F5321A00A85AF5 /* String.swift in Sources */,
 				9D7D4D5A29F592610033B5AF /* ProfileMainState.swift in Sources */,
 				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
+				9D12F5AE29FC51440019625E /* PageView+Module.swift in Sources */,
 				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,
+				9DBFAA1629F7F2E0001F27DC /* Separator.swift in Sources */,
 				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
 				9D7D4D4A29F557630033B5AF /* NavigationController.swift in Sources */,
 				9D7D4D4C29F58DDD0033B5AF /* TabBarController.swift in Sources */,
@@ -507,15 +623,19 @@
 				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
 				9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */,
 				9D7D4D5C29F592A00033B5AF /* ProfileMainAction.swift in Sources */,
+				9D12F5B829FFC1260019625E /* PrimaryTextFieldKeyboardType.swift in Sources */,
 				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
 				9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */,
 				9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
+				9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */,
+				9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,
-				9DA4A41029F5117400A85AF5 /* TaskItem.swift in Sources */,
 				9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */,
 				9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */,
+				9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */,
 				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
+				9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */,
 				9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,13 @@ import Foundation
 struct AcelanTaskArtifact: Decodable {
     
     let id: Int
-    let file_type: AcelanTaskFileType
+    let fileType: AcelanTaskFileType
     let url: URL
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case fileType = "file_type"
+        case url
+    }
     
 }

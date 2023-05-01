@@ -11,65 +11,35 @@ import PNComponents
 struct TaskItemView<Item: TaskItemData>: View {
     
     let item: Item
+    
     let action: () -> Void
     
     var body: some View {
-
         HStack {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    buildLabelView(title: "ID:", content: item.id)
+                    VLabel(title: "ID:", content: item.id)
                     
                     Spacer()
                     
-                    buildStatusView()
+                    TaskStatusView(
+                        statusBackgroundColor: item.statusBackgroundColor,
+                        statusTitle: item.status,
+                        statusTitleColor: item.statusTitleColor
+                    )
                 }
 
-                buildLabelView(title: "Name:", content: item.name)
-                buildLabelView(title: "Started at:", content: item.startedAt)
-                buildLabelView(title: "Finished at:", content: item.finishedAt)
+                VLabel(title: "Name:", content: item.name)
+                VLabel(title: "Started at:", content: item.startedAt)
+                VLabel(title: "Finished at:", content: item.finishedAt)
             }
             
             Spacer()
         }
         .background(Color.resource(.White))
         .padding(10)
-        .overlay(buildTaskItemOverlay())
+        .overlay(ItemOverlayView())
         .buttonAction(action)
-    }
-    
-    @ViewBuilder
-    private func buildStatusView() -> some View {
-        ZStack {
-            Capsule()
-                .foregroundColor(item.statusBackgroundColor)
-            
-            Text(item.status)
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(item.statusTitleColor)
-        }
-        .frame(width: 80, height: 25)
-    }
-    
-    @ViewBuilder
-    private func buildLabelView(title: String, content: String) -> some View {
-        HStack(alignment: .top, spacing: 5) {
-            Text(title)
-                .font(.system(size: 14))
-                .foregroundColor(.resource(.DarkGray))
-            
-            Text(content)
-                .font(.system(size: 14))
-                .foregroundColor(.resource(.Black))
-        }
-        .frame(height: 25)
-    }
-    
-    @ViewBuilder
-    private func buildTaskItemOverlay() -> some View {
-        RoundedRectangle(cornerRadius: 10)
-            .stroke(lineWidth: 1)
-            .foregroundColor(.resource(.LightGray))
     }
     
 }

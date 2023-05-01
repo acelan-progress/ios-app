@@ -11,6 +11,7 @@ import StatefulArch
 enum TasksModuleBuilder: ModuleBuilder {
     
     case main
+    case detail
     
     func buildModule(serviceProvider: ServiceProvider) -> ModuleConvertible {
         switch self {
@@ -20,7 +21,15 @@ enum TasksModuleBuilder: ModuleBuilder {
             return TasksMainPage(
                 state: state,
                 interceptor: interceptor
-            ).asModule()
+            ).asNavigationModule()
+        
+        case .detail:
+            let state = TasksDetailState()
+            let interceptor = TasksDetailInterceptor(state: state, serviceProvider: serviceProvider)
+            return TasksDetailPage(
+                state: state,
+                interceptor: interceptor
+            ).asModule(hidesBottomBarWhenPushed: true)
         }
     }
     

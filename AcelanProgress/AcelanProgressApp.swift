@@ -22,6 +22,7 @@ struct AcelanProgressApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .ignoresSafeArea()
         }
     }
     

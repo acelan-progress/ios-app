@@ -1,5 +1,5 @@
 //
-//  AcelanTextField.swift
+//  PrimaryTextField.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 22.04.2023.
@@ -8,21 +8,24 @@
 import SwiftUI
 import PNComponents
 
-struct AcelanTextField: View {
+struct PrimaryTextField: View {
     
     @StateObject
-    private var state = AcelanTextFieldState()
+    private var state = PrimaryTextFieldState()
     
     let title: String
-    
     let placeholder: String
+    let keyboardType: PrimaryTextFieldKeyboardType
+    let isSecureTextEntry: Bool
     
     @Binding
     private var text: String
     
-    init(title: String, placeholder: String, text: Binding<String>) {
+    init(title: String, placeholder: String, text: Binding<String>, keyboardType: PrimaryTextFieldKeyboardType = .default, isSecureTextEntry: Bool = false) {
         self.title = title
         self.placeholder = placeholder
+        self.keyboardType = keyboardType
+        self.isSecureTextEntry = isSecureTextEntry
         _text = text
     }
     
@@ -36,9 +39,11 @@ struct AcelanTextField: View {
             TextInput(text: $text) { textField in
                 state.setup(textField: textField)
                 
+                textField.keyboardType = getUIKeyboardType()
                 textField.font = .systemFont(ofSize: 16)
                 textField.tintColor = .resource(.Purple)
                 textField.textColor = .resource(.Black)
+                textField.isSecureTextEntry = isSecureTextEntry
                 textField.attributedPlaceholder = NSAttributedString(
                     string: placeholder,
                     attributes: [
@@ -48,9 +53,7 @@ struct AcelanTextField: View {
             }
             .frame(height: 45)
             .padding(.horizontal, 10)
-            .overlay(
-                buildTextInputOverlayView()
-            )
+            .overlay(buildTextInputOverlayView())
         }
     }
     
@@ -62,14 +65,25 @@ struct AcelanTextField: View {
                 lineWidth: state.focused ? 2 : 1
             )
     }
+    
+    private func getUIKeyboardType() -> UIKeyboardType {
+        switch keyboardType {
+        case .email:
+            return .emailAddress
+            
+        case .default, .password:
+            return .default
+        }
+    }
 }
 
 struct AcelanTextField_Previews: PreviewProvider {
     static var previews: some View {
-        AcelanTextField(
+        PrimaryTextField(
             title: "Email",
             placeholder: "email@example.com",
-            text: .constant(.empty)
+            text: .constant(.empty),
+            keyboardType: .email
         ).padding(30)
     }
 }

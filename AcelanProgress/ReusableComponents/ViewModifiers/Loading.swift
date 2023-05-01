@@ -10,14 +10,12 @@ import SwiftUI
 struct Loading: ViewModifier {
     
     @Binding
-    var show: Bool
+    var loading: Bool
     
     func body(content: Content) -> some View {
-        if show {
+        if loading {
             ZStack {
-                content
-
-                Color.clear
+                Color.resource(.White)
                 
                 VStack {
                     Spacer()
@@ -27,7 +25,6 @@ struct Loading: ViewModifier {
                     Spacer()
                 }
             }
-            .ignoresSafeArea(.all)
         } else {
             content
         }
@@ -37,8 +34,8 @@ struct Loading: ViewModifier {
 
 extension View {
     
-    func loading(show: Binding<Bool>) -> some View {
-        modifier(Loading(show: show))
+    func loading(_ loading: Binding<Bool>) -> some View {
+        modifier(Loading(loading: loading))
     }
     
 }

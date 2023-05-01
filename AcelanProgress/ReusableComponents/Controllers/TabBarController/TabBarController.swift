@@ -35,6 +35,7 @@ final class TabBarController: UITabBarController {
         
         self.viewControllers = [
             self.createModule(moduleBuilder: TasksModuleBuilder.main, tabItem: .tasks),
+            self.createModule(moduleBuilder: ArtifactsModuleBuilder.main, tabItem: .artifacts),
             self.createModule(moduleBuilder: ProfileModuleBuilder.main, tabItem: .profile)
         ]
         
@@ -59,7 +60,6 @@ final class TabBarController: UITabBarController {
                                   height: 0.5)
     }
     
-    
     private func createModule(moduleBuilder: ModuleBuilder,
                               tabItem: TabBarItem,
                               tag: Int = 0) -> Module {
@@ -67,7 +67,6 @@ final class TabBarController: UITabBarController {
         module.tabBarItem = self.createUITabBarItem(for: tabItem, tag: tag)
         module.hidesBottomBarWhenPushed = true
         return module
-        
     }
     
     private func createUITabBarItem(for tabItem: TabBarItem, tag: Int) -> UITabBarItem {

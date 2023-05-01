@@ -12,8 +12,17 @@ struct AcelanTask: Decodable {
     let id: Int
     let name: String
     let status: AcelanTaskStatus
-    let started_at: Date?
-    let finished_at: Date?
+    let startedAt: Date?
+    let finishedAt: Date?
     let artifacts: [AcelanTaskArtifact]?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case status
+        case startedAt = "started_at"
+        case finishedAt = "finished_at"
+        case artifacts
+    }
     
 }

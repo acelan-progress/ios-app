@@ -1,5 +1,5 @@
 //
-//  AcelanTextFieldState.swift
+//  PrimaryTextFieldState.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 22.04.2023.
@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 @MainActor
-final class AcelanTextFieldState: ObservableObject {
+final class PrimaryTextFieldState: ObservableObject {
     
     @Published
     var focused: Bool = false
@@ -31,7 +31,7 @@ final class AcelanTextFieldState: ObservableObject {
     
 }
 
-private extension AcelanTextFieldState {
+private extension PrimaryTextFieldState {
     
     @objc
     func didBeginEditing() {

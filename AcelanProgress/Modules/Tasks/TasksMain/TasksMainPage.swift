@@ -20,7 +20,7 @@ struct TasksMainPage: PageView {
             NavigationBar(title: "Tasks")
             
             ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(spacing: 10) {
                     ForEach(state.taskItems) { taskItem in
                         TaskItemView(
                             item: taskItem,

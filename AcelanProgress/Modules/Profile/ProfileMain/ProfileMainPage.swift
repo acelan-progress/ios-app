@@ -21,11 +21,10 @@ struct ProfileMainPage: PageView {
             NavigationBar(title: "Profile")
             
             VStack(alignment: .leading, spacing: 10) {
-                AcelanLabel(title: "Email", content: state.email)
-                    .alignment(.leading)
+                HLabel(title: "Email", content: state.email)
                 
                 SecondaryButton(
-                    title: "Logout",
+                    title: "Log Out",
                     action: {
                         interceptor.call(action: .performLogout)
                     }
@@ -35,8 +34,8 @@ struct ProfileMainPage: PageView {
             }
             .padding(.vertical, 10)
             .padding(.horizontal, 20)
+            .loading($state.loading)
         }
-        .loading(show: $state.loading)
     }
     
 }

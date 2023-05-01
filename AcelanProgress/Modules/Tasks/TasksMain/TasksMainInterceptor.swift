@@ -13,7 +13,7 @@ final class TasksMainInterceptor: PageInterceptor<TasksMainAction, TasksMainStat
     override func handle(action: TasksMainAction) async {
         switch action {
         case let .openTaskItemDetail(taskItem):
-            break
+            NavigationService.push(using: TasksModuleBuilder.detail)
         }
     }
     

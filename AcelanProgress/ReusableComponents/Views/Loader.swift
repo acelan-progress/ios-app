@@ -14,7 +14,6 @@ struct Loader: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 60, height: 60)
                 .foregroundColor(.resource(.DarkGray))
-                .opacity(0.5)
             
             ProgressView()
                 .progressViewStyle(

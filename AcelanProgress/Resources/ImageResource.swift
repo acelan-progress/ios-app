@@ -11,10 +11,14 @@ import SwiftUI
 
 enum ImageResource: String {
     
+    case icon_arrow_left
     case icon_artifacts
+    case icon_more_vertical
     case icon_notifications
     case icon_profile
     case icon_tasks
+    case icon_trash
+
     case image_acelan_logo
     
 }

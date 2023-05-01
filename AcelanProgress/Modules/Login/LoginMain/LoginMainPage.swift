@@ -20,20 +20,23 @@ struct LoginMainPage: PageView {
             VStack(spacing: 15) {
                 Image.resource(.image_acelan_logo)
                 
-                AcelanTextField(
+                PrimaryTextField(
                     title: "Email",
                     placeholder: "Enter email",
-                    text: $state.email
+                    text: $state.email,
+                    keyboardType: .email
                 )
                 
-                AcelanTextField(
+                PrimaryTextField(
                     title: "Password",
                     placeholder: "Enter password",
-                    text: $state.password
+                    text: $state.password,
+                    keyboardType: .password,
+                    isSecureTextEntry: true
                 )
                 
                 PrimaryButton(
-                    title: "Login",
+                    title: "Log In",
                     action: {
                         interceptor.call(action: .performLogin)
                     }
@@ -44,7 +47,7 @@ struct LoginMainPage: PageView {
             .padding(.horizontal, 20)
             .allowsHitTesting(!state.loading)
         }
-        .loading(show: $state.loading)
+        .loading($state.loading)
     }
 
 }
