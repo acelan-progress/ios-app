@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum NavigationBarItem {
-    
+
     case backButton(action: () -> Void)
+    case deleteButton(action: () -> Void)
     
 }

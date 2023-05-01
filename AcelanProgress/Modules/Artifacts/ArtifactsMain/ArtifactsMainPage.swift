@@ -25,7 +25,7 @@ struct ArtifactsMainPage: PageView {
                         ArtifactItemView(
                             item: artifactItem,
                             action: {
-                                interceptor.call(action: .openArtifactItemDetail(artifactItem))
+                                interceptor.call(action: .openModelViewer(artifactItem))
                             }
                         )
                     }
