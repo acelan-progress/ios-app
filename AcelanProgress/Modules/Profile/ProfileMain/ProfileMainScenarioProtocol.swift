@@ -13,6 +13,9 @@ protocol ProfileMainScenarioProtocol: PageScenario {
     
     func performLogout() async
     
+    func setEmail()
+    
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher)
+    func bindFrom(emailPublisher: inout Published<String>.Publisher)
     
 }

@@ -11,18 +11,28 @@ struct AcelanTask: Decodable {
     
     let id: Int
     let name: String
-    let status: AcelanTaskStatus
-    let startedAt: Date?
-    let finishedAt: Date?
+    let status: String
+    let started_at: String?
+    let finished_at: String?
     let artifacts: [AcelanTaskArtifact]?
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case status
-        case startedAt = "started_at"
-        case finishedAt = "finished_at"
-        case artifacts
+    var acelanTaskStatus: AcelanTaskStatus {
+        AcelanTaskStatus(rawValue: status) ?? .unknown
     }
     
+    var startedAtDate: Date? {
+        if let started_at {
+            return started_at.toDate(.default)
+        }
+        return nil
+    }
+    
+    var finishedAtDate: Date? {
+        if let finished_at {
+            return finished_at.toDate(.default)
+        }
+        return nil
+        
+    }
+
 }

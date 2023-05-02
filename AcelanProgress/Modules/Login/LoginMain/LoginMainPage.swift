@@ -45,7 +45,6 @@ struct LoginMainPage: PageView {
                 Spacer()
             }
             .padding(.horizontal, 20)
-            .allowsHitTesting(!state.loading)
         }
         .loading($state.loading)
     }

@@ -15,7 +15,8 @@ struct AcelanProgressApp: App {
     init() {
         AppConfiguration.setup(
             DIConfiguration.self,
-            NavigationConfiguration.self
+            NavigationConfiguration.self,
+            ErrorProcessorConfiguration.self
         )
     }
     

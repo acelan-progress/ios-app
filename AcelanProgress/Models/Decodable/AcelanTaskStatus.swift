@@ -6,57 +6,50 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum AcelanTaskStatus: Decodable {
+enum AcelanTaskStatus: String {
     
     case queued
     case working
     case failure
     case success
-    case unknown(String)
+    case unknown
     
-    init(from decoder: Decoder) throws {
-        let valueContainer = try decoder.singleValueContainer()
-        let decodedValue = try valueContainer.decode(String.self)
+    var name: String {
+        rawValue.capitalized
+    }
+    
+    var backgroundColorResource: ColorResource {
+        switch self {
+        case .queued, .unknown:
+            return .LightGray
         
-        switch decodedValue {
-        case "queued":
-            self = .queued
-            
-        case "working":
-            self = .working
-            
-        case "failure":
-            self = .failure
-            
-        case "success":
-            self = .success
-            
-        default:
-            self = .unknown(decodedValue)
+        case .working:
+            return .LightBlue
+        
+        case .failure:
+            return .Pink
+        
+        case .success:
+            return .LightGreen
         }
     }
     
-    var name: String {
-        var name: String = .empty
+    var titleColorResource: ColorResource {
         switch self {
-        case .queued:
-            name = "queued"
+        case .queued, .unknown:
+            return .DarkGray
         
         case .working:
-            name = "working"
+            return .DarkBlue
         
         case .failure:
-            name = "failure"
+            return .DarkRed
         
         case .success:
-            name = "success"
-            
-        case let .unknown(unknownName):
-            name = unknownName
+            return .DarkGreen
         }
-        
-        return name.capitalized
     }
     
 }

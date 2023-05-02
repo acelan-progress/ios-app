@@ -11,7 +11,7 @@ import StatefulArch
 enum TasksModuleBuilder: ModuleBuilder {
     
     case main
-    case detail
+    case detail(taskId: Int)
     
     func buildModule(serviceProvider: ServiceProvider) -> ModuleConvertible {
         switch self {
@@ -23,8 +23,8 @@ enum TasksModuleBuilder: ModuleBuilder {
                 interceptor: interceptor
             ).asNavigationModule()
         
-        case .detail:
-            let state = TasksDetailState()
+        case let .detail(taskId):
+            let state = TasksDetailState(taskId: taskId)
             let interceptor = TasksDetailInterceptor(state: state, serviceProvider: serviceProvider)
             return TasksDetailPage(
                 state: state,

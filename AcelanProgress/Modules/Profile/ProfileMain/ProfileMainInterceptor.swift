@@ -26,6 +26,17 @@ final class ProfileMainInterceptor: PageInterceptor<ProfileMainAction, ProfileMa
     
     override func subscribe(withState state: inout ProfileMainState) {
         scenario.bindFrom(loadingPublisher: &state.$loading)
+        scenario.bindFrom(emailPublisher: &state.$email)
+    }
+    
+    override func handle(lifeCycleEvent: PageLifeCycleEvent) async {
+        switch lifeCycleEvent {
+        case .didLoad:
+            scenario.setEmail()
+            
+        default:
+            break
+        }
     }
     
 }

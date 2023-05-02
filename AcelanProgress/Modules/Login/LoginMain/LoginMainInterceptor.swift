@@ -19,11 +19,15 @@ final class LoginMainInterceptor: PageInterceptor<LoginMainAction, LoginMainStat
     override func handle(action: LoginMainAction) async {
         switch action {
         case .performLogin:
-            if let email = state?.email, let password = state?.password {
-                await scenario.performLogin(email: email, password: password)
+            guard let email = state?.email, let password = state?.password, !email.isEmpty, !password.isEmpty else {
+                return
             }
             
-            NavigationService.setRoot(using: MainModuleBuilder.tabBar)
+            let result = await scenario.performLogIn(email: email, password: password)
+            
+            if result {
+                NavigationService.setRoot(using: MainModuleBuilder.tabBar)
+            }
         }
     }
     

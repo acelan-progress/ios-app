@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "ioswebclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/purenative/iOSWebClient.git",
+      "state" : {
+        "revision" : "0315eb93ae83cf164553811e5d238b50ed379727",
+        "version" : "1.1.2"
+      }
+    },
+    {
       "identity" : "pncomponentns",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/purenative/pncomponentns.git",

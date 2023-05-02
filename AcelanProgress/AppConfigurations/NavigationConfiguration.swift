@@ -14,7 +14,13 @@ enum NavigationConfiguration: AppConfigurationModule {
     static func setup() {
         NavigationService.set(serviceProvider: DIConfiguration.container)
         
-        NavigationService.setRoot(using: LoginModuleBuilder.main)
+        let appDataStorageService: AppDataStorageService = DIConfiguration.container.provideService()
+        
+        if appDataStorageService.isAuthorized {
+            NavigationService.setRoot(using: MainModuleBuilder.tabBar)
+        } else {
+            NavigationService.setRoot(using: LoginModuleBuilder.main)
+        }
     }
     
 }

@@ -11,6 +11,17 @@ import Combine
 final class TasksMainState: ObservableObject {
     
     @Published
-    var taskItems = TaskItemMock.allCases
+    var tasks: [AcelanTask] = []
+    
+    @Published
+    var loading: Bool = true
+    
+}
+
+extension TasksMainState {
+    
+    var taskItems: [TaskItem] {
+        tasks.map(TaskItem.task)
+    }
     
 }

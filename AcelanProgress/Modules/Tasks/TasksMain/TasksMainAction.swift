@@ -9,6 +9,6 @@ import Foundation
 
 enum TasksMainAction {
     
-    case openTaskItemDetail(TaskItemMock)
+    case openTaskItemDetail(TaskItem)
     
 }

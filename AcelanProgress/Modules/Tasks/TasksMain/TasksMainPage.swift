@@ -33,6 +33,7 @@ struct TasksMainPage: PageView {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
             }
+            .loading($state.loading)
         }
     }
     

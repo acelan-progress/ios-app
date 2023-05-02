@@ -10,22 +10,44 @@ import StatefulArch
 
 final class ProfileMainScenario: PageScenario {
     
+    private var authService: AuthService!
+    private var appDataStorageService: AppDataStorageService!
+    
+    override func provideServices(with serviceProvider: ServiceProvider) {
+        serviceProvider.provide(service: &authService)
+        serviceProvider.provide(service: &appDataStorageService)
+    }
+    
     @Published
     var loading: Bool = false
     
+    @Published
+    var email: String = .dash
+    
 }
 
-extension ProfileMainScenario: ProfileMainScenarioProtocol {
+extension ProfileMainScenario: ProfileMainScenarioProtocol, ErrorHandler {
     
     func performLogout() async {
         loading = true
-        // TODO: - Implement API request
-        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        
+        await handleErrorIn {
+            try await authService.performLogOut()
+        }
+        
         loading = false
+    }
+    
+    func setEmail() {
+        email = appDataStorageService.userEmail ?? .dash
     }
     
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher) {
         $loading.assign(to: &loadingPublisher)
+    }
+    
+    func bindFrom(emailPublisher: inout Published<String>.Publisher) {
+        $email.assign(to: &emailPublisher)
     }
     
 }

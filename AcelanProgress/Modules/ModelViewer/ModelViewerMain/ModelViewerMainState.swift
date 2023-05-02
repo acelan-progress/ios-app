@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SceneKit
 
 final class ModelViewerMainState: ObservableObject {
     
@@ -15,4 +16,10 @@ final class ModelViewerMainState: ObservableObject {
     
 }
 
-
+extension ModelViewerMainState {
+    
+    var modelScene: SCNScene? {
+        SCNScene(named: modelName)
+    }
+    
+}

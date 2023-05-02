@@ -27,23 +27,23 @@ struct TasksDetailPage: PageView {
             
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
-                    TaskStatusView(
-                        statusBackgroundColor: .resource(.Pink),
-                        statusTitle: "Failure",
-                        statusTitleColor: .resource(.DarkRed)
-                    )
-                    
-                    HLabel(title: "ID", content: "1")
-                    
-                    HLabel(title: "Name", content: "Name")
-                    
-                    HLabel(title: "Started at", content: "12.04.2023, 14:30")
-                    
-                    HLabel(title: "Finished at", content: "12.04.2023, 15:30")
+                    if let taskItem = state.taskItem {
+                        TaskStatusView(
+                            statusBackgroundColor: taskItem.statusBackgroundColor,
+                            statusTitle: taskItem.status,
+                            statusTitleColor: taskItem.statusTitleColor
+                        )
+                        
+                        HLabel(title: "ID", content: taskItem.id)
+                        HLabel(title: "Name", content: taskItem.name)
+                        HLabel(title: "Started at", content: taskItem.startedAt)
+                        HLabel(title: "Finished at", content: taskItem.finishedAt)
+                    }
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
             }
+            .loading($state.loading)
         }
     }
 }

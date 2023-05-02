@@ -10,18 +10,29 @@ import StatefulArch
 
 final class LoginMainScenario: PageScenario {
     
+    private var authService: AuthService!
+    
+    override func provideServices(with serviceProvider: ServiceProvider) {
+        serviceProvider.provide(service: &authService)
+    }
+    
     @Published
     var loading: Bool = false
     
 }
 
-extension LoginMainScenario: LoginMainScenarioProtocol {
+extension LoginMainScenario: LoginMainScenarioProtocol, ErrorHandler {
     
-    func performLogin(email: String, password: String) async {
+    func performLogIn(email: String, password: String) async -> Bool {
         loading = true
-        // TODO: - Implement API request
-        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        
+        let result = await handleErrorIn {
+            try await authService.performLogIn(email: email, password: password)
+        }
+        
         loading = false
+        
+        return result.isSuccess
     }
     
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher) {

@@ -46,13 +46,6 @@ struct TaskItemView<Item: TaskItemData>: View {
 
 struct TaskItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
-                ForEach(TaskItemMock.allCases) { taskItem in
-                    TaskItemView(item: taskItem, action: {})
-                }
-            }
-            .padding(30)
-        }
+        EmptyView()
     }
 }

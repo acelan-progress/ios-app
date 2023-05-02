@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D12F5AE29FC51440019625E /* PageView+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5AD29FC51440019625E /* PageView+Module.swift */; };
-		9D12F5B029FD66810019625E /* ArtifactItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5AF29FD66810019625E /* ArtifactItemData.swift */; };
+		9D12F5B029FD66810019625E /* ArtifactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5AF29FD66810019625E /* ArtifactItem.swift */; };
 		9D12F5B229FFB8C30019625E /* ArtifactsMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B129FFB8C30019625E /* ArtifactsMainInterceptor.swift */; };
 		9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */; };
 		9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B529FFBD540019625E /* ItemOverlayView.swift */; };
@@ -20,8 +20,35 @@
 		9D12F5C529FFDC7E0019625E /* ModelViewerMainInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */; };
 		9D12F5C729FFDCE50019625E /* ModelViewerMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */; };
 		9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C829FFDE550019625E /* DeleteButton.swift */; };
+		9D12F5CD29FFEFF70019625E /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5CC29FFEFF70019625E /* ApiClient.swift */; };
+		9D12F5D129FFF06C0019625E /* WebClient in Frameworks */ = {isa = PBXBuildFile; productRef = 9D12F5D029FFF06C0019625E /* WebClient */; };
+		9D12F5D329FFF1A00019625E /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5D229FFF1A00019625E /* ApiRouter.swift */; };
+		9D12F5D529FFF2F70019625E /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5D429FFF2F70019625E /* ApiConstants.swift */; };
+		9D12F5D729FFF64E0019625E /* ApiRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5D629FFF64E0019625E /* ApiRequestParameters.swift */; };
+		9D12F5D929FFF8160019625E /* ApiAuthorizationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5D829FFF8160019625E /* ApiAuthorizationMethod.swift */; };
+		9D12F5DC2A0011E50019625E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5DB2A0011E50019625E /* AuthService.swift */; };
+		9D12F5DE2A0012110019625E /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5DD2A0012110019625E /* TokenStorage.swift */; };
+		9D12F5E02A0018D40019625E /* AppDataStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5DF2A0018D40019625E /* AppDataStorageService.swift */; };
+		9D12F5E22A001A4F0019625E /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5E12A001A4F0019625E /* TokenResponse.swift */; };
+		9D12F5E62A0023700019625E /* AlertNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5E52A0023700019625E /* AlertNavigation.swift */; };
+		9D12F5EB2A0029E70019625E /* ErrorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5EA2A0029E70019625E /* ErrorProcessor.swift */; };
+		9D12F5ED2A002A090019625E /* ErrorQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5EC2A002A090019625E /* ErrorQueue.swift */; };
+		9D12F5EF2A002A2E0019625E /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5EE2A002A2E0019625E /* ErrorHandler.swift */; };
+		9D12F5F12A002A4B0019625E /* ErrorRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5F02A002A4B0019625E /* ErrorRecord.swift */; };
+		9D12F5F32A002A7D0019625E /* AppErrorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5F22A002A7D0019625E /* AppErrorProcessor.swift */; };
+		9D12F5F52A002AF40019625E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5F42A002AF40019625E /* Strings.swift */; };
+		9D12F5F72A002BF70019625E /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5F62A002BF70019625E /* DecodingError.swift */; };
+		9D12F5F92A00322C0019625E /* ErrorProcessorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5F82A00322C0019625E /* ErrorProcessorConfiguration.swift */; };
+		9D12F5FD2A003BB00019625E /* TasksMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5FC2A003BB00019625E /* TasksMainScenario.swift */; };
+		9D12F5FF2A003C080019625E /* TasksMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5FE2A003C080019625E /* TasksMainScenarioProtocol.swift */; };
+		9D12F6012A0041180019625E /* TasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F6002A0041180019625E /* TasksService.swift */; };
+		9D12F6032A00498C0019625E /* TasksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F6022A00498C0019625E /* TasksResponse.swift */; };
 		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
+		9D6530722A015A2100434A94 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530712A015A2100434A94 /* String+Date.swift */; };
+		9D6530742A0163B800434A94 /* TasksDetailScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530732A0163B700434A94 /* TasksDetailScenario.swift */; };
+		9D6530762A0163C600434A94 /* TasksDetailScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530752A0163C600434A94 /* TasksDetailScenarioProtocol.swift */; };
+		9D6530782A01718500434A94 /* ArtifactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530772A01718500434A94 /* ArtifactsService.swift */; };
 		9D7692AF29FA585200EE0B53 /* TaskStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */; };
 		9D7692B329FA694B00EE0B53 /* ArtifactItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */; };
 		9D7692B729FA70E400EE0B53 /* VLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B629FA70E400EE0B53 /* VLabel.swift */; };
@@ -75,7 +102,7 @@
 		9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1529F4481A00B3BBAE /* LoginMainScenarioProtocol.swift */; };
 		9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */; };
 		9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */; };
-		9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */; };
+		9DA57C2129F4525B00B3BBAE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItem.swift */; };
 		9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA9DE0F29E3338A004F8274 /* StatefulArch */; };
 		9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */; };
 		9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */; };
@@ -101,7 +128,7 @@
 
 /* Begin PBXFileReference section */
 		9D12F5AD29FC51440019625E /* PageView+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageView+Module.swift"; sourceTree = "<group>"; };
-		9D12F5AF29FD66810019625E /* ArtifactItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItemData.swift; sourceTree = "<group>"; };
+		9D12F5AF29FD66810019625E /* ArtifactItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItem.swift; sourceTree = "<group>"; };
 		9D12F5B129FFB8C30019625E /* ArtifactsMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainInterceptor.swift; sourceTree = "<group>"; };
 		9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainPage.swift; sourceTree = "<group>"; };
 		9D12F5B529FFBD540019625E /* ItemOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOverlayView.swift; sourceTree = "<group>"; };
@@ -113,9 +140,35 @@
 		9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainInterceptor.swift; sourceTree = "<group>"; };
 		9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainPage.swift; sourceTree = "<group>"; };
 		9D12F5C829FFDE550019625E /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		9D12F5CC29FFEFF70019625E /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		9D12F5D229FFF1A00019625E /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		9D12F5D429FFF2F70019625E /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		9D12F5D629FFF64E0019625E /* ApiRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestParameters.swift; sourceTree = "<group>"; };
+		9D12F5D829FFF8160019625E /* ApiAuthorizationMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthorizationMethod.swift; sourceTree = "<group>"; };
+		9D12F5DB2A0011E50019625E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9D12F5DD2A0012110019625E /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		9D12F5DF2A0018D40019625E /* AppDataStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataStorageService.swift; sourceTree = "<group>"; };
+		9D12F5E12A001A4F0019625E /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		9D12F5E52A0023700019625E /* AlertNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNavigation.swift; sourceTree = "<group>"; };
+		9D12F5EA2A0029E70019625E /* ErrorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProcessor.swift; sourceTree = "<group>"; };
+		9D12F5EC2A002A090019625E /* ErrorQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorQueue.swift; sourceTree = "<group>"; };
+		9D12F5EE2A002A2E0019625E /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		9D12F5F02A002A4B0019625E /* ErrorRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRecord.swift; sourceTree = "<group>"; };
+		9D12F5F22A002A7D0019625E /* AppErrorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorProcessor.swift; sourceTree = "<group>"; };
+		9D12F5F42A002AF40019625E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		9D12F5F62A002BF70019625E /* DecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
+		9D12F5F82A00322C0019625E /* ErrorProcessorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorProcessorConfiguration.swift; sourceTree = "<group>"; };
+		9D12F5FC2A003BB00019625E /* TasksMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainScenario.swift; sourceTree = "<group>"; };
+		9D12F5FE2A003C080019625E /* TasksMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainScenarioProtocol.swift; sourceTree = "<group>"; };
+		9D12F6002A0041180019625E /* TasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksService.swift; sourceTree = "<group>"; };
+		9D12F6022A00498C0019625E /* TasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksResponse.swift; sourceTree = "<group>"; };
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D6530712A015A2100434A94 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		9D6530732A0163B700434A94 /* TasksDetailScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailScenario.swift; sourceTree = "<group>"; };
+		9D6530752A0163C600434A94 /* TasksDetailScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailScenarioProtocol.swift; sourceTree = "<group>"; };
+		9D6530772A01718500434A94 /* ArtifactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsService.swift; sourceTree = "<group>"; };
 		9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusView.swift; sourceTree = "<group>"; };
 		9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItemView.swift; sourceTree = "<group>"; };
 		9D7692B629FA70E400EE0B53 /* VLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLabel.swift; sourceTree = "<group>"; };
@@ -166,7 +219,7 @@
 		9DA57C1529F4481A00B3BBAE /* LoginMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainScenarioProtocol.swift; sourceTree = "<group>"; };
 		9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
 		9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
-		9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemData.swift; sourceTree = "<group>"; };
+		9DA57C2029F4525B00B3BBAE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailState.swift; sourceTree = "<group>"; };
 		9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailAction.swift; sourceTree = "<group>"; };
@@ -182,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA57BFA29F417C100B3BBAE /* PNComponents in Frameworks */,
+				9D12F5D129FFF06C0019625E /* WebClient in Frameworks */,
 				9DA9DE1029E3338A004F8274 /* StatefulArch in Frameworks */,
 				9D7AF9C429F3FC7100E7C9E1 /* SwiftDI in Frameworks */,
 				9D7AF9C729F3FCEF00E7C9E1 /* AppConfiguration in Frameworks */,
@@ -196,6 +250,8 @@
 			children = (
 				9DA4A41329F5321A00A85AF5 /* String.swift */,
 				9DA4A41529F5446600A85AF5 /* Int+String.swift */,
+				9D12F5F62A002BF70019625E /* DecodingError.swift */,
+				9D6530712A015A2100434A94 /* String+Date.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -228,6 +284,67 @@
 			path = ModelViewerMain;
 			sourceTree = "<group>";
 		};
+		9D12F5CA29FFE53E0019625E /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5DA2A0011CD0019625E /* Services */,
+				9D12F5CB29FFEFB20019625E /* Web */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		9D12F5CB29FFEFB20019625E /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5CC29FFEFF70019625E /* ApiClient.swift */,
+				9D12F5D229FFF1A00019625E /* ApiRouter.swift */,
+				9D12F5D429FFF2F70019625E /* ApiConstants.swift */,
+				9D12F5D629FFF64E0019625E /* ApiRequestParameters.swift */,
+				9D12F5D829FFF8160019625E /* ApiAuthorizationMethod.swift */,
+				9D12F5DD2A0012110019625E /* TokenStorage.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		9D12F5DA2A0011CD0019625E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5DB2A0011E50019625E /* AuthService.swift */,
+				9D12F5DF2A0018D40019625E /* AppDataStorageService.swift */,
+				9D12F6002A0041180019625E /* TasksService.swift */,
+				9D6530772A01718500434A94 /* ArtifactsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9D12F5E42A0023640019625E /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5E52A0023700019625E /* AlertNavigation.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		9D12F5E82A0029C10019625E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5E92A0029C90019625E /* ErrorProcessing */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9D12F5E92A0029C90019625E /* ErrorProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				9D12F5EA2A0029E70019625E /* ErrorProcessor.swift */,
+				9D12F5EC2A002A090019625E /* ErrorQueue.swift */,
+				9D12F5EE2A002A2E0019625E /* ErrorHandler.swift */,
+				9D12F5F02A002A4B0019625E /* ErrorRecord.swift */,
+				9D12F5F22A002A7D0019625E /* AppErrorProcessor.swift */,
+			);
+			path = ErrorProcessing;
+			sourceTree = "<group>";
+		};
 		9D5A801229BB9D5300648BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +364,8 @@
 		9D5A801D29BB9D5300648BA1 /* AcelanProgress */ = {
 			isa = PBXGroup;
 			children = (
+				9D12F5E82A0029C10019625E /* Utilities */,
+				9D12F5CA29FFE53E0019625E /* DataAccess */,
 				9D7D4D4729F557430033B5AF /* ReusableComponents */,
 				9DA4A41229F5321100A85AF5 /* Extensions */,
 				9DA4A41129F531FA00A85AF5 /* Support */,
@@ -317,6 +436,8 @@
 				9D7D4D4129F553490033B5AF /* TasksMainState.swift */,
 				9D7D4D4329F553B30033B5AF /* TasksMainInterceptor.swift */,
 				9D7D4D4529F553CD0033B5AF /* TasksMainAction.swift */,
+				9D12F5FC2A003BB00019625E /* TasksMainScenario.swift */,
+				9D12F5FE2A003C080019625E /* TasksMainScenarioProtocol.swift */,
 			);
 			path = TasksMain;
 			sourceTree = "<group>";
@@ -324,6 +445,7 @@
 		9D7D4D4729F557430033B5AF /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9D12F5E42A0023640019625E /* Navigations */,
 				9D7D991D29F6F411008AC934 /* ViewModifiers */,
 				9D7AF9DE29F4019200E7C9E1 /* Views */,
 				9D7D4D4829F557520033B5AF /* Controllers */,
@@ -385,6 +507,8 @@
 				9DA4A40229F5097400A85AF5 /* AcelanTask.swift */,
 				9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */,
 				9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */,
+				9D12F5E12A001A4F0019625E /* TokenResponse.swift */,
+				9D12F6022A00498C0019625E /* TasksResponse.swift */,
 			);
 			path = Decodable;
 			sourceTree = "<group>";
@@ -465,6 +589,7 @@
 			children = (
 				9DA57C1129F439EC00B3BBAE /* DIConfiguration.swift */,
 				9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */,
+				9D12F5F82A00322C0019625E /* ErrorProcessorConfiguration.swift */,
 			);
 			path = AppConfigurations;
 			sourceTree = "<group>";
@@ -481,8 +606,8 @@
 		9DA57C1F29F4524100B3BBAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9DA57C2029F4525B00B3BBAE /* TaskItemData.swift */,
-				9D12F5AF29FD66810019625E /* ArtifactItemData.swift */,
+				9DA57C2029F4525B00B3BBAE /* TaskItem.swift */,
+				9D12F5AF29FD66810019625E /* ArtifactItem.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -494,6 +619,7 @@
 				9D5A802229BB9D5900648BA1 /* Assets.xcassets */,
 				9DA57BF129F4109700B3BBAE /* ColorResource.swift */,
 				9DA57BF329F411D600B3BBAE /* ImageResource.swift */,
+				9D12F5F42A002AF40019625E /* Strings.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -505,6 +631,8 @@
 				9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */,
 				9DBFAA1129F7D39B001F27DC /* TasksDetailInterceptor.swift */,
 				9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */,
+				9D6530732A0163B700434A94 /* TasksDetailScenario.swift */,
+				9D6530752A0163C600434A94 /* TasksDetailScenarioProtocol.swift */,
 			);
 			path = TasksDetail;
 			sourceTree = "<group>";
@@ -549,6 +677,7 @@
 				9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */,
 				9D7AF9C629F3FCEF00E7C9E1 /* AppConfiguration */,
 				9DA57BF929F417C100B3BBAE /* PNComponents */,
+				9D12F5D029FFF06C0019625E /* WebClient */,
 			);
 			productName = "Acelan-Progress";
 			productReference = 9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */;
@@ -583,6 +712,7 @@
 				9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */,
 				9D7AF9C529F3FCEF00E7C9E1 /* XCRemoteSwiftPackageReference "AppConfiguration" */,
 				9DA57BF829F417C100B3BBAE /* XCRemoteSwiftPackageReference "pncomponentns" */,
+				9D12F5CF29FFF06C0019625E /* XCRemoteSwiftPackageReference "iOSWebClient" */,
 			);
 			productRefGroup = 9D5A801C29BB9D5300648BA1 /* Products */;
 			projectDirPath = "";
@@ -611,6 +741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */,
+				9D12F5DE2A0012110019625E /* TokenStorage.swift in Sources */,
 				9DA57BF029F40ED400B3BBAE /* PrimaryButton.swift in Sources */,
 				9D7692AF29FA585200EE0B53 /* TaskStatusView.swift in Sources */,
 				9DA57BF229F4109700B3BBAE /* ColorResource.swift in Sources */,
@@ -618,40 +749,57 @@
 				9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */,
 				9DA4A41629F5446600A85AF5 /* Int+String.swift in Sources */,
 				9D7D4D6729F5955C0033B5AF /* HLabel.swift in Sources */,
+				9D12F5D529FFF2F70019625E /* ApiConstants.swift in Sources */,
 				9DBFAA1429F7F160001F27DC /* TasksDetailPage.swift in Sources */,
 				9D7D4D4029F5533A0033B5AF /* TasksMainPage.swift in Sources */,
+				9D12F5E02A0018D40019625E /* AppDataStorageService.swift in Sources */,
+				9D12F5F12A002A4B0019625E /* ErrorRecord.swift in Sources */,
+				9D12F5D929FFF8160019625E /* ApiAuthorizationMethod.swift in Sources */,
 				9DA57BFC29F425FD00B3BBAE /* PrimaryTextField.swift in Sources */,
+				9D12F5CD29FFEFF70019625E /* ApiClient.swift in Sources */,
 				9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */,
+				9D6530722A015A2100434A94 /* String+Date.swift in Sources */,
 				9DA4A40929F50A9E00A85AF5 /* DateFormatterProtocol.swift in Sources */,
 				9DA57BFF29F4263200B3BBAE /* PrimaryTextFieldState.swift in Sources */,
 				9D12F5C129FFDBF30019625E /* ModelViewerMainState.swift in Sources */,
+				9D12F5F72A002BF70019625E /* DecodingError.swift in Sources */,
 				9D7D991F29F6F441008AC934 /* Loading.swift in Sources */,
+				9D12F5F52A002AF40019625E /* Strings.swift in Sources */,
 				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
-				9D12F5B029FD66810019625E /* ArtifactItemData.swift in Sources */,
+				9D12F5B029FD66810019625E /* ArtifactItem.swift in Sources */,
 				9D12F5BC29FFD7A80019625E /* ModelViewerBuilder.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */,
 				9D12F5B229FFB8C30019625E /* ArtifactsMainInterceptor.swift in Sources */,
 				9DA57C0629F4350B00B3BBAE /* LoginMainAction.swift in Sources */,
+				9D12F5DC2A0011E50019625E /* AuthService.swift in Sources */,
 				9DA57C0E29F437EE00B3BBAE /* LoginModuleBuilder.swift in Sources */,
 				9D7692BF29FA7F7400EE0B53 /* ArtifactsMainState.swift in Sources */,
 				9DBFAA1229F7D39B001F27DC /* TasksDetailInterceptor.swift in Sources */,
 				9D7D4D5729F592340033B5AF /* ProfileModuleBuilder.swift in Sources */,
+				9D12F5F92A00322C0019625E /* ErrorProcessorConfiguration.swift in Sources */,
+				9D6530782A01718500434A94 /* ArtifactsService.swift in Sources */,
 				9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */,
 				9D7692BA29FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift in Sources */,
+				9D12F6012A0041180019625E /* TasksService.swift in Sources */,
+				9D12F5D729FFF64E0019625E /* ApiRequestParameters.swift in Sources */,
 				9D7692B729FA70E400EE0B53 /* VLabel.swift in Sources */,
 				9D7692BD29FA7F3A00EE0B53 /* ArtifactsMainAction.swift in Sources */,
 				9D12F5BF29FFDBA40019625E /* ModelViewerMainAction.swift in Sources */,
 				9D7D4D6229F593340033B5AF /* ProfileMainScenarioProtocol.swift in Sources */,
+				9D12F5ED2A002A090019625E /* ErrorQueue.swift in Sources */,
 				9DA57C1429F447FB00B3BBAE /* LoginMainScenario.swift in Sources */,
-				9DA57C2129F4525B00B3BBAE /* TaskItemData.swift in Sources */,
+				9DA57C2129F4525B00B3BBAE /* TaskItem.swift in Sources */,
 				9D7D4D5229F5909F0033B5AF /* MainModuleBuilder.swift in Sources */,
 				9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */,
 				9DA57C1229F439EC00B3BBAE /* DIConfiguration.swift in Sources */,
 				9DA4A41429F5321A00A85AF5 /* String.swift in Sources */,
 				9D7D4D5A29F592610033B5AF /* ProfileMainState.swift in Sources */,
 				9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */,
+				9D6530742A0163B800434A94 /* TasksDetailScenario.swift in Sources */,
+				9D12F5FF2A003C080019625E /* TasksMainScenarioProtocol.swift in Sources */,
+				9D12F6032A00498C0019625E /* TasksResponse.swift in Sources */,
 				9D12F5AE29FC51440019625E /* PageView+Module.swift in Sources */,
 				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
@@ -659,6 +807,7 @@
 				9DBFAA1629F7F2E0001F27DC /* Separator.swift in Sources */,
 				9DA57C0829F435A200B3BBAE /* LoginMainInterceptor.swift in Sources */,
 				9D7D4D4A29F557630033B5AF /* NavigationController.swift in Sources */,
+				9D12F5EF2A002A2E0019625E /* ErrorHandler.swift in Sources */,
 				9D7D4D4C29F58DDD0033B5AF /* TabBarController.swift in Sources */,
 				9D7D4D5429F591820033B5AF /* SecondaryButton.swift in Sources */,
 				9DA57BF429F411D600B3BBAE /* ImageResource.swift in Sources */,
@@ -668,12 +817,18 @@
 				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
 				9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */,
 				9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */,
+				9D12F5EB2A0029E70019625E /* ErrorProcessor.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
+				9D12F5FD2A003BB00019625E /* TasksMainScenario.swift in Sources */,
 				9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */,
 				9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */,
+				9D6530762A0163C600434A94 /* TasksDetailScenarioProtocol.swift in Sources */,
 				9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */,
+				9D12F5F32A002A7D0019625E /* AppErrorProcessor.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,
 				9DA4A40B29F50C2900A85AF5 /* AcelanTaskArtifact.swift in Sources */,
+				9D12F5E22A001A4F0019625E /* TokenResponse.swift in Sources */,
+				9D12F5D329FFF1A00019625E /* ApiRouter.swift in Sources */,
 				9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */,
 				9D12F5C729FFDCE50019625E /* ModelViewerMainPage.swift in Sources */,
 				9D12F5C529FFDC7E0019625E /* ModelViewerMainInterceptor.swift in Sources */,
@@ -681,6 +836,7 @@
 				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
 				9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */,
 				9DA57C0C29F4362F00B3BBAE /* NavigationBar.swift in Sources */,
+				9D12F5E62A0023700019625E /* AlertNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +1047,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9D12F5CF29FFF06C0019625E /* XCRemoteSwiftPackageReference "iOSWebClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/purenative/iOSWebClient.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/purenative/SwiftDI.git";
@@ -926,6 +1090,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9D12F5D029FFF06C0019625E /* WebClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D12F5CF29FFF06C0019625E /* XCRemoteSwiftPackageReference "iOSWebClient" */;
+			productName = WebClient;
+		};
 		9D7AF9C329F3FC7100E7C9E1 /* SwiftDI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9D7AF9C229F3FC7100E7C9E1 /* XCRemoteSwiftPackageReference "SwiftDI" */;

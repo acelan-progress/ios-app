@@ -1,5 +1,5 @@
 //
-//  ArtifactItemData.swift
+//  ArtifactItem.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 29.04.2023.

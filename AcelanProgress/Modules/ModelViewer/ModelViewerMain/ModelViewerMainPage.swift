@@ -29,7 +29,7 @@ struct ModelViewerMainPage: PageView {
             )
             
             SceneView(
-                scene: SCNScene(named: state.modelName),
+                scene: state.modelScene,
                 options: [.allowsCameraControl, .autoenablesDefaultLighting]
             )
         }
