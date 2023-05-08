@@ -39,7 +39,7 @@ enum AcelanTaskStatus: String {
     var titleColorResource: ColorResource {
         switch self {
         case .queued, .unknown:
-            return .DarkGray
+            return .Carbon
         
         case .working:
             return .DarkBlue
