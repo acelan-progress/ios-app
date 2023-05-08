@@ -26,7 +26,7 @@ final class TasksDetailInterceptor: PageInterceptor<TasksDetailAction, TasksDeta
     override func subscribe(withState state: inout TasksDetailState) {
         scenario.bindFrom(loadingPublisher: &state.$loading)
         scenario.bindFrom(acelanTaskPublisher: &state.$acelanTask)
-        scenario.setTaskId(taskId: state.taskId)
+        scenario.setTo(taskId: state.taskId)
     }
     
     override func handle(lifeCycleEvent: PageLifeCycleEvent) async {

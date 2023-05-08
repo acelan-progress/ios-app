@@ -3,19 +3,19 @@
     {
       "identity" : "appconfiguration",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/purenative/AppConfiguration.git",
+      "location" : "https://github.com/purenative/AppConfiguration",
       "state" : {
-        "revision" : "f9d085ade38dc745229eb73a8f6f3a7b6639ea22",
-        "version" : "0.0.1"
+        "branch" : "main",
+        "revision" : "1fefbba311c2b81462806e4365d7c3d708780fee"
       }
     },
     {
       "identity" : "ioswebclient",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/purenative/iOSWebClient.git",
+      "location" : "https://github.com/purenative/iOSWebClient",
       "state" : {
-        "revision" : "0315eb93ae83cf164553811e5d238b50ed379727",
-        "version" : "1.1.2"
+        "branch" : "main",
+        "revision" : "0315eb93ae83cf164553811e5d238b50ed379727"
       }
     },
     {
@@ -30,10 +30,10 @@
     {
       "identity" : "statefularch",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/purenative/StatefulArch",
+      "location" : "https://github.com/purenative/StatefulArch.git",
       "state" : {
-        "revision" : "839824ca200c8f1ecc6219f06a6838d20735f03f",
-        "version" : "0.1.1"
+        "branch" : "main",
+        "revision" : "54cf6e8abbb9a141f9ca51124c66a3376b3fdce4"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/purenative/SwiftDI.git",
       "state" : {
-        "revision" : "9976875b6a5fda81c156743bf53cb95ce0ebeb3f",
-        "version" : "0.0.2"
+        "branch" : "main",
+        "revision" : "9976875b6a5fda81c156743bf53cb95ce0ebeb3f"
       }
     }
   ],
