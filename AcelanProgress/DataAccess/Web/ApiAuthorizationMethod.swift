@@ -11,7 +11,7 @@ import WebClient
 final class ApiAuthorizationMethod: AuthorizationMethod {
     
     public func preparedValue(using token: String?) -> String {
-        guard let token = token else {
+        guard let token else {
             return ""
         }
 
