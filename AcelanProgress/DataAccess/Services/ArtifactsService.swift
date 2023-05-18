@@ -11,18 +11,10 @@ import WebClient
 
 final class ArtifactsService {
     
-    private let webClient: WebClient
+    let downloadManager: DownloadManager
     
     init(serviceProvider: ServiceProvider) {
-        self.webClient = serviceProvider.provideService()
-    }
-    
-    func downloadArtifact(_ url: URL) {
-        
-    }
-    
-    func removeArtifact(_ url: URL) {
-        
+        self.downloadManager = serviceProvider.provideService()
     }
     
 }

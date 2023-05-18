@@ -13,7 +13,7 @@ final class ArtifactsMainInterceptor: PageInterceptor<ArtifactsMainAction, Artif
     override func handle(action: ArtifactsMainAction) async {
         switch action {
         case let .openModelViewer(artifactItem):
-            NavigationService.push(using: ModelViewerBuilder.main)
+            NavigationService.push(using: ModelViewerModuleBuilder.main)
         }
     }
     

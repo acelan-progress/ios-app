@@ -10,5 +10,6 @@ import Foundation
 enum TasksDetailAction {
     
     case goBack
+    case downloadArtifact
     
 }

@@ -1,5 +1,5 @@
 //
-//  ModelViewerBuilder.swift
+//  ModelViewerModuleBuilder.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 01.05.2023.
@@ -8,7 +8,7 @@
 import Foundation
 import StatefulArch
 
-enum ModelViewerBuilder: ModuleBuilder {
+enum ModelViewerModuleBuilder: ModuleBuilder {
     
     case main
     

@@ -24,6 +24,12 @@ final class TasksDetailScenario: PageScenario {
     @Published
     var loading: Bool = false
     
+    @Published
+    var downloadingArtifact: Bool = false
+    
+    @Published
+    var artifactDownloadProgress: Double = .zero
+    
 }
 
 extension TasksDetailScenario: TasksDetailScenarioProtocol, ErrorHandler {
@@ -40,6 +46,14 @@ extension TasksDetailScenario: TasksDetailScenarioProtocol, ErrorHandler {
         $loading.assign(to: &loadingPublisher)
     }
     
+    func bindFrom(downloadingArtifactPublisher: inout Published<Bool>.Publisher) {
+        $downloadingArtifact.assign(to: &downloadingArtifactPublisher)
+    }
+    
+    func bindFrom(artifactDownloadProgressPublisher: inout Published<Double>.Publisher) {
+        $artifactDownloadProgress.assign(to: &artifactDownloadProgressPublisher)
+    }
+    
     func loadTask() async {
         loading = true
         
@@ -52,6 +66,12 @@ extension TasksDetailScenario: TasksDetailScenarioProtocol, ErrorHandler {
         }
         
         loading = false
+    }
+    
+    func downloadArtifact() async {
+        downloadingArtifact = true
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
+        downloadingArtifact = false
     }
     
 }

@@ -20,6 +20,9 @@ final class TasksDetailInterceptor: PageInterceptor<TasksDetailAction, TasksDeta
         switch action {
         case .goBack:
             NavigationService.pop()
+            
+        case .downloadArtifact:
+            await scenario.downloadArtifact()
         }
     }
     
@@ -27,6 +30,8 @@ final class TasksDetailInterceptor: PageInterceptor<TasksDetailAction, TasksDeta
         scenario.bindFrom(loadingPublisher: &state.$loading)
         scenario.bindFrom(acelanTaskPublisher: &state.$acelanTask)
         scenario.setTo(taskId: state.taskId)
+        scenario.bindFrom(downloadingArtifactPublisher: &state.$downloadingArtifact)
+        scenario.bindFrom(artifactDownloadProgressPublisher: &state.$artifactDownloadProgress)
     }
     
     override func handle(lifeCycleEvent: PageLifeCycleEvent) async {

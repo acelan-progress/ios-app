@@ -15,7 +15,11 @@ protocol TasksDetailScenarioProtocol: PageScenario {
     
     func bindFrom(acelanTaskPublisher: inout Published<AcelanTask?>.Publisher)
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher)
+    func bindFrom(downloadingArtifactPublisher: inout Published<Bool>.Publisher)
+    func bindFrom(artifactDownloadProgressPublisher: inout Published<Double>.Publisher)
     
     func loadTask() async
+    
+    func downloadArtifact() async
     
 }

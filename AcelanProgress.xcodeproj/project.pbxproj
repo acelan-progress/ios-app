@@ -12,7 +12,7 @@
 		9D12F5B429FFB9390019625E /* ArtifactsMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */; };
 		9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B529FFBD540019625E /* ItemOverlayView.swift */; };
 		9D12F5B829FFC1260019625E /* PrimaryTextFieldKeyboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */; };
-		9D12F5BC29FFD7A80019625E /* ModelViewerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */; };
+		9D12F5BC29FFD7A80019625E /* ModelViewerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5BB29FFD7A80019625E /* ModelViewerModuleBuilder.swift */; };
 		9D12F5BF29FFDBA40019625E /* ModelViewerMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5BE29FFDBA40019625E /* ModelViewerMainAction.swift */; };
 		9D12F5C129FFDBF30019625E /* ModelViewerMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */; };
 		9D12F5C329FFDC260019625E /* airplane.ply in Resources */ = {isa = PBXBuildFile; fileRef = 9D12F5C229FFDC260019625E /* airplane.ply */; };
@@ -45,6 +45,8 @@
 		9D32B6352A08CFE8001095D4 /* WebClient in Frameworks */ = {isa = PBXBuildFile; productRef = 9D32B6342A08CFE8001095D4 /* WebClient */; };
 		9D32B6382A08D010001095D4 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 9D32B6372A08D010001095D4 /* AppConfiguration */; };
 		9D32B63B2A08D03D001095D4 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 9D32B63A2A08D03D001095D4 /* SwiftDI */; };
+		9D32B63D2A08DBAF001095D4 /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32B63C2A08DBAF001095D4 /* DownloadProgressView.swift */; };
+		9D486D092A16BF51006AD451 /* DownloadProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D486D082A16BF51006AD451 /* DownloadProgressTracker.swift */; };
 		9D5A801F29BB9D5300648BA1 /* AcelanProgressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */; };
 		9D5A802329BB9D5900648BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5A802229BB9D5900648BA1 /* Assets.xcassets */; };
 		9D6530722A015A2100434A94 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530712A015A2100434A94 /* String+Date.swift */; };
@@ -57,6 +59,7 @@
 		9D7692BA29FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692B929FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift */; };
 		9D7692BD29FA7F3A00EE0B53 /* ArtifactsMainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692BC29FA7F3A00EE0B53 /* ArtifactsMainAction.swift */; };
 		9D7692BF29FA7F7400EE0B53 /* ArtifactsMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7692BE29FA7F7400EE0B53 /* ArtifactsMainState.swift */; };
+		9D78603D2A1404D3003B6038 /* DownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78603C2A1404D3003B6038 /* DownloadProgress.swift */; };
 		9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D3C29F553000033B5AF /* TasksModuleBuilder.swift */; };
 		9D7D4D4029F5533A0033B5AF /* TasksMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D3F29F5533A0033B5AF /* TasksMainPage.swift */; };
 		9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D4129F553490033B5AF /* TasksMainState.swift */; };
@@ -76,7 +79,7 @@
 		9D7D4D6429F5947D0033B5AF /* ProfileMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */; };
 		9D7D4D6729F5955C0033B5AF /* HLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D4D6629F5955C0033B5AF /* HLabel.swift */; };
 		9D7D991C29F6F271008AC934 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991B29F6F271008AC934 /* Loader.swift */; };
-		9D7D991F29F6F441008AC934 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991E29F6F441008AC934 /* Loading.swift */; };
+		9D7D991F29F6F441008AC934 /* LoadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991E29F6F441008AC934 /* LoadingModifier.swift */; };
 		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
 		9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40229F5097400A85AF5 /* AcelanTask.swift */; };
 		9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */; };
@@ -103,6 +106,7 @@
 		9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */; };
 		9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */; };
 		9DA57C2129F4525B00B3BBAE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItem.swift */; };
+		9DAF64CF2A100DC4004382C8 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF64CE2A100DC4004382C8 /* DownloadManager.swift */; };
 		9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */; };
 		9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */; };
 		9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */; };
@@ -131,7 +135,7 @@
 		9D12F5B329FFB9390019625E /* ArtifactsMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainPage.swift; sourceTree = "<group>"; };
 		9D12F5B529FFBD540019625E /* ItemOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemOverlayView.swift; sourceTree = "<group>"; };
 		9D12F5B729FFC1260019625E /* PrimaryTextFieldKeyboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldKeyboardType.swift; sourceTree = "<group>"; };
-		9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerBuilder.swift; sourceTree = "<group>"; };
+		9D12F5BB29FFD7A80019625E /* ModelViewerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerModuleBuilder.swift; sourceTree = "<group>"; };
 		9D12F5BE29FFDBA40019625E /* ModelViewerMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainAction.swift; sourceTree = "<group>"; };
 		9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainState.swift; sourceTree = "<group>"; };
 		9D12F5C229FFDC260019625E /* airplane.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airplane.ply; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 		9D12F5FE2A003C080019625E /* TasksMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainScenarioProtocol.swift; sourceTree = "<group>"; };
 		9D12F6002A0041180019625E /* TasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksService.swift; sourceTree = "<group>"; };
 		9D12F6022A00498C0019625E /* TasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksResponse.swift; sourceTree = "<group>"; };
+		9D32B63C2A08DBAF001095D4 /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressView.swift; sourceTree = "<group>"; };
+		9D486D082A16BF51006AD451 /* DownloadProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressTracker.swift; sourceTree = "<group>"; };
 		9D5A801B29BB9D5300648BA1 /* AcelanProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcelanProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5A801E29BB9D5300648BA1 /* AcelanProgressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanProgressApp.swift; sourceTree = "<group>"; };
 		9D5A802229BB9D5900648BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		9D7692B929FA7F1400EE0B53 /* ArtifactsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsModuleBuilder.swift; sourceTree = "<group>"; };
 		9D7692BC29FA7F3A00EE0B53 /* ArtifactsMainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainAction.swift; sourceTree = "<group>"; };
 		9D7692BE29FA7F7400EE0B53 /* ArtifactsMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainState.swift; sourceTree = "<group>"; };
+		9D78603C2A1404D3003B6038 /* DownloadProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgress.swift; sourceTree = "<group>"; };
 		9D7D4D3C29F553000033B5AF /* TasksModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModuleBuilder.swift; sourceTree = "<group>"; };
 		9D7D4D3F29F5533A0033B5AF /* TasksMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainPage.swift; sourceTree = "<group>"; };
 		9D7D4D4129F553490033B5AF /* TasksMainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksMainState.swift; sourceTree = "<group>"; };
@@ -192,7 +199,7 @@
 		9D7D4D6329F5947D0033B5AF /* ProfileMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainPage.swift; sourceTree = "<group>"; };
 		9D7D4D6629F5955C0033B5AF /* HLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLabel.swift; sourceTree = "<group>"; };
 		9D7D991B29F6F271008AC934 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		9D7D991E29F6F441008AC934 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		9D7D991E29F6F441008AC934 /* LoadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModifier.swift; sourceTree = "<group>"; };
 		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
 		9DA4A40229F5097400A85AF5 /* AcelanTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTask.swift; sourceTree = "<group>"; };
 		9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskDateFormatter.swift; sourceTree = "<group>"; };
@@ -218,6 +225,7 @@
 		9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
 		9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		9DA57C2029F4525B00B3BBAE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		9DAF64CE2A100DC4004382C8 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailState.swift; sourceTree = "<group>"; };
 		9DBFAA0F29F7D344001F27DC /* TasksDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailAction.swift; sourceTree = "<group>"; };
@@ -257,7 +265,7 @@
 		9D12F5BA29FFD7940019625E /* ModelViewer */ = {
 			isa = PBXGroup;
 			children = (
-				9D12F5BB29FFD7A80019625E /* ModelViewerBuilder.swift */,
+				9D12F5BB29FFD7A80019625E /* ModelViewerModuleBuilder.swift */,
 				9D12F5BD29FFD7AF0019625E /* ModelViewerMain */,
 			);
 			path = ModelViewer;
@@ -318,6 +326,7 @@
 		9D12F5E82A0029C10019625E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9D78603B2A1404BC003B6038 /* DownloadManager */,
 				9D12F5E92A0029C90019625E /* ErrorProcessing */,
 			);
 			path = Utilities;
@@ -388,6 +397,16 @@
 			path = ArtifactsMain;
 			sourceTree = "<group>";
 		};
+		9D78603B2A1404BC003B6038 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF64CE2A100DC4004382C8 /* DownloadManager.swift */,
+				9D78603C2A1404D3003B6038 /* DownloadProgress.swift */,
+				9D486D082A16BF51006AD451 /* DownloadProgressTracker.swift */,
+			);
+			path = DownloadManager;
+			sourceTree = "<group>";
+		};
 		9D7AF9DE29F4019200E7C9E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +424,7 @@
 				9D7D991B29F6F271008AC934 /* Loader.swift */,
 				9D12F5C829FFDE550019625E /* DeleteButton.swift */,
 				9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */,
+				9D32B63C2A08DBAF001095D4 /* DownloadProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -485,7 +505,7 @@
 		9D7D991D29F6F411008AC934 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D991E29F6F441008AC934 /* Loading.swift */,
+				9D7D991E29F6F441008AC934 /* LoadingModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -752,11 +772,11 @@
 				9DA57BFF29F4263200B3BBAE /* PrimaryTextFieldState.swift in Sources */,
 				9D12F5C129FFDBF30019625E /* ModelViewerMainState.swift in Sources */,
 				9D12F5F72A002BF70019625E /* DecodingError.swift in Sources */,
-				9D7D991F29F6F441008AC934 /* Loading.swift in Sources */,
+				9D7D991F29F6F441008AC934 /* LoadingModifier.swift in Sources */,
 				9D12F5F52A002AF40019625E /* Strings.swift in Sources */,
 				9D7D4D5E29F592BE0033B5AF /* ProfileMainInterceptor.swift in Sources */,
 				9D12F5B029FD66810019625E /* ArtifactItem.swift in Sources */,
-				9D12F5BC29FFD7A80019625E /* ModelViewerBuilder.swift in Sources */,
+				9D12F5BC29FFD7A80019625E /* ModelViewerModuleBuilder.swift in Sources */,
 				9DA4A40D29F50EA200A85AF5 /* AcelanTaskFileType.swift in Sources */,
 				9DA57C0A29F435E800B3BBAE /* LoginMainPage.swift in Sources */,
 				9D7D4D4429F553B30033B5AF /* TasksMainInterceptor.swift in Sources */,
@@ -790,6 +810,8 @@
 				9D12F5FF2A003C080019625E /* TasksMainScenarioProtocol.swift in Sources */,
 				9D12F6032A00498C0019625E /* TasksResponse.swift in Sources */,
 				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
+				9D32B63D2A08DBAF001095D4 /* DownloadProgressView.swift in Sources */,
+				9D78603D2A1404D3003B6038 /* DownloadProgress.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,
 				9DBFAA1629F7F2E0001F27DC /* Separator.swift in Sources */,
@@ -811,6 +833,7 @@
 				9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */,
 				9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */,
 				9D6530762A0163C600434A94 /* TasksDetailScenarioProtocol.swift in Sources */,
+				9DAF64CF2A100DC4004382C8 /* DownloadManager.swift in Sources */,
 				9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */,
 				9D12F5F32A002A7D0019625E /* AppErrorProcessor.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,
@@ -819,6 +842,7 @@
 				9D12F5D329FFF1A00019625E /* ApiRouter.swift in Sources */,
 				9D7D4D4E29F58F790033B5AF /* TabBarItem.swift in Sources */,
 				9D12F5C729FFDCE50019625E /* ModelViewerMainPage.swift in Sources */,
+				9D486D092A16BF51006AD451 /* DownloadProgressTracker.swift in Sources */,
 				9D12F5C529FFDC7E0019625E /* ModelViewerMainInterceptor.swift in Sources */,
 				9D12F5B629FFBD540019625E /* ItemOverlayView.swift in Sources */,
 				9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */,
@@ -961,7 +985,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -994,7 +1018,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

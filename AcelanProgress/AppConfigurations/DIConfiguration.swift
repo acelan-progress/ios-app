@@ -60,6 +60,16 @@ extension DIConfiguration {
             return client
         }
         
+        container.registerDependency(DownloadManager.self, scope: .instance) {
+            let session = URLSession(configuration: .default)
+            let downloadManager = DownloadManager(session: session)
+            return downloadManager
+        }
+        
+        container.registerDependency(ArtifactsService.self) {
+            ArtifactsService(serviceProvider: container)
+        }
+        
         container.registerDependency(ApiClient.self) {
             ApiClient(serviceProvider: container)
         }
