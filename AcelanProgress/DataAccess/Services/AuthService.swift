@@ -8,17 +8,18 @@
 import Foundation
 import StatefulArch
 
-final class AuthService {
+final class AuthService: ErrorHandler {
     
     private let apiClient: ApiClient
-    private let tokenStorage: TokenStorage
+    private let tokenStorage: JSONWebTokenStorage
     private let appDataStorageService: AppDataStorageService
+    private let artifactsRepository: ArtifactsRepository
     
     init(serviceProvider: ServiceProvider) {
         self.apiClient = serviceProvider.provideService()
         self.tokenStorage = serviceProvider.provideService()
         self.appDataStorageService = serviceProvider.provideService()
-        
+        self.artifactsRepository = serviceProvider.provideService()
     }
     
     func performLogIn(email: String, password: String) async throws {
@@ -29,6 +30,8 @@ final class AuthService {
     }
     
     func performLogOut() async throws {
+        try await artifactsRepository.deleteAllArtifacts()
+        
         tokenStorage.clearToken()
         appDataStorageService.clearAppData()
     }

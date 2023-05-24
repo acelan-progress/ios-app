@@ -11,9 +11,9 @@ import Combine
 final class ProfileMainState: ObservableObject {
     
     @Published
-    var email: String = "email@example.com"
+    var email: String = .dash
     
     @Published
-    var loading: Bool = false
+    var loading = false
     
 }

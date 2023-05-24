@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 protocol TasksMainScenarioProtocol {
     
-    func refreshTasks() async
+    func loadTasks() async
     
     func bindFrom(tasksPublisher: inout Published<[AcelanTask]>.Publisher)
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher)

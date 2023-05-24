@@ -34,5 +34,9 @@ struct AcelanTask: Decodable {
         return nil
         
     }
+    
+    var supportedArtifact: AcelanTaskArtifact? {
+        artifacts?.filter { $0.fileType == AcelanTaskFileType.ply }.first
+    }
 
 }

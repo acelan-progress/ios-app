@@ -11,10 +11,14 @@ import WebClient
 
 final class ArtifactsService {
     
-    let downloadManager: DownloadManager
+    private let session: URLSession
     
-    init(serviceProvider: ServiceProvider) {
-        self.downloadManager = serviceProvider.provideService()
+    init(session: URLSession) {
+        self.session = session
+    }
+    
+    func downloadArtifact(from sourceURL: URL, to destinationURL: URL) async throws {
+        let _ = try await session.download(from: sourceURL, to: destinationURL)
     }
     
 }

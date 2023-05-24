@@ -18,6 +18,7 @@ enum DIConfiguration: AppConfigurationModule {
     static func setup() {
         setupScenarios(in: container)
         setupServices(in: container)
+        setupRepositories(in: container)
     }
     
 }
@@ -40,37 +41,40 @@ extension DIConfiguration {
         container.registerDependency(TasksDetailScenarioProtocol.self) {
             TasksDetailScenario(serviceProvider: container)
         }
+        
+        container.registerDependency(ModelViewerScenarioProtocol.self) {
+            ModelViewerScenario(serviceProvider: container)
+        }
+        
+        container.registerDependency(ArtifactsMainScenarioProtocol.self) {
+            ArtifactsMainScenario(serviceProvider: container)
+        }
     }
     
     static func setupServices(in container: DIContainer) {
-        container.registerDependency(TokenStorage.self) {
-            TokenStorage()
+        container.registerDependency(JSONWebTokenStorage.self) {
+            JSONWebTokenStorage()
         }
         
         container.registerDependency(WebClient.self, scope: .instance) {
             let urlSessionConfiguration = URLSessionConfiguration.default
             urlSessionConfiguration.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
             let session = URLSession(configuration: urlSessionConfiguration)
-            let tokenStorage: TokenStorage = container.provideService()
+            let tokenStorage: JSONWebTokenStorage = container.provideService()
             let client = WebClient(
                 session: session,
-                authorizationMethods: [ApiAuthorizationMethod()],
+                authorizationMethods: [BearerAuthorizationMethod()],
                 authorizationTokenStorage: tokenStorage
             )
             return client
         }
         
-        container.registerDependency(DownloadManager.self, scope: .instance) {
-            let session = URLSession(configuration: .default)
-            let downloadManager = DownloadManager(session: session)
-            return downloadManager
-        }
-        
         container.registerDependency(ArtifactsService.self) {
-            ArtifactsService(serviceProvider: container)
+            let session = URLSession(configuration: .default)
+            return ArtifactsService(session: session)
         }
         
-        container.registerDependency(ApiClient.self) {
+        container.registerDependency(ApiClient.self, scope: .instance) {
             ApiClient(serviceProvider: container)
         }
         
@@ -84,6 +88,12 @@ extension DIConfiguration {
         
         container.registerDependency(TasksService.self) {
             TasksService(serviceProvider: container)
+        }
+    }
+    
+    static func setupRepositories(in container: DIContainer) {
+        container.registerDependency(ArtifactsRepository.self, scope: .instance) {
+            ArtifactsRepository()
         }
     }
     

@@ -15,41 +15,29 @@ protocol ArtifactItemData: Identifiable {
     
 }
 
-#if DEBUG
-enum ArtifactItemMock: String, CaseIterable, ArtifactItemData {
+enum ArtifactItem: ArtifactItemData {
     
-    case airplane
-    case car
+    case acelanTaskArtifact(AcelanTaskArtifact)
     
     var id: String {
         switch self {
-        case .airplane:
-            return 1.asString()
-            
-        case .car:
-            return 2.asString()
+        case let .acelanTaskArtifact(acelanTaskArtifact):
+            return acelanTaskArtifact.id.asString()
         }
     }
     
     var fileType: String {
         switch self {
-        case .airplane:
-            return "ply"
-            
-        case .car:
-            return "obj"
+        case let .acelanTaskArtifact(acelanTaskArtifact):
+            return acelanTaskArtifact.file_type
         }
     }
     
     var url: String {
         switch self {
-        case .airplane:
-            return "https://acelan.ru/artifacts/airplane.ply"
-            
-        case .car:
-            return "https://acelan.ru/artifacts/car.obj"
+        case let .acelanTaskArtifact(acelanTaskArtifact):
+            return acelanTaskArtifact.url
         }
     }
     
 }
-#endif

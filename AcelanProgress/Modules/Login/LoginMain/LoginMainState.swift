@@ -18,6 +18,6 @@ final class LoginMainState: ObservableObject {
     var password: String = .empty
     
     @Published
-    var loading: Bool = false
+    var loading = false
     
 }

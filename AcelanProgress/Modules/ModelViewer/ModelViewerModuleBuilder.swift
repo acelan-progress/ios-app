@@ -10,12 +10,12 @@ import StatefulArch
 
 enum ModelViewerModuleBuilder: ModuleBuilder {
     
-    case main
+    case main(artifactId: Int)
     
     func buildModule(serviceProvider: ServiceProvider) -> ModuleConvertible {
         switch self {
-        case .main:
-            let state = ModelViewerMainState()
+        case let .main(artifactId):
+            let state = ModelViewerMainState(artifactId: artifactId)
             let interceptor = ModelViewerMainInterceptor(state: state, serviceProvider: serviceProvider)
             return ModelViewerMainPage(
                 state: state,

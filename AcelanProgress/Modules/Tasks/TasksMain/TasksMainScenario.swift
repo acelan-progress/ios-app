@@ -13,10 +13,10 @@ final class TasksMainScenario: PageScenario {
     private var tasksService: TasksService!
     
     @Published
-    var tasks: [AcelanTask] = []
+    var tasks = [AcelanTask]()
     
     @Published
-    var loading: Bool = false
+    var loading = false
     
     override func provideServices(with serviceProvider: ServiceProvider) {
         serviceProvider.provide(service: &tasksService)
@@ -26,18 +26,19 @@ final class TasksMainScenario: PageScenario {
 
 extension TasksMainScenario: TasksMainScenarioProtocol, ErrorHandler {
     
-    func refreshTasks() async {
+    func loadTasks() async {
+        defer {
+            loading = false
+        }
         loading = true
         
-        let result = await handleErrorIn(action: {
+        let result = await handleError {
             try await tasksService.getTasks()
-        })
+        }
         
         if let tasks = result.value {
             self.tasks = tasks
         }
-        
-        loading = false
     }
     
     func bindFrom(tasksPublisher: inout Published<[AcelanTask]>.Publisher) {

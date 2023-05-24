@@ -20,7 +20,7 @@ extension ErrorHandler {
     }
     
     @discardableResult
-    func handleErrorIn<Success>(action: () async throws -> Success) async -> Result<Success, Error> {
+    func handleError<Success>(in action: () async throws -> Success) async -> Result<Success, Error> {
         do {
             let result = try await action()
             return .success(result)

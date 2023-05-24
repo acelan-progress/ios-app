@@ -12,14 +12,27 @@ import SceneKit
 final class ModelViewerMainState: ObservableObject {
     
     @Published
-    var modelName = "airplane.ply"
+    var modelFilename: String?
+    
+    @Published
+    var loading = false
+    
+    let artifactId: Int
+    
+    init(artifactId: Int) {
+        self.artifactId = artifactId
+    }
     
 }
 
 extension ModelViewerMainState {
     
     var modelScene: SCNScene? {
-        SCNScene(named: modelName)
+        guard let modelFileURL = modelFilename?.modelFileURL else {
+            return nil
+        }
+        
+        return try? SCNScene(url: modelFileURL)
     }
     
 }

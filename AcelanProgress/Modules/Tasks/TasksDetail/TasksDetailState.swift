@@ -16,20 +16,13 @@ final class TasksDetailState: ObservableObject {
     var acelanTask: AcelanTask?
     
     @Published
-    var loading: Bool
+    var loading = false
     
     @Published
-    var downloadingArtifact: Bool
+    var artifactId: Int?
     
-    @Published
-    var artifactDownloadProgress: Double
-    
-    init(taskId: Int, acelanTask: AcelanTask? = nil, loading: Bool = false, downloadingArtifact: Bool = false, downloadingArtifactProgress: Double = .zero) {
+    init(taskId: Int) {
         self.taskId = taskId
-        self.acelanTask = acelanTask
-        self.loading = loading
-        self.downloadingArtifact = downloadingArtifact
-        self.artifactDownloadProgress = downloadingArtifactProgress
     }
     
 }
@@ -37,25 +30,21 @@ final class TasksDetailState: ObservableObject {
 extension TasksDetailState {
     
     var taskItem: TaskItem? {
-        if let acelanTask {
-            return TaskItem.task(acelanTask)
+        guard let acelanTask else {
+            return nil
         }
-        return nil
+        return TaskItem.acelanTask(acelanTask)
     }
     
-    var showArtifactButton: Bool {
+    var taskHasArtifacts: Bool {
         guard let artifacts = acelanTask?.artifacts else {
             return false
         }
         return !artifacts.isEmpty
     }
     
-    var artifactButtonTitle: String {
-        artifactDownloaded ? "View Artifact" : "Download Artifact"
-    }
-    
     var artifactDownloaded: Bool {
-        false
+        artifactId != nil
     }
     
 }

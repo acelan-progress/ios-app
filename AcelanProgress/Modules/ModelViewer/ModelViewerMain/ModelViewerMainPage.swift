@@ -33,11 +33,6 @@ struct ModelViewerMainPage: PageView {
                 options: [.allowsCameraControl, .autoenablesDefaultLighting]
             )
         }
-    }
-}
-
-struct ModelViewerPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
+        .loading($state.loading)
     }
 }

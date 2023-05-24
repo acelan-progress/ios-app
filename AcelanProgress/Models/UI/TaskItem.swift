@@ -22,46 +22,46 @@ protocol TaskItemData: Identifiable {
 
 enum TaskItem: TaskItemData {
 
-    case task(AcelanTask)
+    case acelanTask(AcelanTask)
     
     var id: String {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             return acelanTask.id.asString()
         }
     }
     
     var name: String {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             return acelanTask.name
         }
     }
     
     var status: String {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             return acelanTask.acelanTaskStatus.name
         }
     }
     
     var statusBackgroundColor: Color {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             return .resource(acelanTask.acelanTaskStatus.backgroundColorResource)
         }
     }
     
     var statusTitleColor: Color {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             return .resource(acelanTask.acelanTaskStatus.titleColorResource)
         }
     }
     
     var startedAt: String {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             if let startedAtDate = acelanTask.startedAtDate {
                 return AcelanTaskDateFormatter.format(startedAtDate)
             }
@@ -71,7 +71,7 @@ enum TaskItem: TaskItemData {
     
     var finishedAt: String {
         switch self {
-        case let .task(acelanTask):
+        case let .acelanTask(acelanTask):
             if let finishedAtDate = acelanTask.finishedAtDate {
                 return AcelanTaskDateFormatter.format(finishedAtDate)
             }

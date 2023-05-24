@@ -26,7 +26,7 @@ struct PrimaryTextField: View {
         self.placeholder = placeholder
         self.keyboardType = keyboardType
         self.isSecureTextEntry = isSecureTextEntry
-        _text = text
+        self._text = text
     }
     
     var body: some View {

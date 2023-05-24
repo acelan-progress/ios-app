@@ -11,9 +11,17 @@ import Combine
 final class ArtifactsMainState: ObservableObject {
     
     @Published
-    var artifactItems = ArtifactItemMock.allCases
+    var loading = false
     
     @Published
-    var loading = false
+    var acelanTaskArtifacts = [AcelanTaskArtifact]()
+    
+}
+
+extension ArtifactsMainState {
+    
+    var artifactItems: [ArtifactItem] {
+        return acelanTaskArtifacts.map(ArtifactItem.acelanTaskArtifact)
+    }
     
 }

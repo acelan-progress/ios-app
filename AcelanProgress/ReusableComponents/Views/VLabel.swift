@@ -2,10 +2,11 @@
 //  VLabel.swift
 //  AcelanProgress
 //
-//  Created by Mikhail Yeremeyev on 27.04.2023.
+//  Created by Mikhail Yeremeyev on 23.04.2023.
 //
 
 import SwiftUI
+import PNComponents
 
 struct VLabel: View {
     
@@ -13,7 +14,7 @@ struct VLabel: View {
     let content: String
     
     var body: some View {
-        HStack(alignment: .top, spacing: 5) {
+        VStack(alignment: .leading, spacing: 10) {
             Text(title)
                 .font(.system(size: 16))
                 .foregroundColor(.resource(.DarkGray))
@@ -22,15 +23,16 @@ struct VLabel: View {
                 .font(.system(size: 16))
                 .foregroundColor(.resource(.Black))
         }
-        .frame(height: 25)
+        .alignment(.leading)
     }
+
 }
 
-struct VerticalLabel_Previews: PreviewProvider {
+struct AcelanLabel_Previews: PreviewProvider {
     static var previews: some View {
         VLabel(
             title: "Email",
             content: "email@example.com"
-        )
+        ).padding(20)
     }
 }

@@ -21,7 +21,7 @@ struct ProfileMainPage: PageView {
             NavigationBar(title: "Profile")
             
             VStack(alignment: .leading, spacing: 10) {
-                HLabel(title: "Email", content: state.email)
+                VLabel(title: "Email", content: state.email)
                 
                 SecondaryButton(
                     title: "Log Out",

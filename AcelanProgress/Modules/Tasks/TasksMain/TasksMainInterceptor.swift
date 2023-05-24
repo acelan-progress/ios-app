@@ -20,21 +20,21 @@ final class TasksMainInterceptor: PageInterceptor<TasksMainAction, TasksMainStat
         switch action {
         case let .openTaskItemDetail(taskItem):
             switch taskItem {
-            case let .task(acelanTask):
+            case let .acelanTask(acelanTask):
                 NavigationService.push(using: TasksModuleBuilder.detail(taskId: acelanTask.id))
             }
         }
     }
     
     override func subscribe(withState state: inout TasksMainState) {
-        scenario.bindFrom(loadingPublisher: &state.$loading)
         scenario.bindFrom(tasksPublisher: &state.$tasks)
+        scenario.bindFrom(loadingPublisher: &state.$loading)
     }
     
     override func handle(lifeCycleEvent: PageLifeCycleEvent) async {
         switch lifeCycleEvent {
         case .willAppear:
-            await scenario.refreshTasks()
+            await scenario.loadTasks()
         
         default:
             break

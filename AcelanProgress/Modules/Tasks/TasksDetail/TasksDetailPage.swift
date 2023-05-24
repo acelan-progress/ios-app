@@ -23,7 +23,8 @@ struct TasksDetailPage: PageView {
                     leadingItem: .backButton(
                         action: {
                             interceptor.call(action: .goBack)
-                        })
+                        }
+                    )
                 )
                 
                 ScrollView {
@@ -35,18 +36,28 @@ struct TasksDetailPage: PageView {
                                 statusTitleColor: taskItem.statusTitleColor
                             )
                             
-                            HLabel(title: "ID", content: taskItem.id)
-                            HLabel(title: "Name", content: taskItem.name)
-                            HLabel(title: "Started at", content: taskItem.startedAt)
-                            HLabel(title: "Finished at", content: taskItem.finishedAt)
+                            VLabel(title: "ID", content: taskItem.id)
+                            VLabel(title: "Name", content: taskItem.name)
+                            VLabel(title: "Started at", content: taskItem.startedAt)
+                            VLabel(title: "Finished at", content: taskItem.finishedAt)
                             
-                            if state.showArtifactButton {
-                                PrimaryButton(
-                                    title: state.artifactButtonTitle,
-                                    action: {
-                                        interceptor.call(action: .downloadArtifact)
-                                    }
-                                )
+                            if state.taskHasArtifacts {
+                                if !state.artifactDownloaded {
+                                    PrimaryButton(
+                                        title: "Download Artifact",
+                                        action: {
+                                            interceptor.call(action: .downloadArtifact)
+                                        }
+                                    )
+                                } else if let artifactId = state.artifactId {
+                                    PrimaryButton(
+                                        title: "View Artifact",
+                                        action: {
+                                            interceptor.call(action: .openModelViewer(artifactId: artifactId))
+                                        }
+                                    )
+                                }
+                                    
                             }
                         }
                     }
@@ -55,14 +66,6 @@ struct TasksDetailPage: PageView {
                 }
             }
             .loading($state.loading)
-            
-            if state.downloadingArtifact {
-                Color.resource(.White)
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-                
-                DownloadProgressView(progress: $state.artifactDownloadProgress)
-            }
         }
     }
 }

@@ -16,10 +16,10 @@ extension DecodingError: CustomStringConvertible {
             return "Type mismatch for \'\(any)\': " + context.description
             
         case .valueNotFound(let any, let context):
-            return "Value not found for type \'\(any)\':" + context.description
+            return "Value not found for type \'\(any)\': " + context.description
             
         case .keyNotFound(let codingKey, let context):
-            return "Key not found for \'\(codingKey)\':" + context.description
+            return "Key not found for \'\(codingKey)\': " + context.description
             
         case .dataCorrupted(let context):
             return "Data corrupted: " + context.description
