@@ -17,20 +17,21 @@ final class LoginMainScenario: PageScenario {
     }
     
     @Published
-    var loading: Bool = false
+    var loading = false
     
 }
 
 extension LoginMainScenario: LoginMainScenarioProtocol, ErrorHandler {
     
     func performLogIn(email: String, password: String) async -> Bool {
+        defer {
+            loading = false
+        }
         loading = true
         
-        let result = await handleErrorIn {
+        let result = await handleError {
             try await authService.performLogIn(email: email, password: password)
         }
-        
-        loading = false
         
         return result.isSuccess
     }

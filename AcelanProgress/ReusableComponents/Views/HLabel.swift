@@ -2,11 +2,10 @@
 //  HLabel.swift
 //  AcelanProgress
 //
-//  Created by Mikhail Yeremeyev on 23.04.2023.
+//  Created by Mikhail Yeremeyev on 27.04.2023.
 //
 
 import SwiftUI
-import PNComponents
 
 struct HLabel: View {
     
@@ -14,7 +13,7 @@ struct HLabel: View {
     let content: String
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        HStack(alignment: .top, spacing: 5) {
             Text(title)
                 .font(.system(size: 16))
                 .foregroundColor(.resource(.DarkGray))
@@ -23,16 +22,15 @@ struct HLabel: View {
                 .font(.system(size: 16))
                 .foregroundColor(.resource(.Black))
         }
-        .alignment(.leading)
+        .frame(height: 25)
     }
-
 }
 
-struct AcelanLabel_Previews: PreviewProvider {
+struct VerticalLabel_Previews: PreviewProvider {
     static var previews: some View {
         HLabel(
             title: "Email",
             content: "email@example.com"
-        ).padding(20)
+        )
     }
 }

@@ -19,7 +19,7 @@ final class ProfileMainScenario: PageScenario {
     }
     
     @Published
-    var loading: Bool = false
+    var loading = false
     
     @Published
     var email: String = .dash
@@ -29,13 +29,15 @@ final class ProfileMainScenario: PageScenario {
 extension ProfileMainScenario: ProfileMainScenarioProtocol, ErrorHandler {
     
     func performLogout() async {
+        defer {
+            loading = false
+        }
         loading = true
         
-        await handleErrorIn {
+        
+        await handleError {
             try await authService.performLogOut()
         }
-        
-        loading = false
     }
     
     func setEmail() {

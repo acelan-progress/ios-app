@@ -10,17 +10,17 @@ import StatefulArch
 
 final class AppDataStorageService {
     
-    private static let userEmailKey = "AppDataStorageService_userEmail"
+    private let userEmailKey = "AppDataStorageService_userEmail"
     
-    private let tokenStorage: TokenStorage
+    private let tokenStorage: JSONWebTokenStorage
     
     init(serviceProvider: ServiceProvider) {
         self.tokenStorage = serviceProvider.provideService()
     }
     
     var userEmail: String? {
-        get { UserDefaults.standard.string(forKey: Self.userEmailKey) }
-        set { UserDefaults.standard.set(newValue, forKey: Self.userEmailKey) }
+        get { UserDefaults.standard.string(forKey: userEmailKey) }
+        set { UserDefaults.standard.set(newValue, forKey: userEmailKey) }
     }
     
     var isAuthorized: Bool {

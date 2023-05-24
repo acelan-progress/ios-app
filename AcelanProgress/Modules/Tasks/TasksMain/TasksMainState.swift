@@ -11,17 +11,17 @@ import Combine
 final class TasksMainState: ObservableObject {
     
     @Published
-    var tasks: [AcelanTask] = []
+    var tasks = [AcelanTask]()
     
     @Published
-    var loading: Bool = true
+    var loading = false
     
 }
 
 extension TasksMainState {
     
     var taskItems: [TaskItem] {
-        tasks.map(TaskItem.task)
+        tasks.map(TaskItem.acelanTask)
     }
     
 }

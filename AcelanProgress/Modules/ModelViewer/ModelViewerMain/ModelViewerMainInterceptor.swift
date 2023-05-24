@@ -10,6 +10,12 @@ import StatefulArch
 
 final class ModelViewerMainInterceptor: PageInterceptor<ModelViewerMainAction, ModelViewerMainState> {
     
+    private var scenario: ModelViewerScenarioProtocol!
+    
+    override func provideServices(withServiceProvider serviceProvider: ServiceProvider) {
+        serviceProvider.provide(service: &scenario)
+    }
+    
     override func handle(action: ModelViewerMainAction) async {
         switch action {
         case .goBack:
@@ -17,6 +23,23 @@ final class ModelViewerMainInterceptor: PageInterceptor<ModelViewerMainAction, M
             
         case .deleteModel:
             // TODO: - implement model deletion
+            await scenario.deleteModel()
+            NavigationService.pop()
+        }
+    }
+    
+    override func subscribe(withState state: inout ModelViewerMainState) {
+        scenario.setTo(artifactId: state.artifactId)
+        scenario.bindFrom(modelFilenamePublisher: &state.$modelFilename)
+        scenario.bindFrom(loadingPublisher: &state.$loading)
+    }
+    
+    override func handle(lifeCycleEvent: PageLifeCycleEvent) async {
+        switch lifeCycleEvent {
+        case .willAppear:
+            await scenario.loadModel()
+            
+        default:
             break
         }
     }

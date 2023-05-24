@@ -16,12 +16,13 @@ final class TasksDetailState: ObservableObject {
     var acelanTask: AcelanTask?
     
     @Published
-    var loading: Bool
+    var loading = false
     
-    init(taskId: Int, acelanTask: AcelanTask? = nil, loading: Bool = false) {
+    @Published
+    var artifactId: Int?
+    
+    init(taskId: Int) {
         self.taskId = taskId
-        self.acelanTask = acelanTask
-        self.loading = loading
     }
     
 }
@@ -29,10 +30,21 @@ final class TasksDetailState: ObservableObject {
 extension TasksDetailState {
     
     var taskItem: TaskItem? {
-        if let acelanTask {
-            return TaskItem.task(acelanTask)
+        guard let acelanTask else {
+            return nil
         }
-        return nil
+        return TaskItem.acelanTask(acelanTask)
+    }
+    
+    var taskHasArtifacts: Bool {
+        guard let artifacts = acelanTask?.artifacts else {
+            return false
+        }
+        return !artifacts.isEmpty
+    }
+    
+    var artifactDownloaded: Bool {
+        artifactId != nil
     }
     
 }

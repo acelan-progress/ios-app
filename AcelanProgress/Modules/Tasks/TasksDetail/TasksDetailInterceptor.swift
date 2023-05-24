@@ -20,13 +20,21 @@ final class TasksDetailInterceptor: PageInterceptor<TasksDetailAction, TasksDeta
         switch action {
         case .goBack:
             NavigationService.pop()
+            
+        case .downloadArtifact:
+            await scenario.downloadArtifact()
+            
+        case let .openModelViewer(artifactId):
+            NavigationService.push(using: ModelViewerModuleBuilder.main(artifactId: artifactId))
         }
     }
     
     override func subscribe(withState state: inout TasksDetailState) {
-        scenario.bindFrom(loadingPublisher: &state.$loading)
-        scenario.bindFrom(acelanTaskPublisher: &state.$acelanTask)
         scenario.setTo(taskId: state.taskId)
+        
+        scenario.bindFrom(acelanTaskPublisher: &state.$acelanTask)
+        scenario.bindFrom(loadingPublisher: &state.$loading)
+        scenario.bindFrom(artifactIdPublisher: &state.$artifactId)
     }
     
     override func handle(lifeCycleEvent: PageLifeCycleEvent) async {

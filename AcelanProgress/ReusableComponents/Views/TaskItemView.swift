@@ -18,7 +18,7 @@ struct TaskItemView<Item: TaskItemData>: View {
         HStack {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    VLabel(title: "ID:", content: item.id)
+                    HLabel(title: "ID:", content: item.id)
                     
                     Spacer()
                     
@@ -29,9 +29,9 @@ struct TaskItemView<Item: TaskItemData>: View {
                     )
                 }
 
-                VLabel(title: "Name:", content: item.name)
-                VLabel(title: "Started at:", content: item.startedAt)
-                VLabel(title: "Finished at:", content: item.finishedAt)
+                HLabel(title: "Name:", content: item.name)
+                HLabel(title: "Started at:", content: item.startedAt)
+                HLabel(title: "Finished at:", content: item.finishedAt)
             }
             
             Spacer()

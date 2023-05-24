@@ -10,5 +10,7 @@ import Foundation
 enum TasksDetailAction {
     
     case goBack
+    case downloadArtifact
+    case openModelViewer(artifactId: Int)
     
 }

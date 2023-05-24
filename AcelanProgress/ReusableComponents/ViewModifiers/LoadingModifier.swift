@@ -1,5 +1,5 @@
 //
-//  Loading.swift
+//  LoadingModifier.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 24.04.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Loading: ViewModifier {
+struct LoadingModifier: ViewModifier {
     
     @Binding
     var loading: Bool
@@ -35,7 +35,7 @@ struct Loading: ViewModifier {
 extension View {
     
     func loading(_ loading: Binding<Bool>) -> some View {
-        modifier(Loading(loading: loading))
+        modifier(LoadingModifier(loading: loading))
     }
     
 }
