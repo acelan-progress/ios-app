@@ -27,12 +27,3 @@ struct PrimaryButton: View {
     }
 
 }
-
-struct PrimaryButton_Previews: PreviewProvider {
-    static var previews: some View {
-        PrimaryButton(
-            title: "Login",
-            action: {}
-        ).padding(30)
-    }
-}

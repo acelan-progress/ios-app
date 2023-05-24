@@ -27,12 +27,3 @@ struct VLabel: View {
     }
 
 }
-
-struct AcelanLabel_Previews: PreviewProvider {
-    static var previews: some View {
-        VLabel(
-            title: "Email",
-            content: "email@example.com"
-        ).padding(20)
-    }
-}

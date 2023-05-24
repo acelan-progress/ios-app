@@ -50,9 +50,3 @@ struct LoginMainPage: PageView {
     }
 
 }
-
-struct LoginMainPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

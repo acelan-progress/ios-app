@@ -69,9 +69,3 @@ struct TasksDetailPage: PageView {
         }
     }
 }
-
-struct TasksDetailPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

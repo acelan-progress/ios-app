@@ -38,9 +38,3 @@ struct ArtifactsMainPage: PageView {
     }
     
 }
-
-struct ArtifactsMainPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

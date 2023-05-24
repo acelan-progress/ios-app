@@ -28,13 +28,3 @@ struct TaskStatusView: View {
     }
     
 }
-
-struct TaskStatusView_Previews: PreviewProvider {
-    static var previews: some View {
-        TaskStatusView(
-            statusBackgroundColor: .resource(.Pink),
-            statusTitle: "Failure",
-            statusTitleColor: .resource(.DarkRed)
-        )
-    }
-}

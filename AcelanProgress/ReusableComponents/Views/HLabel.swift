@@ -25,12 +25,3 @@ struct HLabel: View {
         .frame(height: 25)
     }
 }
-
-struct VerticalLabel_Previews: PreviewProvider {
-    static var previews: some View {
-        HLabel(
-            title: "Email",
-            content: "email@example.com"
-        )
-    }
-}

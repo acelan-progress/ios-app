@@ -26,9 +26,3 @@ struct SecondaryButton: View {
     }
     
 }
-
-struct SecondaryButton_Previews: PreviewProvider {
-    static var previews: some View {
-        SecondaryButton(title: "Logout", action: {})
-    }
-}

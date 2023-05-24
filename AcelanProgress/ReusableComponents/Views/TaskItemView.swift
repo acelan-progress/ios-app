@@ -43,9 +43,3 @@ struct TaskItemView<Item: TaskItemData>: View {
     }
     
 }
-
-struct TaskItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

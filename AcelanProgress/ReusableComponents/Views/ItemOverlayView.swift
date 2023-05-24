@@ -16,12 +16,3 @@ struct ItemOverlayView: View {
     }
     
 }
-
-struct ItemOverlayView_Previews: PreviewProvider {
-    static var previews: some View {
-        Rectangle()
-            .frame(width: 50, height: 50)
-            .foregroundColor(.resource(.Black))
-            .overlay(ItemOverlayView())
-    }
-}

@@ -38,9 +38,3 @@ struct TasksMainPage: PageView {
     }
     
 }
-
-struct TasksMainPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

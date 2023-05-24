@@ -15,9 +15,3 @@ struct Separator: View {
     }
     
 }
-
-struct Separator_Previews: PreviewProvider {
-    static var previews: some View {
-        Separator()
-    }
-}

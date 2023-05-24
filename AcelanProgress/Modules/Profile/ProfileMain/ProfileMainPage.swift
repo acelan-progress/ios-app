@@ -39,9 +39,3 @@ struct ProfileMainPage: PageView {
     }
     
 }
-
-struct ProfileMainPage_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyView()
-    }
-}

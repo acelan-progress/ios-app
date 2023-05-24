@@ -76,14 +76,3 @@ struct PrimaryTextField: View {
         }
     }
 }
-
-struct AcelanTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        PrimaryTextField(
-            title: "Email",
-            placeholder: "email@example.com",
-            text: .constant(.empty),
-            keyboardType: .email
-        ).padding(30)
-    }
-}
