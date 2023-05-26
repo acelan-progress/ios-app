@@ -13,7 +13,7 @@ import UIKit
 final class PrimaryTextFieldState: ObservableObject {
     
     @Published
-    var focused: Bool = false
+    var focused = false
     
     func setup(textField: UITextField) {
         textField.addTarget(
