@@ -57,13 +57,7 @@ extension ModelViewerScenario: ModelViewerScenarioProtocol, ErrorHandler {
         modelFilename = value?.filename
     }
     
-    func deleteModel() async {
-        if let modelFilename, let modelFileURL = modelFilename.modelFileURL {
-            await handleError {
-                try FileManager.default.removeItem(at: modelFileURL)
-            }
-        }
-        
+    func deleteModel() async {        
         await handleError {
             try await artifactsRepository.deleteArtifact(id: artifactId)
         }
