@@ -41,23 +41,20 @@ struct TasksDetailPage: PageView {
                             VLabel(title: "Started at", content: taskItem.startedAt)
                             VLabel(title: "Finished at", content: taskItem.finishedAt)
                             
-                            if state.taskHasArtifacts {
-                                if !state.artifactDownloaded {
-                                    PrimaryButton(
-                                        title: "Download Artifact",
-                                        action: {
-                                            interceptor.call(action: .downloadArtifact)
-                                        }
-                                    )
-                                } else if let artifactId = state.artifactId {
-                                    PrimaryButton(
-                                        title: "View Artifact",
-                                        action: {
-                                            interceptor.call(action: .openModelViewer(artifactId: artifactId))
-                                        }
-                                    )
-                                }
-                                    
+                            if let artifactId = state.artifactId {
+                                PrimaryButton(
+                                    title: "View Artifact",
+                                    action: {
+                                        interceptor.call(action: .openModelViewer(artifactId: artifactId))
+                                    }
+                                )
+                            } else {
+                                PrimaryButton(
+                                    title: "Download Artifact",
+                                    action: {
+                                        interceptor.call(action: .downloadArtifact)
+                                    }
+                                )
                             }
                         }
                     }

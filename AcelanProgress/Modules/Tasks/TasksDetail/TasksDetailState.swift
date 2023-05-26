@@ -36,15 +36,4 @@ extension TasksDetailState {
         return TaskItem.acelanTask(acelanTask)
     }
     
-    var taskHasArtifacts: Bool {
-        guard let artifacts = acelanTask?.artifacts else {
-            return false
-        }
-        return !artifacts.isEmpty
-    }
-    
-    var artifactDownloaded: Bool {
-        artifactId != nil
-    }
-    
 }
