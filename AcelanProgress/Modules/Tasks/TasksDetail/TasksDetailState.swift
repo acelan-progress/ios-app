@@ -29,6 +29,13 @@ final class TasksDetailState: ObservableObject {
 
 extension TasksDetailState {
     
+    var taskHasArtifacts: Bool {
+        guard let artifacts = acelanTask?.artifacts else {
+            return false
+        }
+        return !artifacts.isEmpty
+    }
+    
     var taskItem: TaskItem? {
         guard let acelanTask else {
             return nil

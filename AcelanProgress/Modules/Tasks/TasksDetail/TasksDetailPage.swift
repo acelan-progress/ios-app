@@ -41,20 +41,22 @@ struct TasksDetailPage: PageView {
                             VLabel(title: "Started at", content: taskItem.startedAt)
                             VLabel(title: "Finished at", content: taskItem.finishedAt)
                             
-                            if let artifactId = state.artifactId {
-                                PrimaryButton(
-                                    title: "View Artifact",
-                                    action: {
-                                        interceptor.call(action: .openModelViewer(artifactId: artifactId))
-                                    }
-                                )
-                            } else {
-                                PrimaryButton(
-                                    title: "Download Artifact",
-                                    action: {
-                                        interceptor.call(action: .downloadArtifact)
-                                    }
-                                )
+                            if state.taskHasArtifacts {
+                                if let artifactId = state.artifactId {
+                                    PrimaryButton(
+                                        title: "View Artifact",
+                                        action: {
+                                            interceptor.call(action: .openModelViewer(artifactId: artifactId))
+                                        }
+                                    )
+                                } else {
+                                    PrimaryButton(
+                                        title: "Download Artifact",
+                                        action: {
+                                            interceptor.call(action: .downloadArtifact)
+                                        }
+                                    )
+                                }
                             }
                         }
                     }
