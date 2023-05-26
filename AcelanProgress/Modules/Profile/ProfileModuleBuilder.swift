@@ -12,7 +12,7 @@ enum ProfileModuleBuilder: ModuleBuilder {
 
     case main
     
-    func buildModule(serviceProvider: StatefulArch.ServiceProvider) -> StatefulArch.ModuleConvertible {
+    func buildModule(serviceProvider: StatefulArch.ServiceProvider) -> ModuleConvertible {
         let state = ProfileMainState()
         let interceptor = ProfileMainInterceptor(state: state, serviceProvider: serviceProvider)
         return ProfileMainPage(
