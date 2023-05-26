@@ -753,7 +753,6 @@
 				9D32B6332A08CFE8001095D4 /* XCRemoteSwiftPackageReference "iOSWebClient" */,
 				9D32B6362A08D010001095D4 /* XCRemoteSwiftPackageReference "AppConfiguration" */,
 				9D32B6392A08D03D001095D4 /* XCRemoteSwiftPackageReference "SwiftDI" */,
-				9D76204D2A18F71B00FAE9CE /* XCRemoteSwiftPackageReference "Storage" */,
 				9D7620582A1A2E4500FAE9CE /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 9D5A801C29BB9D5300648BA1 /* Products */;
@@ -1122,14 +1121,6 @@
 		9D32B6392A08D03D001095D4 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/purenative/SwiftDI.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		9D76204D2A18F71B00FAE9CE /* XCRemoteSwiftPackageReference "Storage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/purenative/Storage.git";
 			requirement = {
 				branch = main;
 				kind = branch;
