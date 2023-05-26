@@ -22,7 +22,6 @@ final class ModelViewerMainInterceptor: PageInterceptor<ModelViewerMainAction, M
             NavigationService.pop()
             
         case .deleteModel:
-            // TODO: - implement model deletion
             await scenario.deleteModel()
             NavigationService.pop()
         }
