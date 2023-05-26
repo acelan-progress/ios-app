@@ -45,7 +45,12 @@ extension ModelViewerScenario: ModelViewerScenarioProtocol, ErrorHandler {
         modelFilename = value?.filename
     }
     
-    func deleteModel() async {        
+    func deleteModel() async {
+        defer {
+            loading = false
+        }
+        loading = true
+        
         await handleError {
             try await artifactsRepository.deleteArtifact(id: artifactId)
         }
