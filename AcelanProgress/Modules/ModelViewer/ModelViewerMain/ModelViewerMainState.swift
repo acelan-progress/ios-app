@@ -31,7 +31,7 @@ extension ModelViewerMainState {
         guard let modelFileURL = modelFilename?.modelFileURL else {
             return nil
         }
-        
+
         return try? SCNScene(url: modelFileURL)
     }
     

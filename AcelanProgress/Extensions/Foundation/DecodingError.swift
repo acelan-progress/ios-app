@@ -34,7 +34,7 @@ extension DecodingError: CustomStringConvertible {
 extension DecodingError.Context: CustomStringConvertible {
     
     public var description: String {
-        debugDescription + " Path: " + codingPath.map({ $0.stringValue }).joined(separator: "/")
+        debugDescription + " Path: " + codingPath.map { $0.stringValue }.joined(separator: "/")
     }
     
 }

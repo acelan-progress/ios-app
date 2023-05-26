@@ -32,7 +32,6 @@ struct AcelanTask: Decodable {
             return finished_at.toDate(.default)
         }
         return nil
-        
     }
     
     var supportedArtifact: AcelanTaskArtifact? {

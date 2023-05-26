@@ -11,12 +11,12 @@ import StatefulArch
 @MainActor
 protocol ModelViewerScenarioProtocol: PageScenario {
     
+    func loadModel() async
+    func deleteModel() async
+    
     func setTo(artifactId: Int)
     
     func bindFrom(modelFilenamePublisher: inout Published<String?>.Publisher)
     func bindFrom(loadingPublisher: inout Published<Bool>.Publisher)
-    
-    func loadModel() async
-    func deleteModel() async
     
 }

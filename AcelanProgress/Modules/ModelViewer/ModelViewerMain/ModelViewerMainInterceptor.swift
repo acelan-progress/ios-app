@@ -29,6 +29,7 @@ final class ModelViewerMainInterceptor: PageInterceptor<ModelViewerMainAction, M
     
     override func subscribe(withState state: inout ModelViewerMainState) {
         scenario.setTo(artifactId: state.artifactId)
+
         scenario.bindFrom(modelFilenamePublisher: &state.$modelFilename)
         scenario.bindFrom(loadingPublisher: &state.$loading)
     }

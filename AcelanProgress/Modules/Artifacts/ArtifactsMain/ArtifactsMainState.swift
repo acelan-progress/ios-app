@@ -21,7 +21,7 @@ final class ArtifactsMainState: ObservableObject {
 extension ArtifactsMainState {
     
     var artifactItems: [ArtifactItem] {
-        return acelanTaskArtifacts.map(ArtifactItem.acelanTaskArtifact)
+        acelanTaskArtifacts.map(ArtifactItem.acelanTaskArtifact)
     }
     
 }

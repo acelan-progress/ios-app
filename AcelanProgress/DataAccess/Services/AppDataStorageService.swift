@@ -11,7 +11,6 @@ import StatefulArch
 final class AppDataStorageService {
     
     private let userEmailKey = "AppDataStorageService_userEmail"
-    
     private let tokenStorage: JSONWebTokenStorage
     
     init(serviceProvider: ServiceProvider) {

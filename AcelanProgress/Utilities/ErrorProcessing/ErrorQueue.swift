@@ -9,7 +9,7 @@ import Foundation
 
 final class ErrorQueue {
     
-    private var errorRecords: [ErrorRecord] = []
+    private var errorRecords = [ErrorRecord]()
     private var processingErrorRecord: ErrorRecord?
     
     private var errorProcessor: ErrorProcessor?

@@ -28,18 +28,6 @@ final class ModelViewerScenario: PageScenario {
 
 extension ModelViewerScenario: ModelViewerScenarioProtocol, ErrorHandler {
     
-    func setTo(artifactId: Int) {
-        self.artifactId = artifactId
-    }
-    
-    func bindFrom(modelFilenamePublisher: inout Published<String?>.Publisher) {
-        $modelFilename.assign(to: &modelFilenamePublisher)
-    }
-    
-    func bindFrom(loadingPublisher: inout Published<Bool>.Publisher) {
-        $loading.assign(to: &loadingPublisher)
-    }
-    
     func loadModel() async {
         defer {
             loading = false
@@ -61,6 +49,18 @@ extension ModelViewerScenario: ModelViewerScenarioProtocol, ErrorHandler {
         await handleError {
             try await artifactsRepository.deleteArtifact(id: artifactId)
         }
+    }
+    
+    func setTo(artifactId: Int) {
+        self.artifactId = artifactId
+    }
+    
+    func bindFrom(modelFilenamePublisher: inout Published<String?>.Publisher) {
+        $modelFilename.assign(to: &modelFilenamePublisher)
+    }
+    
+    func bindFrom(loadingPublisher: inout Published<Bool>.Publisher) {
+        $loading.assign(to: &loadingPublisher)
     }
     
 }
