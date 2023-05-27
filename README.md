@@ -1,6 +1,6 @@
 # Acelan Progress iOS
 
-An app to track calculation tasks
+A mobile app to monitor calculation tasks
 
 ## Requirements
 
