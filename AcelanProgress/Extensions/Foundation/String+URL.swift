@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     
-    var modelFileURL: URL? {
+    var documentFileURL: URL? {
         guard let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
             return nil
         }

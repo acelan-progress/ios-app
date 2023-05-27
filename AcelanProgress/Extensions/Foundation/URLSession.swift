@@ -9,20 +9,20 @@ import Foundation
 
 extension URLSession {
     
-    func download(from sourceURL: URL, to destinationURL: URL) async throws -> HTTPURLResponse {
+    func download(from remoteURL: URL, to localURL: URL) async throws -> HTTPURLResponse {
         try await withCheckedThrowingContinuation { continuation in
-            let task = downloadTask(with: sourceURL) { temporaryURL, response, error in
+            let task = downloadTask(with: remoteURL) { temporaryLocalURL, response, error in
                 if let error {
                     continuation.resume(throwing: error)
                     return
                 }
                 
-                if let temporaryURL {
+                if let temporaryLocalURL {
                     do {
-                        if FileManager.default.fileExists(atPath: destinationURL.path) {
-                            try FileManager.default.removeItem(at: destinationURL)
+                        if FileManager.default.fileExists(atPath: localURL.path) {
+                            try FileManager.default.removeItem(at: localURL)
                         }
-                        try FileManager.default.moveItem(at: temporaryURL, to: destinationURL)
+                        try FileManager.default.moveItem(at: temporaryLocalURL, to: localURL)
                     } catch let fileManagerError {
                         continuation.resume(throwing: fileManagerError)
                         return

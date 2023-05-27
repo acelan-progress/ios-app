@@ -52,7 +52,7 @@ final class ArtifactsRepository: RealmBasedRepository {
         try await withCheckedThrowingContinuation { continuation in
             do {
                 if let artifact = try getObject(ofType: Artifact.self, primaryKey: id) {
-                    if let modelFileURL = artifact.filename.modelFileURL {
+                    if let modelFileURL = artifact.filename.documentFileURL {
                         try FileManager.default.removeItem(at: modelFileURL)
                     }
                     
@@ -73,7 +73,7 @@ final class ArtifactsRepository: RealmBasedRepository {
                 let results = try getResults(ofType: Artifact.self)
                 
                 for artifact in results {
-                    if let modelFileURL = artifact.filename.modelFileURL {
+                    if let modelFileURL = artifact.filename.documentFileURL {
                         try FileManager.default.removeItem(at: modelFileURL)
                     }
                 }

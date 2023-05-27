@@ -69,17 +69,17 @@ extension TasksDetailScenario: TasksDetailScenarioProtocol, ErrorHandler {
             artifactId = acelanTaskArtifact.id
         }
         
-        guard let artifactSourceURL = acelanTaskArtifact.artifactSourceURL else {
+        guard let artifactRemoteURL = acelanTaskArtifact.artifactRemoteURL else {
             return
         }
         
-        let filename = artifactSourceURL.lastPathComponent
-        guard let artifactDestinationUrl = filename.modelFileURL else {
+        let filename = artifactRemoteURL.lastPathComponent
+        guard let artifactLocalURL = filename.documentFileURL else {
             return
         }
 
         await handleError {
-            try await artifactsService.downloadArtifact(from: artifactSourceURL, to: artifactDestinationUrl)
+            try await artifactsService.downloadArtifact(from: artifactRemoteURL, to: artifactLocalURL)
         }
         
         await handleError {

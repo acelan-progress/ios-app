@@ -17,7 +17,7 @@ struct AcelanTaskArtifact: Decodable {
         AcelanTaskFileType(rawValue: file_type) ?? .unknown
     }
     
-    var artifactSourceURL: URL? {
+    var artifactRemoteURL: URL? {
         URL(string: url)
     }
     

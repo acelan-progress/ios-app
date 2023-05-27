@@ -17,8 +17,8 @@ final class ArtifactsService {
         self.session = session
     }
     
-    func downloadArtifact(from sourceURL: URL, to destinationURL: URL) async throws {
-        let _ = try await session.download(from: sourceURL, to: destinationURL)
+    func downloadArtifact(from remoteURL: URL, to localURL: URL) async throws {
+        let _ = try await session.download(from: remoteURL, to: localURL)
     }
     
 }
