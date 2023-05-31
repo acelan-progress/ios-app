@@ -28,7 +28,7 @@ final class ModelViewerMainState: ObservableObject {
 extension ModelViewerMainState {
     
     var modelScene: SCNScene? {
-        guard let modelFileURL = modelFilename?.documentFileURL else {
+        guard let modelFileURL = modelFilename?.localDocumentFileURL else {
             return nil
         }
 

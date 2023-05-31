@@ -110,7 +110,6 @@
 		9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */; };
 		9DA57C1D29F451F000B3BBAE /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */; };
 		9DA57C2129F4525B00B3BBAE /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA57C2029F4525B00B3BBAE /* TaskItem.swift */; };
-		9DB0054E2A1DE25500CDDEEC /* RealmBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0054D2A1DE25500CDDEEC /* RealmBasedRepository.swift */; };
 		9DB005522A1E8C9E00CDDEEC /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB005512A1E8C9E00CDDEEC /* String+URL.swift */; };
 		9DBFAA0B29F7CFC1001F27DC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */; };
 		9DBFAA0E29F7D321001F27DC /* TasksDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */; };
@@ -232,7 +231,6 @@
 		9DA57C1729F4490C00B3BBAE /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
 		9DA57C1C29F451F000B3BBAE /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		9DA57C2029F4525B00B3BBAE /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
-		9DB0054D2A1DE25500CDDEEC /* RealmBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBasedRepository.swift; sourceTree = "<group>"; };
 		9DB005512A1E8C9E00CDDEEC /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		9DBFAA0A29F7CFC1001F27DC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		9DBFAA0D29F7D321001F27DC /* TasksDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailState.swift; sourceTree = "<group>"; };
@@ -393,7 +391,6 @@
 		9D7620502A19000600FAE9CE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				9DB0054C2A1DE24400CDDEEC /* Base */,
 				9D7620562A19311000FAE9CE /* ArtifactsRepository.swift */,
 			);
 			path = Repositories;
@@ -654,14 +651,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9DB0054C2A1DE24400CDDEEC /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				9DB0054D2A1DE25500CDDEEC /* RealmBasedRepository.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		9DBFAA0C29F7D25D001F27DC /* TasksDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,7 +830,6 @@
 				9D6530742A0163B800434A94 /* TasksDetailScenario.swift in Sources */,
 				9D12F5FF2A003C080019625E /* TasksMainScenarioProtocol.swift in Sources */,
 				9D12F6032A00498C0019625E /* TasksResponse.swift in Sources */,
-				9DB0054E2A1DE25500CDDEEC /* RealmBasedRepository.swift in Sources */,
 				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,

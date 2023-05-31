@@ -74,7 +74,7 @@ extension TasksDetailScenario: TasksDetailScenarioProtocol, ErrorHandler {
         }
         
         let filename = artifactRemoteURL.lastPathComponent
-        guard let artifactLocalURL = filename.documentFileURL else {
+        guard let artifactLocalURL = filename.localDocumentFileURL else {
             return
         }
 
