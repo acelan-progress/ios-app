@@ -11,7 +11,6 @@ import PNComponents
 struct TaskItemView<Item: TaskItemData>: View {
     
     let item: Item
-    
     let action: () -> Void
     
     var body: some View {
