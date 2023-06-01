@@ -13,7 +13,7 @@ final class TasksService {
     private let apiClient: ApiClient
     
     init(serviceProvider: ServiceProvider) {
-        apiClient = serviceProvider.provideService()
+        self.apiClient = serviceProvider.provideService()
     }
     
     func getTasks() async throws -> [AcelanTask] {

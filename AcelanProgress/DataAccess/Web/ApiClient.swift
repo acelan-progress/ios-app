@@ -14,7 +14,7 @@ final class ApiClient {
     private let webClient: WebClient
     
     init(serviceProvider: ServiceProvider) {
-        webClient = serviceProvider.provideService()
+        self.webClient = serviceProvider.provideService()
     }
     
     func request<D: Decodable>(with paramerers: RequestParameters) async throws -> D {
