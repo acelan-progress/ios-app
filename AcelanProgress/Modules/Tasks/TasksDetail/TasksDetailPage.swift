@@ -67,4 +67,5 @@ struct TasksDetailPage: PageView {
             .loading($state.loading)
         }
     }
+
 }

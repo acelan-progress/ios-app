@@ -35,4 +35,5 @@ struct ModelViewerMainPage: PageView {
         }
         .loading($state.loading)
     }
+
 }
