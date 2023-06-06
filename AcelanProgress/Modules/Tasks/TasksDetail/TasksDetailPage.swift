@@ -64,7 +64,7 @@ struct TasksDetailPage: PageView {
                     .padding(.horizontal, 20)
                 }
             }
-            .loading($state.loading)
+            .withLoading($state.loading)
         }
     }
 

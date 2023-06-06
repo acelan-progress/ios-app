@@ -33,7 +33,7 @@ struct ArtifactsMainPage: PageView {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
             }
-            .loading($state.loading)
+            .withLoading($state.loading)
         }
     }
     

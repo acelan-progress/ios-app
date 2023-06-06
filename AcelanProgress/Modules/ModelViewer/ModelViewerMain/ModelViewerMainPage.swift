@@ -33,7 +33,7 @@ struct ModelViewerMainPage: PageView {
                 options: [.allowsCameraControl, .autoenablesDefaultLighting]
             )
         }
-        .loading($state.loading)
+        .withLoading($state.loading)
     }
 
 }

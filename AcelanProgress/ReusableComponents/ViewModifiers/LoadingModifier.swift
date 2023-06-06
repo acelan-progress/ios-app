@@ -34,7 +34,7 @@ struct LoadingModifier: ViewModifier {
 
 extension View {
     
-    func loading(_ loading: Binding<Bool>) -> some View {
+    func withLoading(_ loading: Binding<Bool>) -> some View {
         modifier(LoadingModifier(loading: loading))
     }
     
