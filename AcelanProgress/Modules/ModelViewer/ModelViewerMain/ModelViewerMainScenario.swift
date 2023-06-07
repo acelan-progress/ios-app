@@ -1,5 +1,5 @@
 //
-//  ModelViewerScenario.swift
+//  ModelViewerMainScenario.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 21.05.2023.
@@ -8,7 +8,7 @@
 import Foundation
 import StatefulArch
 
-final class ModelViewerScenario: PageScenario {
+final class ModelViewerMainScenario: PageScenario {
     
     private var artifactsRepository: ArtifactsRepository!
     
@@ -26,7 +26,7 @@ final class ModelViewerScenario: PageScenario {
     
 }
 
-extension ModelViewerScenario: ModelViewerScenarioProtocol, ErrorHandler {
+extension ModelViewerMainScenario: ModelViewerMainScenarioProtocol, ErrorHandler {
     
     func loadModel() async {
         defer {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AcelanTaskFileType: String, Decodable {
+enum AcelanTaskFileType: String {
     
     case ply
     case unknown

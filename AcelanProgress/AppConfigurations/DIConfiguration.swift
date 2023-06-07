@@ -41,9 +41,9 @@ extension DIConfiguration {
         container.registerDependency(TasksDetailScenarioProtocol.self) {
             TasksDetailScenario(serviceProvider: container)
         }
-        
-        container.registerDependency(ModelViewerScenarioProtocol.self) {
-            ModelViewerScenario(serviceProvider: container)
+    
+        container.registerDependency(ModelViewerMainScenarioProtocol.self) {
+            ModelViewerMainScenario(serviceProvider: container)
         }
         
         container.registerDependency(ArtifactsMainScenarioProtocol.self) {

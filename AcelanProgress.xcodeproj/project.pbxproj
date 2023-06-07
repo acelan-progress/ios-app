@@ -82,8 +82,8 @@
 		9D7D991F29F6F441008AC934 /* LoadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D991E29F6F441008AC934 /* LoadingModifier.swift */; };
 		9D8311BA2A1A580800B376CE /* ArtifactsMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311B92A1A580800B376CE /* ArtifactsMainScenario.swift */; };
 		9D8311BC2A1A582B00B376CE /* ArtifactsMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311BB2A1A582B00B376CE /* ArtifactsMainScenarioProtocol.swift */; };
-		9D8311BE2A1A7E5F00B376CE /* ModelViewerScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311BD2A1A7E5F00B376CE /* ModelViewerScenario.swift */; };
-		9D8311C02A1A7E6A00B376CE /* ModelViewerScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311BF2A1A7E6A00B376CE /* ModelViewerScenarioProtocol.swift */; };
+		9D8311BE2A1A7E5F00B376CE /* ModelViewerMainScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311BD2A1A7E5F00B376CE /* ModelViewerMainScenario.swift */; };
+		9D8311C02A1A7E6A00B376CE /* ModelViewerMainScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8311BF2A1A7E6A00B376CE /* ModelViewerMainScenarioProtocol.swift */; };
 		9DA4A40129F502CC00A85AF5 /* AcelanTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */; };
 		9DA4A40329F5097400A85AF5 /* AcelanTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40229F5097400A85AF5 /* AcelanTask.swift */; };
 		9DA4A40729F50A6100A85AF5 /* AcelanTaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */; };
@@ -204,8 +204,8 @@
 		9D7D991E29F6F441008AC934 /* LoadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingModifier.swift; sourceTree = "<group>"; };
 		9D8311B92A1A580800B376CE /* ArtifactsMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainScenario.swift; sourceTree = "<group>"; };
 		9D8311BB2A1A582B00B376CE /* ArtifactsMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsMainScenarioProtocol.swift; sourceTree = "<group>"; };
-		9D8311BD2A1A7E5F00B376CE /* ModelViewerScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerScenario.swift; sourceTree = "<group>"; };
-		9D8311BF2A1A7E6A00B376CE /* ModelViewerScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerScenarioProtocol.swift; sourceTree = "<group>"; };
+		9D8311BD2A1A7E5F00B376CE /* ModelViewerMainScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainScenario.swift; sourceTree = "<group>"; };
+		9D8311BF2A1A7E6A00B376CE /* ModelViewerMainScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerMainScenarioProtocol.swift; sourceTree = "<group>"; };
 		9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskStatus.swift; sourceTree = "<group>"; };
 		9DA4A40229F5097400A85AF5 /* AcelanTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTask.swift; sourceTree = "<group>"; };
 		9DA4A40629F50A6100A85AF5 /* AcelanTaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcelanTaskDateFormatter.swift; sourceTree = "<group>"; };
@@ -288,8 +288,8 @@
 				9D12F5C029FFDBF30019625E /* ModelViewerMainState.swift */,
 				9D12F5C429FFDC7E0019625E /* ModelViewerMainInterceptor.swift */,
 				9D12F5C629FFDCE50019625E /* ModelViewerMainPage.swift */,
-				9D8311BD2A1A7E5F00B376CE /* ModelViewerScenario.swift */,
-				9D8311BF2A1A7E6A00B376CE /* ModelViewerScenarioProtocol.swift */,
+				9D8311BD2A1A7E5F00B376CE /* ModelViewerMainScenario.swift */,
+				9D8311BF2A1A7E6A00B376CE /* ModelViewerMainScenarioProtocol.swift */,
 			);
 			path = ModelViewerMain;
 			sourceTree = "<group>";
@@ -852,11 +852,11 @@
 				9D12F5EB2A0029E70019625E /* ErrorProcessor.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,
 				9D12F5FD2A003BB00019625E /* TasksMainScenario.swift in Sources */,
-				9D8311BE2A1A7E5F00B376CE /* ModelViewerScenario.swift in Sources */,
+				9D8311BE2A1A7E5F00B376CE /* ModelViewerMainScenario.swift in Sources */,
 				9D12F5C929FFDE550019625E /* DeleteButton.swift in Sources */,
 				9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */,
 				9D6530762A0163C600434A94 /* TasksDetailScenarioProtocol.swift in Sources */,
-				9D8311C02A1A7E6A00B376CE /* ModelViewerScenarioProtocol.swift in Sources */,
+				9D8311C02A1A7E6A00B376CE /* ModelViewerMainScenarioProtocol.swift in Sources */,
 				9DBFAA1029F7D344001F27DC /* TasksDetailAction.swift in Sources */,
 				9D12F5F32A002A7D0019625E /* AppErrorProcessor.swift in Sources */,
 				9D7D4D4229F553490033B5AF /* TasksMainState.swift in Sources */,

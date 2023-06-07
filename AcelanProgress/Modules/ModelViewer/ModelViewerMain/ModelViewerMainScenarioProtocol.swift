@@ -1,5 +1,5 @@
 //
-//  ModelViewerScenarioProtocol.swift
+//  ModelViewerMainScenarioProtocol.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 21.05.2023.
@@ -9,7 +9,7 @@ import Foundation
 import StatefulArch
 
 @MainActor
-protocol ModelViewerScenarioProtocol: PageScenario {
+protocol ModelViewerMainScenarioProtocol: PageScenario {
     
     func loadModel() async
     func deleteModel() async

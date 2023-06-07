@@ -10,7 +10,7 @@ import StatefulArch
 
 final class ModelViewerMainInterceptor: PageInterceptor<ModelViewerMainAction, ModelViewerMainState> {
     
-    private var scenario: ModelViewerScenarioProtocol!
+    private var scenario: ModelViewerMainScenarioProtocol!
     
     override func provideServices(withServiceProvider serviceProvider: ServiceProvider) {
         serviceProvider.provide(service: &scenario)
