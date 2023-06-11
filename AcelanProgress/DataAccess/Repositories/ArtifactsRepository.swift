@@ -32,7 +32,7 @@ final class ArtifactsRepository {
     func deleteArtifact(id: Int) async throws {
         let realm = try await Realm()
         if let artifact = realm.object(ofType: Artifact.self, forPrimaryKey: id) {
-            if let modelFileURL = artifact.filename.localDocumentFileURL {
+            if let modelFileURL = artifact.filename.localDocumentFileURL, FileManager.default.fileExists(atPath: modelFileURL.path) {
                 try FileManager.default.removeItem(at: modelFileURL)
             }
             try realm.write {
@@ -45,7 +45,7 @@ final class ArtifactsRepository {
         let realm = try await Realm()
         let results = realm.objects(Artifact.self)
         for artifact in results {
-            if let modelFileURL = artifact.filename.localDocumentFileURL {
+            if let modelFileURL = artifact.filename.localDocumentFileURL, FileManager.default.fileExists(atPath: modelFileURL.path) {
                 try FileManager.default.removeItem(at: modelFileURL)
             }
         }
