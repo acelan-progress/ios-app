@@ -1,3 +1,5 @@
+![[Swift](https://img.shields.io/badge/Swift-5.7.2-blue)](https://www.swift.org)
+
 # Acelan Progress iOS
 
 A mobile app to monitor calculation tasks
