@@ -2,7 +2,7 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.7.2-blue)](https://www.swift.org) [![Xcode Version](https://img.shields.io/badge/Xcode-14.2-blue)](https://xcodereleases.com)
 
-A mobile app to monitor calculation tasks
+A native iOS application designed to monitor calculation tasks
 
 ## Requirements
 
