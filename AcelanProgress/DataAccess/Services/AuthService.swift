@@ -8,7 +8,7 @@
 import Foundation
 import StatefulArch
 
-final class AuthService: ErrorHandler {
+final class AuthService {
     
     private let apiClient: ApiClient
     private let tokenStorage: JSONWebTokenStorage
