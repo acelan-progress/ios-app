@@ -1,4 +1,4 @@
-![[Swift](https://img.shields.io/badge/Swift-5.7.2-blue)](https://www.swift.org)
+![[Swift Version](https://img.shields.io/badge/Swift-5.7.2-blue.svg)](https://www.swift.org)
 
 # Acelan Progress iOS
 
