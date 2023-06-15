@@ -388,6 +388,15 @@
 			path = AcelanProgress;
 			sourceTree = "<group>";
 		};
+		9D6C299F2A3B80A30086DB52 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */,
+				9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		9D7620502A19000600FAE9CE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,10 +540,8 @@
 		9DA4A3FF29F5028100A85AF5 /* Decodable */ = {
 			isa = PBXGroup;
 			children = (
-				9DA4A40029F502CC00A85AF5 /* AcelanTaskStatus.swift */,
 				9DA4A40229F5097400A85AF5 /* AcelanTask.swift */,
 				9DA4A40A29F50C2900A85AF5 /* AcelanTaskArtifact.swift */,
-				9DA4A40C29F50EA200A85AF5 /* AcelanTaskFileType.swift */,
 				9D12F5E12A001A4F0019625E /* TokenResponse.swift */,
 				9D12F6022A00498C0019625E /* TasksResponse.swift */,
 			);
@@ -624,6 +631,7 @@
 		9DA57C1E29F4522C00B3BBAE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D6C299F2A3B80A30086DB52 /* Data */,
 				9D7620532A1900AF00FAE9CE /* Realm */,
 				9DA4A3FF29F5028100A85AF5 /* Decodable */,
 				9DA57C1F29F4524100B3BBAE /* UI */,
