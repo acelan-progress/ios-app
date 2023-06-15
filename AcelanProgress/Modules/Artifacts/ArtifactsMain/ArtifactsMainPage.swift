@@ -20,7 +20,7 @@ struct ArtifactsMainPage: PageView {
             NavigationBar(title: "Artifacts")
             
             ScrollView {
-                VStack(spacing: 10) {
+                LazyVStack(spacing: 10) {
                     ForEach(state.artifactItems) { artifactItem in
                         ArtifactItemView(
                             item: artifactItem,
