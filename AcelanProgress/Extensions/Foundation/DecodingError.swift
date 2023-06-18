@@ -11,18 +11,17 @@ extension DecodingError: CustomStringConvertible {
     
     public var description: String {
         switch self {
+        case let .typeMismatch(any, context):
+            return "Type mismatch for \'\(any)\': \(context.description)"
             
-        case .typeMismatch(let any, let context):
-            return "Type mismatch for \'\(any)\': " + context.description
+        case let .valueNotFound(any, context):
+            return "Value not found for type \'\(any)\': \(context.description)"
             
-        case .valueNotFound(let any, let context):
-            return "Value not found for type \'\(any)\': " + context.description
+        case let .keyNotFound(codingKey, context):
+            return "Key not found for \'\(codingKey)\': \(context.description)"
             
-        case .keyNotFound(let codingKey, let context):
-            return "Key not found for \'\(codingKey)\': " + context.description
-            
-        case .dataCorrupted(let context):
-            return "Data corrupted: " + context.description
+        case let .dataCorrupted(context):
+            return "Data corrupted: \(context.description)"
             
         @unknown default:
             return localizedDescription
