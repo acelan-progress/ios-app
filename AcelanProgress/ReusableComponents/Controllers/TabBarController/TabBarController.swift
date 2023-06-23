@@ -14,7 +14,7 @@ final class TabBarController: UITabBarController {
     
     private lazy var borderView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.resource(.LightGray)
+        view.backgroundColor = .resource(.LightGray)
         self.tabBar.addSubview(view)
         return view
     }()
