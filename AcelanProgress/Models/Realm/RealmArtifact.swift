@@ -1,5 +1,5 @@
 //
-//  Artifact.swift
+//  RealmArtifact.swift
 //  AcelanProgress
 //
 //  Created by Mikhail Yeremeyev on 20.05.2023.
@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-final class Artifact: Object {
+final class RealmArtifact: Object {
     
     @Persisted(primaryKey: true)
     var id: Int = .zero
@@ -33,6 +33,10 @@ final class Artifact: Object {
         self.remoteURL = remoteURL
         self.filename = filename
         self.taskId = taskId
+    }
+    
+    func toAcelanTaskArtifact() -> AcelanTaskArtifact {
+        AcelanTaskArtifact(id: id, file_type: fileType, url: remoteURL)
     }
     
 }

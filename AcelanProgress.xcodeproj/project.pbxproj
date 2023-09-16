@@ -50,7 +50,7 @@
 		9D6530742A0163B800434A94 /* TasksDetailScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530732A0163B700434A94 /* TasksDetailScenario.swift */; };
 		9D6530762A0163C600434A94 /* TasksDetailScenarioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530752A0163C600434A94 /* TasksDetailScenarioProtocol.swift */; };
 		9D6530782A01718500434A94 /* ArtifactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6530772A01718500434A94 /* ArtifactsService.swift */; };
-		9D7620552A1900CF00FAE9CE /* Artifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7620542A1900CF00FAE9CE /* Artifact.swift */; };
+		9D7620552A1900CF00FAE9CE /* RealmArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7620542A1900CF00FAE9CE /* RealmArtifact.swift */; };
 		9D7620572A19311000FAE9CE /* ArtifactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7620562A19311000FAE9CE /* ArtifactsRepository.swift */; };
 		9D76205A2A1A2E4500FAE9CE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9D7620592A1A2E4500FAE9CE /* Realm */; };
 		9D76205C2A1A2E4500FAE9CE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D76205B2A1A2E4500FAE9CE /* RealmSwift */; };
@@ -118,6 +118,7 @@
 		9DBFAA1429F7F160001F27DC /* TasksDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */; };
 		9DBFAA1629F7F2E0001F27DC /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1529F7F2E0001F27DC /* Separator.swift */; };
 		9DBFAA1A29F7F7A6001F27DC /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFAA1929F7F7A6001F27DC /* NavigationBarItem.swift */; };
+		9DDE7C2C2A92177500B98DB0 /* RealmBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE7C2B2A92177400B98DB0 /* RealmBasedRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -174,7 +175,7 @@
 		9D6530732A0163B700434A94 /* TasksDetailScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailScenario.swift; sourceTree = "<group>"; };
 		9D6530752A0163C600434A94 /* TasksDetailScenarioProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailScenarioProtocol.swift; sourceTree = "<group>"; };
 		9D6530772A01718500434A94 /* ArtifactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsService.swift; sourceTree = "<group>"; };
-		9D7620542A1900CF00FAE9CE /* Artifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artifact.swift; sourceTree = "<group>"; };
+		9D7620542A1900CF00FAE9CE /* RealmArtifact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmArtifact.swift; sourceTree = "<group>"; };
 		9D7620562A19311000FAE9CE /* ArtifactsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsRepository.swift; sourceTree = "<group>"; };
 		9D7692AE29FA585200EE0B53 /* TaskStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusView.swift; sourceTree = "<group>"; };
 		9D7692B229FA694B00EE0B53 /* ArtifactItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactItemView.swift; sourceTree = "<group>"; };
@@ -239,6 +240,7 @@
 		9DBFAA1329F7F160001F27DC /* TasksDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDetailPage.swift; sourceTree = "<group>"; };
 		9DBFAA1529F7F2E0001F27DC /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		9DBFAA1929F7F7A6001F27DC /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
+		9DDE7C2B2A92177400B98DB0 /* RealmBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBasedRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +402,7 @@
 		9D7620502A19000600FAE9CE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				9DDE7C2A2A92175600B98DB0 /* Base */,
 				9D7620562A19311000FAE9CE /* ArtifactsRepository.swift */,
 			);
 			path = Repositories;
@@ -408,7 +411,7 @@
 		9D7620532A1900AF00FAE9CE /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				9D7620542A1900CF00FAE9CE /* Artifact.swift */,
+				9D7620542A1900CF00FAE9CE /* RealmArtifact.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -690,6 +693,14 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		9DDE7C2A2A92175600B98DB0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9DDE7C2B2A92177400B98DB0 /* RealmBasedRepository.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -838,6 +849,7 @@
 				9D6530742A0163B800434A94 /* TasksDetailScenario.swift in Sources */,
 				9D12F5FF2A003C080019625E /* TasksMainScenarioProtocol.swift in Sources */,
 				9D12F6032A00498C0019625E /* TasksResponse.swift in Sources */,
+				9DDE7C2C2A92177500B98DB0 /* RealmBasedRepository.swift in Sources */,
 				9D7D991C29F6F271008AC934 /* Loader.swift in Sources */,
 				9DA57C0429F434BD00B3BBAE /* LoginMainState.swift in Sources */,
 				9D7D4D3D29F553000033B5AF /* TasksModuleBuilder.swift in Sources */,
@@ -855,7 +867,7 @@
 				9DA57C1829F4490C00B3BBAE /* NavigationConfiguration.swift in Sources */,
 				9D7D4D4629F553CD0033B5AF /* TasksMainAction.swift in Sources */,
 				9D7D4D6029F593190033B5AF /* ProfileMainScenario.swift in Sources */,
-				9D7620552A1900CF00FAE9CE /* Artifact.swift in Sources */,
+				9D7620552A1900CF00FAE9CE /* RealmArtifact.swift in Sources */,
 				9D8311BA2A1A580800B376CE /* ArtifactsMainScenario.swift in Sources */,
 				9D12F5EB2A0029E70019625E /* ErrorProcessor.swift in Sources */,
 				9DA57C1629F4481A00B3BBAE /* LoginMainScenarioProtocol.swift in Sources */,

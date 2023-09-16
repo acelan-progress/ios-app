@@ -8,48 +8,63 @@
 import Foundation
 import RealmSwift
 
-@MainActor
-final class ArtifactsRepository {
+final class ArtifactsRepository: RealmBasedRepository {
     
-    func createArtifact(id: Int, fileType: String, remoteURL: String, filename: String, taskId: Int) async throws {
-        let realm = try await Realm()
-        let artifact = Artifact(id: id, fileType: fileType, remoteURL: remoteURL, filename: filename, taskId: taskId)
-        try realm.write {
+    func createArtifact(id: Int,
+                        fileType: String,
+                        remoteURL: String,
+                        filename: String,
+                        taskId: Int) async {
+        let artifact = RealmArtifact(id: id,
+                                     fileType: fileType,
+                                     remoteURL: remoteURL,
+                                     filename: filename,
+                                     taskId: taskId)
+        await write { realm in
             realm.add(artifact)
         }
     }
     
-    func getArtifact(id: Int) async throws -> Artifact? {
-        let realm = try await Realm()
-        return realm.object(ofType: Artifact.self, forPrimaryKey: id)
+    func getArtifact(id: Int) async -> AcelanTaskArtifact? {
+        if let realmArtifact: RealmArtifact = await object(forPrimaryKey: id) {
+            return realmArtifact.toAcelanTaskArtifact()
+        } else {
+            return nil
+        }
     }
     
-    func getArtifacts() async throws -> Results<Artifact> {
-        let realm = try await Realm()
-        return realm.objects(Artifact.self)
+    func getArtifacts() async -> [AcelanTaskArtifact] {
+        if let realmArtifacts: Results<RealmArtifact> = await objects() {
+            return realmArtifacts.map { $0.toAcelanTaskArtifact() }
+        } else {
+            return []
+        }
     }
     
-    func deleteArtifact(id: Int) async throws {
-        let realm = try await Realm()
-        if let artifact = realm.object(ofType: Artifact.self, forPrimaryKey: id) {
+    func deleteArtifact(id: Int) async {
+        if let artifact: RealmArtifact = await object(forPrimaryKey: id) {
             if let modelFileURL = artifact.filename.localDocumentFileURL, FileManager.default.fileExists(atPath: modelFileURL.path) {
-                try FileManager.default.removeItem(at: modelFileURL)
+                try? FileManager.default.removeItem(at: modelFileURL)
             }
-            try realm.write {
+            
+            await write { realm in
                 realm.delete(artifact)
             }
         }
     }
     
-    func deleteAllArtifacts() async throws {
-        let realm = try await Realm()
-        let results = realm.objects(Artifact.self)
+    func deleteAllArtifacts() async {
+        guard let results: Results<RealmArtifact> = await objects() else {
+            return
+        }
+        
         for artifact in results {
             if let modelFileURL = artifact.filename.localDocumentFileURL, FileManager.default.fileExists(atPath: modelFileURL.path) {
-                try FileManager.default.removeItem(at: modelFileURL)
+                try? FileManager.default.removeItem(at: modelFileURL)
             }
         }
-        try realm.write {
+        
+        await write { realm in
             realm.delete(results)
         }
     }

@@ -21,8 +21,4 @@ struct AcelanTaskArtifact: Decodable {
         URL(string: url)
     }
     
-    static func create(from artifact: Artifact) -> AcelanTaskArtifact {
-        AcelanTaskArtifact(id: artifact.id, file_type: artifact.fileType, url: artifact.remoteURL)
-    }
-    
 }
